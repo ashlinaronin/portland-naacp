@@ -5,6 +5,5 @@ cache:
   directories:
     - "node_modules"
 script:
-  - npm install
   - gulp build
   - gulp deploy --user $FTP_USER --password $FTP_PASSWORD
