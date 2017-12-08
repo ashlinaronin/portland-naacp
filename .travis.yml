@@ -6,4 +6,4 @@ cache:
     - "node_modules"
 script:
   - gulp build
-  - gulp deploy --user $FTP_USER --password $FTP_PASSWORD
+  - gulp deploy --ftpPath $FTP_PATH --user $FTP_USER --password $FTP_PASSWORD

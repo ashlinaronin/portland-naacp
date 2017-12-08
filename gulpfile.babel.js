@@ -172,7 +172,7 @@ function watch() {
 }
 
 function deploy() {
-  const remotePath = '/adamt/portland-naacp/wp-content/';
+  const remotePath = args.ftpPath;
   const connection = ftp.create({
     host: 'sftp.flywheelsites.com',
     user: args.user,
@@ -180,7 +180,7 @@ function deploy() {
     log: gutil.log
   });
 
-  gulp.src(['../../*.*'])
+  return gulp.src(['../../*.*'])
     .pipe(connection.newer(remotePath))
     .pipe(connection.dest(remotePath));
 }
