@@ -174,7 +174,7 @@ function watch() {
 function deploy() {
   const remotePath = args.ftpPath;
   const connection = ftp.create({
-    host: 'sftp.flywheelsites.com',
+    host: args.host,
     user: args.user,
     password: args.password,
     log: gutil.log
