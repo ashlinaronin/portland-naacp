@@ -1,9 +1,6 @@
 language: node_js
 node_js:
   - "8"
-cache:
-  directories:
-    - "node_modules"
 script:
   - gulp build
   - gulp deploy --ftpPath $FTP_PATH --user $FTP_USER --password $FTP_PASSWORD
