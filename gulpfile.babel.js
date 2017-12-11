@@ -11,7 +11,7 @@ import fs            from 'fs';
 import webpackStream from 'webpack-stream';
 import webpack2      from 'webpack';
 import named         from 'vinyl-named';
-import ftp           from 'vinyl-ftp';
+import sftp          from 'gulp-sftp';
 import minimist      from 'minimist';
 
 // Load all Gulp plugins into one variable
@@ -172,15 +172,16 @@ function watch() {
 }
 
 function deploy() {
-  const remotePath = args.ftpPath;
-  const connection = ftp.create({
-    host: args.host,
-    user: args.user,
-    password: args.password,
-    log: gutil.log
-  });
-
-  return gulp.src(['../../*.*'])
-    .pipe(connection.newer(remotePath))
-    .pipe(connection.dest(remotePath));
+  // We can ignore src since those files all get moved to dist
+  // We don't need to copy node_modules to deployment server since
+  // they are only used to generate build
+  // These command line arguments can be passed to this function via
+  // env variables in a CI pipeline (for now, that is Travis CI)
+  return gulp.src(['**/*.*', '!src/**/*.*', '!node_modules/**/*.*'])
+    .pipe(sftp({
+      host: args.host,
+      remotePath: args.remotePath,
+      user: args.user,
+      pass: args.password
+    }));
 }

@@ -3,4 +3,4 @@ node_js:
   - "8"
 script:
   - gulp build
-  - gulp deploy --ftpHost $FTP_HOST --ftpPath $FTP_PATH --user $FTP_USER --password $FTP_PASSWORD
+  - gulp deploy --host $FTP_HOST --remotePath $FTP_PATH --user $FTP_USER --password $FTP_PASSWORD
