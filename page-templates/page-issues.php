@@ -28,12 +28,34 @@ get_header(); ?>
   </div>
 
   <div class="callout large secondary">
-    <h3>Learn more about us & get involved</h3>
-    <div class="grid-x">
-      <div class="small-4 cell card">Callout 1 / CTA (Committees?)</div>
-      <div class="small-4 cell card">Callout 2 / CTA (Org history?)</div>
-      <div class="small-4 cell card">Callout 3 / CTA (Get involved?)</div>
-    </div>
+    <h3><?php get_field('headline-description'); ?></h3>
+
+    <?php if ( have_rows('links')): ?>
+      <div class="grid-x">
+      <?php while( have_rows('links')): the_row();
+        $link1 = get_sub_field('link_1');
+        $link2 = get_sub_field('link_2');
+    		$link3 = get_sub_field('link_3');
+      ?>
+
+        <div class="small-4 cell card">
+          <h4><?php echo($link1['headline']) ?></h4>
+          <p><?php echo($link1['copy']) ?></p>
+          <a href="<?php echo($link1['link']['url']); ?>" target="<?php echo($link1['link']['target']); ?>"><?php echo($link1['link']['title']); ?></a>
+        </div>
+        <div class="small-4 cell card">
+          <h4><?php echo($link2['headline']) ?></h4>
+          <p><?php echo($link2['copy']) ?></p>
+          <a href="<?php echo($link2['link']['url']); ?>" target="<?php echo($link2['link']['target']); ?>"><?php echo($link2['link']['title']); ?></a>
+        </div>
+        <div class="small-4 cell card">
+          <h4><?php echo($link3['headline']) ?></h4>
+          <p><?php echo($link3['copy']) ?></p>
+          <a href="<?php echo($link3['link']['url']); ?>" target="<?php echo($link3['link']['target']); ?>"><?php echo($link3['link']['title']); ?></a>
+        </div>
+      <?php endwhile; ?>
+      </div>
+    <?php endif; ?>
   </div>
 </div>
 
