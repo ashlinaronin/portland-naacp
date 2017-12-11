@@ -14,11 +14,17 @@ get_header(); ?>
   </div>
 
   <div class="callout large">
-    <?php get_template_part('template-parts/issue-information'); ?>
-    <?php get_template_part('template-parts/issue-information'); ?>
-    <?php get_template_part('template-parts/issue-information'); ?>
-    <?php get_template_part('template-parts/issue-information'); ?>
-    <?php get_template_part('template-parts/issue-information'); ?>
+  <?php if ( have_rows('issues')): ?>
+    <?php while( have_rows('issues')): the_row();
+      $issue = get_sub_field('issue');
+      $issue_description = get_sub_field('issue_description');
+    ?>
+      <div class="callout secondary">
+        <h5><?php echo $issue; ?></h5>
+	      <?php echo $issue_description; ?>
+      </div>
+    <?php endwhile; ?>
+  <?php endif; ?>
   </div>
 
   <div class="callout large secondary">
