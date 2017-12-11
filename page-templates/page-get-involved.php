@@ -9,29 +9,54 @@ get_header(); ?>
 <div class="text-center">
   <div class="callout large">
     <div class="callout secondary">
-      <h2>Get involved lead-in copy</h2>
-      <div class="expanded stacked-for-small button-group margin-horizontal-2">
-        <a class="button">Donate</a>
-        <a class="button">Join PDX NAACP</a>
-        <a class="button">Resources</a>
-      </div>
+      <h2><?php the_field('lead-in_heading'); ?></h2>
+      <p><?php the_field('lead-in_copy'); ?></p>
+
+      <?php
+        if (have_rows('lead-in_CTA')):
+          while(have_rows('lead-in_CTA')): the_row();
+            $link_1 = get_sub_field('lead-in_link-1');
+            $link_2 = get_sub_field('lead-in_link-2');
+            $link_3 = get_sub_field('lead-in_link-3');
+            ?>
+
+            <div class="expanded stacked-for-small button-group margin-horizontal-2">
+
+              <?php if ($link_1): ?>
+              <a class="button" href="<?php echo $link_1['url']; ?>"
+                 target="<?php echo $link_1['target']; ?>"><?php echo $link_1['title']; ?></a>
+	            <?php endif; ?>
+	            <?php if ($link_2): ?>
+                  <a class="button" href="<?php echo $link_2['url']; ?>"
+                     target="<?php echo $link_2['target']; ?>"><?php echo $link_2['title']; ?></a>
+	            <?php endif; ?>
+	            <?php if ($link_3): ?>
+                  <a class="button" href="<?php echo $link_3['url']; ?>"
+                     target="<?php echo $link_3['target']; ?>"><?php echo $link_3['title']; ?></a>
+	            <?php endif; ?>
+            </div>
+      <?php
+          endwhile;
+        endif;
+      ?>
+
     </div>
   </div>
 
   <div class="callout large">
     <h3>Make a donation</h3>
     <div class="callout secondary">
-      Donation form
+      Donation form link: <?php the_field('donation_form_link'); ?>
     </div>
     <div class="callout secondary">
-      Direct donation info
+      <?php the_field('direct_donation_info'); ?>
     </div>
   </div>
 
   <div class="callout large">
-    <h3>Become a member</h3>
+    <h3><?php the_field('membership_copy'); ?></h3>
     <div class="callout secondary">
-      Membership form
+      <?php the_field('membership_form_link'); ?>
     </div>
   </div>
 
