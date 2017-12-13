@@ -3,13 +3,11 @@
 This theme uses FoundationPress. If you have not worked with a Sass-based workflow before, I would recommend reading [FoundationPress for beginners](https://foundationpress.olefredrik.com/posts/tutorials/foundationpress-for-beginners), a short blog post that explains what you need to know.
 
 ## Collaboration
-To collaborate on this project, make code changes to this Git repository and push your changes to `master`. The theme is automatically deployed to http://pdxnaacp.flywheelsites.com/ via TravisCI whenever code is pushed to `master`. The Travis CI build config is accessible from the TravisCI website to any Github user that is part of the Portland NAACP organization.
-
-We should have a fruitful collaboration process if we follow these general guidelines:
-* Add all data on the Flywheel staging site at http://pdxnaacp.flywheelsites.com/
+Let's follow these general guidelines to ensure a smooth collaboration process:
+* Enter all data (copy, posts, etc.) on the Flywheel staging site at http://pdxnaacp.flywheelsites.com/
 * If you want to pull data from Flywheel to your machine, use the WP Migrate DB plugin
 * DON'T USE the Push to Flywheel or Pull from Flywheel functionality in Local by Flywheel (it is not designed for collaboration)
-* When you've finished a change locally, commit it with Git and push to master
+* When you've finished a change locally, commit it with Git and push to master (it will automatically be deployed to http://pdxnaacp.flywheelsites.com in ~5 minutes via TravisCI)
 
 Here's a step-by-step guide to set up a local development site using the Local by Flywheel tool:
 1. Download Local by Flywheel
