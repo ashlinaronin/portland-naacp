@@ -14,17 +14,18 @@ Here's a step-by-step guide to set up a local development site using the Local b
 2. Log in to your Flywheel account in the Local by Flywheel app
 3. Pull down an initial copy of the NAACP Portland site from Flywheel through the app
 4. Start the site from Local and view your local site to make sure everything is working
-5. Navigate to the wp-content/themes folder on your computer (on my Mac, the address is /Users/ashlinaronin/Local Sites/portland-naacp/app/public/wp-content/themes)
-6. Delete the portland-naacp folder (you can make a copy somewhere else on your computer if this makes you nervous!)
-7. Open a Terminal/Command prompt window in the themes folder (I would open a new Terminal window on Mac and enter 'cd /Users/ashlinaronin/Local Sites/portland-naacp/app/public/wp-content/themes')
-8. Clone the git repository for the portland-naacp theme (git clone https://github.com/naacp-portland/naacp-portland-wordpress-theme)
-9. Rename the resulting folder 'portland-naacp'
-10. Enter the portland-naacp folder and run `npm install` to install dependencies
-11. Run `npm start` in the portland-naacp folder to run the front-end build. Keep this open while you are developing so that changes to SASS and JavaScript are compiled and visible on your local development site
-12. Open your local site again and make sure it still works
-13. Make changes to the code and observe them locally
-14. When you are ready to push changes to the site, check them into Git (w/ command line or GUI) and push to master. All code pushed to master will start an automatic build on TravisCI and deploy to Flywheel
-15. Avoid using the Push / Pull functionality of Flywheel after the initial pull. We should only be pushing code from our local machines to the staging site on Flywheel, which we can do with Git. If we need data from the DB that is on staging but we don't have locally, we should use the WP Migrate DB plugin. In general, we should be editing all data on staging and pulling it down to local, not pushing data up from local to staging so that there is one master copy of the database that we all share and keep up-to-date.
+5. Make sure Dev mode is on in Local so that cache is disabled for local development (important!)
+6. Navigate to the wp-content/themes folder on your computer (on my Mac, the address is /Users/ashlinaronin/Local Sites/portland-naacp/app/public/wp-content/themes)
+7. Delete the portland-naacp folder (you can make a copy somewhere else on your computer if this makes you nervous!)
+8. Open a Terminal/Command prompt window in the themes folder (I would open a new Terminal window on Mac and enter 'cd /Users/ashlinaronin/Local Sites/portland-naacp/app/public/wp-content/themes')
+9. Clone the git repository for the portland-naacp theme (git clone https://github.com/naacp-portland/naacp-portland-wordpress-theme)
+10. Rename the resulting folder 'portland-naacp'
+11. Enter the portland-naacp folder and run `npm install` to install dependencies
+12. Run `npm start` in the portland-naacp folder to run the front-end build. Keep this open while you are developing so that changes to SASS and JavaScript are compiled and visible on your local development site
+13. Open your local site again and make sure it still works
+14. Make changes to the code and observe them locally
+15. When you are ready to push changes to the site, check them into Git (w/ command line or GUI) and push to master. All code pushed to master will start an automatic build on TravisCI and deploy to Flywheel
+16. Avoid using the Push / Pull functionality of Flywheel after the initial pull. We should only be pushing code from our local machines to the staging site on Flywheel, which we can do with Git. If we need data from the DB that is on staging but we don't have locally, we should use the WP Migrate DB plugin. In general, we should be editing all data on staging and pulling it down to local, not pushing data up from local to staging so that there is one master copy of the database that we all share and keep up-to-date.
 
 
 ## Helpful Info from FoundationPress
