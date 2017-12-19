@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Glegoo|Open+Sans|Oswald:500,700');
+
+$oswald: 'Oswald', Arial, sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+h1, h2, h4 {
+  font-family: $oswald;
+  text-transform: uppercase;
+}
+
+a {
+  font-family: $oswald;
+  color: $purple;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 500;
+}

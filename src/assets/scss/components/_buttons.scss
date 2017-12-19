@@ -12,4 +12,8 @@
   font-weight: bold;
   font-family: $oswald;
   padding: 1em 2em 1em 2em;
+
+  &.hollow {
+    border-width: 3px;
+  }
 }
