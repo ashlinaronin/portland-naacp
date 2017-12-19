@@ -19,7 +19,7 @@
               <a class="button" href="<?php echo $link_1['url']; ?>" target="<?php echo $link_1['target']; ?>"><?php echo $link_1['title']; ?></a>
             <?php endif;
             if ($link_2): ?>
-              <a class="button" href="<?php echo $link_2['url']; ?>" target="<?php echo $link_2['target']; ?>"><?php echo $link_2['title']; ?></a>
+              <a class="button hollow" href="<?php echo $link_2['url']; ?>" target="<?php echo $link_2['target']; ?>"><?php echo $link_2['title']; ?></a>
             <?php endif;
           endwhile;
         endif;
