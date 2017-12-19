@@ -5,7 +5,7 @@
 
 <div class="module__closing-cta callout large text-center">
     <div>
-        <h3><?php the_field('footer_message'); ?></h3>
+        <h1><?php the_field('footer_message'); ?></h1>
     </div>
     <div>
 
