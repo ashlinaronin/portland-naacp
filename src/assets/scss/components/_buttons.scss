@@ -6,3 +6,10 @@
   border-radius: 3px;
   border: none;
 }
+
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $oswald;
+  padding: 1em 2em 1em 2em;
+}
