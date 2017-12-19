@@ -1,0 +1,32 @@
+.module-news {
+  background-color: $orange;
+
+  > h2 {
+    color: $white;
+  }
+
+  &__news-item {
+    padding-top: 10px;
+    border: 3px solid $white;
+    background-color: $white;
+
+    &-content {
+      margin: 0 12px 18px 12px;
+      > a {
+        color: $orange;
+        line-height: 36px;
+      }
+    }
+
+    &-cta {
+      .button {
+        background: $orange;
+        margin-bottom: 0;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+}

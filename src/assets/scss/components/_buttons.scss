@@ -16,4 +16,9 @@
   &.hollow {
     border-width: 3px;
   }
+
+  &.white {
+    color: $white;
+    border-color: $white;
+  }
 }
