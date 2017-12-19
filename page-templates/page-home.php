@@ -15,12 +15,16 @@ get_header(); ?>
     </div>
 
     <div class="module-events callout large text-center">
-      <h2>Upcoming meetings and events</h2>
-      <div class="module-events__header callout secondary">
-        <span>Next general meeting:</span>
-        <span>Saturday April 22nd, 12pm,</span>
-        <span><a href="#">American Red Cross</a></span>
+      <div class="module-events__header callout">
+        <h2>Next general session</h2>
+        <h1>Sunday, August 27th</h1>
+        <h5>12-2 PM | Concordia University Hall</h5>
+        <div class="small button-group align-center">
+          <a class="button">RSVP on F</a>
+          <a class="button hollow">More info</a>
+        </div>
       </div>
+      <h2>Upcoming events</h2>
       <div class="module-events__events grid-x grid-margin-2">
         <div class="module-events__event large-auto cell card">
           <div>
@@ -78,9 +82,6 @@ get_header(); ?>
             <a href="#">Learn More</a>
           </div>
         </div>
-      </div>
-      <div class="module-events__cta">
-        <button class="button hollow">See calendar</button>
       </div>
     </div>
 
