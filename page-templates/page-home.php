@@ -75,7 +75,7 @@ get_header(); ?>
             <p>Join the Political Action Committee as they track the development of bills in preparation for the coming short...</p>
           </div>
           <div class="module-news__news-item-cta">
-            <a class="button hollow expanded white">View details ></a>
+            <a class="button hollow news expanded">View details ></a>
           </div>
         </div>
         <div class="module-news__news-item large-auto cell">
@@ -85,7 +85,7 @@ get_header(); ?>
             <p>Join the Political Action Committee as they track the development of bills in preparation for the coming short...</p>
           </div>
           <div class="module-news__news-item-cta">
-            <a class="button hollow expanded white">View details ></a>
+            <a class="button hollow news expanded">View details ></a>
           </div>
         </div>
       </div>
