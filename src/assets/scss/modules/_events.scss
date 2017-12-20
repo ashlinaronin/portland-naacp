@@ -7,10 +7,15 @@
   }
 
   &__events {
+    justify-content: center;
 
+    @include breakpoint(medium up) {
+      justify-content: space-between;
+    }
   }
 
   &__event {
+    margin: 10px 10px;
     padding-top: 10px;
     flex-basis: 150px;
     border: 3px solid $purple;
@@ -28,8 +33,10 @@
       }
     }
 
-    &:not(:last-child) {
-      margin-right: 14px;
+    @include breakpoint(medium up) {
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
     }
   }
 }
