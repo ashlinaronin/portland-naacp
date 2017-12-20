@@ -24,6 +24,14 @@
       padding: rem-calc(16) rem-calc(16);
     }
   }
+
+  &__lower {
+    margin: rem-calc(16) auto;
+
+    .menu {
+      margin: rem-calc(16) 0;
+    }
+  }
 }
 
 .menu label {

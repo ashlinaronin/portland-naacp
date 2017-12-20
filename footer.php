@@ -16,9 +16,9 @@
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php //dynamic_sidebar( 'footer-widgets' ); ?>
 
-        <div class="small-6 cell">
+        <div class="small-6 footer__upper cell">
           <!-- Upper Footer -->
-          <ul class="footer__upper-container menu align-spaced">
+          <ul class="menu align-spaced">
             <li>
               <a href="#"><h4>Get Involved</h4></a>
             </li>
@@ -59,20 +59,30 @@
 
 
         <!-- Lower Footer -->
-<!--        <div>-->
-<!--          <ul class="menu menu-horizontal">-->
-<!--            <li><a href="#">Donate</a></li>-->
-<!--            <li><a href="#">Join</a></li>-->
-<!--            <li><a href="#">T</a></li>-->
-<!--            <li><a href="#">F</a></li>-->
-<!--          </ul>-->
-<!--          <ul class="menu menu-horizontal">-->
-<!--            <li><a href="#">Portland NAACP Chapter Information</a></li>-->
-<!--            <li><a href="#">Address</a></li>-->
-<!--            <li><a href="#">Main Contact Email</a></li>-->
-<!--            <li><a href="#">Etc.</a></li>-->
-<!--          </ul>-->
-<!--        </div>-->
+        <div class="footer__lower">
+          <ul class="menu align-center">
+            <li>
+              <a href="#"><h4>Donate</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>Join</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>T</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>F</h4></a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <h5>Portland NAACP Chapter Information</h5>
+            <h5>Address</h5>
+            <h5>Main Contact Email</h5>
+            <h5>Etc.</h5>
+          </div>
+
+        </div>
 
 				<?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer>
