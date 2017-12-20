@@ -5,18 +5,25 @@
 }
 
 .footer {
-  @include xy-grid-container;
-  @include xy-grid;
-  padding: rem-calc(30) 0;
-
-  article {
-    @include xy-cell(auto);
-    margin: 0;
-  }
+  padding: rem-calc(30) rem-calc(12);
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+
+  &__sub-category-list {
+    padding: 0;
+
+    a {
+      padding: rem-calc(16) rem-calc(16);
+    }
+  }
+}
+
+.menu label {
+  padding: 0.7rem 0;
+  font-size: 1.5rem;
+  line-height: 1.33333;
 }
