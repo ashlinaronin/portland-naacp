@@ -7,6 +7,10 @@
 .footer {
   padding: rem-calc(30) rem-calc(12);
 
+  .cell:nth-child(2) {
+    border-left: 1px solid $light-grey;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
