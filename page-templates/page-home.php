@@ -88,6 +88,16 @@ get_header(); ?>
             <a class="button hollow news expanded">View details ></a>
           </div>
         </div>
+        <div class="module-news__news-item large-auto cell">
+          <div class="module-news__news-item-content">
+            <a>09/27/2017</a>
+            <h5>Community Involvement Committee Now Accepting Applications</h5>
+            <p>Join the Political Action Committee as they track the development of bills in preparation for the coming short...</p>
+          </div>
+          <div class="module-news__news-item-cta">
+            <a class="button hollow news expanded">View details ></a>
+          </div>
+        </div>
       </div>
     </div>
 
