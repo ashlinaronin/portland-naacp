@@ -19,7 +19,7 @@ get_header(); ?>
         <h2>Next general session</h2>
         <h1>Sunday, August 27th</h1>
         <h5>12-2 PM | Concordia University Hall</h5>
-        <div class="small button-group align-center">
+        <div class="small stacked-for-small button-group align-center">
           <a class="button">RSVP on F</a>
           <a class="button hollow">More info</a>
         </div>
