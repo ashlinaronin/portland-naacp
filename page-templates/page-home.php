@@ -70,7 +70,7 @@ get_header(); ?>
       <div class="grid-x grid-margin-2 align-justify align-middle">
         <div class="module-news__news-item large-auto cell">
           <div class="module-news__news-item-content">
-            <a>09/27/2017</a>
+            <a>12/29/2017</a>
             <h5>Community Involvement Committee Now Accepting Applications</h5>
             <p>Join the Political Action Committee as they track the development of bills in preparation for the coming short...</p>
           </div>
