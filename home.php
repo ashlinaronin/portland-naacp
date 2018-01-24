@@ -5,30 +5,36 @@ get_header(); ?>
 
   <div class="text-center">
 
+	  <?php $found_posts = get_posts( array('posts_per_page' => 4)) ?>
+	  <?php $first_post = $found_posts[0];
+	    setup_postdata($first_post);
+	  ?>
+
     <div class="callout large">
       <div class="callout secondary">
-        <h2>Latest news post</h2>
+        <h2><?php the_title(); ?></h2>
+        <p><?php the_time( get_option( 'date_format' ))?></p>
+        <p><?php the_excerpt(); ?></p>
       </div>
     </div>
 
-  <?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
-
     <div class="grid-x grid-padding-x">
     <main class="small-6 cell">
-    <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
+    <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
       <div class="callout secondary">
         <a href="<?php the_permalink(); ?>">
           <h5><?php the_title(); ?> (<?php the_time( get_option( 'date_format' ))?>)</h5>
         </a>
         <p><?php the_excerpt(); ?></p>
       </div>
-  <?php endwhile; ?>
+  <?php endforeach; ?>
+	    <?php wp_reset_postdata(); ?>
+
       <div class="callout secondary">
         Pagination Controls
       </div>
     </main>
 
-    <?php wp_reset_postdata(); ?>
     <aside class="small-6 cell">
       <div class="callout secondary">
         <h3>Sidebar of news related functionality</h3>
