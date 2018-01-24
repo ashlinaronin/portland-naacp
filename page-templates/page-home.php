@@ -65,42 +65,26 @@ get_header(); ?>
       </div>
     </div>
 
-    <div class="module-news callout large">
-      <h2 class="text-center">Latest news</h2>
-      <div class="grid-x grid-margin-2 align-justify align-middle">
+  <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+  <div class="module-news callout large">
+    <h2 class="text-center">Latest news</h2>
+    <div class="grid-x grid-margin-2 align-justify align-middle">
+      <?php while ($the_query -> have_posts()): $the_query -> the_post(); ?>
         <div class="module-news__news-item large-auto cell">
           <div class="module-news__news-item-content">
-            <a>12/29/2017</a>
-            <h5>Community Involvement Committee Now Accepting Applications</h5>
-            <p>Join the Political Action Committee as they track the development of bills in preparation for the coming short...</p>
+            <p><?php the_time( get_option( 'date_format' )); ?></p>
+            <h5><?php the_title(); ?></h5>
+            <p><?php the_excerpt(__('more...)')); ?></p>
           </div>
           <div class="module-news__news-item-cta">
-            <a class="button hollow news expanded">View details ></a>
+            <a class="button hollow news expanded" href="<?php the_permalink(); ?>">View details ></a>
           </div>
         </div>
-        <div class="module-news__news-item large-auto cell">
-          <div class="module-news__news-item-content">
-            <a>09/27/2017</a>
-            <h5>Community Involvement Committee Now Accepting Applications</h5>
-            <p>Join the Political Action Committee as they track the development of bills in preparation for the coming short...</p>
-          </div>
-          <div class="module-news__news-item-cta">
-            <a class="button hollow news expanded">View details ></a>
-          </div>
-        </div>
-        <div class="module-news__news-item large-auto cell">
-          <div class="module-news__news-item-content">
-            <a>09/27/2017</a>
-            <h5>Community Involvement Committee Now Accepting Applications</h5>
-            <p>Join the Political Action Committee as they track the development of bills in preparation for the coming short...</p>
-          </div>
-          <div class="module-news__news-item-cta">
-            <a class="button hollow news expanded">View details ></a>
-          </div>
-        </div>
-      </div>
+      <?php endwhile; ?>
     </div>
+  </div>
+  <?php wp_reset_postdata(); ?>
 
-    <?php get_template_part('template-parts/inspirational-closing-cta'); ?>
+  <?php get_template_part('template-parts/inspirational-closing-cta'); ?>
 
 <?php get_footer();
