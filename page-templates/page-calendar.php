@@ -9,18 +9,9 @@ get_header(); ?>
   <div class="text-center">
     <div class="callout large">
       <div class="callout secondary">
-        <h2>Latest news post</h2>
-        <p>
-          Events calendar plugin
-        </p>
-        <p>(User experience based on plugin.. let's try to find the best one for that :) )</p>
 
-        Events will be categorized:
-        <ul>
-          <li>Action</li>
-          <li>Issues</li>
-          <li>Group Meetings (general & committee)</li>
-        </ul>
+	      <?php echo $post->post_content ?>
+
       </div>
     </div>
   </div>
