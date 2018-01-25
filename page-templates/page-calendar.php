@@ -9,9 +9,10 @@ get_header(); ?>
   <div class="text-center">
     <div class="callout large">
       <div class="callout secondary">
-
-	      <?php echo $post->post_content ?>
-
+		<?php
+          $calendarPost = get_post();
+          echo apply_filters( 'the_content', $calendarPost->post_content );
+		?>
       </div>
     </div>
   </div>
