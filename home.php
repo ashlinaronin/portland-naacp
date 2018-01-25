@@ -5,8 +5,9 @@ get_header(); ?>
 
   <div class="text-center">
 
-	  <?php $found_posts = get_posts( array('posts_per_page' => 4)) ?>
-	  <?php $first_post = $found_posts[0];
+	  <?php
+      $found_posts = get_posts( array('posts_per_page' => 4));
+      $first_post = $found_posts[0];
 	    setup_postdata($first_post);
 	  ?>
 
@@ -18,17 +19,21 @@ get_header(); ?>
       </div>
     </div>
 
+    <?php
+      // Remove the first post from found_posts so that we don't display it again in the short list below
+      unset($found_posts[0]);
+    ?>
+
     <div class="grid-x grid-padding-x">
     <main class="small-6 cell">
-    <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
-      <div class="callout secondary">
-        <a href="<?php the_permalink(); ?>">
-          <h5><?php the_title(); ?> (<?php the_time( get_option( 'date_format' ))?>)</h5>
-        </a>
-        <p><?php the_excerpt(); ?></p>
-      </div>
-  <?php endforeach; ?>
-	    <?php wp_reset_postdata(); ?>
+      <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
+        <div class="callout secondary">
+          <a href="<?php the_permalink(); ?>">
+            <h5><?php the_title(); ?> (<?php the_time( get_option( 'date_format' ))?>)</h5>
+          </a>
+          <p><?php the_excerpt(); ?></p>
+        </div>
+      <?php endforeach; ?>
 
       <div class="callout secondary">
         Pagination Controls
