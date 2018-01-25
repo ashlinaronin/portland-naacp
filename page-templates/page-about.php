@@ -10,6 +10,9 @@ get_header(); ?>
     <div class="cell small-8">
       <div class="callout secondary">
         <h3>About NAACP</h3>
+	      <p>
+	        <?php echo $post->post_content ?>
+        </p>
       </div>
     </div>
     <div class="cell small-4">
