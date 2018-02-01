@@ -1,8 +1,16 @@
+.callout.large h1{ /*180109-dpc*/
+	color: $white;
+}
+
 h1, h2 {
   font-family: $oswald;
   font-weight: 700;
   text-transform: uppercase;
   color: $purple;
+	span {
+		color: $yellow;
+	}
+	
 }
 
 h4 {

@@ -58,6 +58,7 @@
   Add your scss files below to structure your project styles
 */
 
+@import "_flexbox.scss";
 // Global
 @import "global/_accessibility";
 @import "global/colors";

@@ -17,3 +17,33 @@
     border-width: 3px;
   }
 }
+
+.margin-horizontal-2 {/*180109-dpc*/
+	font-size: 1.25em;
+	margin-top: 1em;
+	max-width: 200px;
+	margin: 2em auto;
+	padding: 0;
+a.button.hollow {
+		background: transparent;
+		color: $yellow;
+		border: 3px solid $yellow;
+		margin-left: auto;
+		flex: .3;
+		padding: .5em;
+	}
+	a.button {
+		font-size: 1.25em;
+		background: $yellow;
+		color: $purple;
+		margin-right: auto;
+		flex: .3;
+		padding: .5em;
+	}
+}
+
+@media (min-width: 640px) {
+	.button-group.margin-horizontal-2 {
+		max-width: 500px;
+	}
+}

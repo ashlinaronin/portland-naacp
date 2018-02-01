@@ -81,7 +81,19 @@
     }
   }
 
-  h1 {
+  //Callouts
+	
+	.module-events.callout.large {
+		background-color: red;
+		margin-top: -15px;//10124-dpc
+	}
+	//180124-dpc
+	.callout.large h1 {
+		margin-top: 120px;
+	}
+	
+	//Text
+	h1 {
     color: #fff;
     font-weight: 500;
 
