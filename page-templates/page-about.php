@@ -10,6 +10,10 @@ get_header(); ?>
     <div class="cell small-8">
       <div class="callout secondary">
         <h3>About NAACP</h3>
+	      <?php
+	      	$aboutPost = get_post();
+	      	echo apply_filters( 'the_content', $aboutPost->post_content );
+	      ?>
       </div>
     </div>
     <div class="cell small-4">
