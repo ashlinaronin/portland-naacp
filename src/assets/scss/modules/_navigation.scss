@@ -99,6 +99,8 @@
       top: 36px;
 
       > li.is-dropdown-submenu-item {
+        width: initial;
+        padding: 0 8px 0 8px;
         background: $yellow;
 
         &:link {
@@ -115,6 +117,14 @@
 
         &:active {
           color: red;
+        }
+
+        &:first-child {
+          padding-top: 6px;
+        }
+
+        &:last-child {
+          padding-bottom: 6px;
         }
       }
 
