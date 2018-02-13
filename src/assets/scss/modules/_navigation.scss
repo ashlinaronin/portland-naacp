@@ -103,22 +103,20 @@
         padding: 0 8px 0 8px;
         background: $yellow;
 
-        &:link {
-          color: $black;
-        }
+        a {
+          &:link {
+            color: $black;
+          }
 
-        &:visited {
-          color: $purple;
-        }
+          &:visited, &:active {
+            color: $purple;
+          }
 
-        &:hover {
-          color: lighten($black, 0.3);
+          &:hover, &:focus {
+            color: lighten($black, 30%);
+          }
         }
-
-        &:active {
-          color: red;
-        }
-
+        
         &:first-child {
           padding-top: 6px;
         }
