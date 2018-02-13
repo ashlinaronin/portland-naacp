@@ -76,7 +76,7 @@
     position: relative;
   }
 
-  .menu:not(.submenu) .menu-item:not(.is-dropdown-submenu-parent).is-active > a {
+  .menu:not(.submenu) .menu-item.current-menu-item > a {
     &:after {
       content: '';
       background-color: #FFC003;
@@ -88,14 +88,14 @@
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu > li:not(.menu-text) > a { padding: 1rem; }
 
   .dropdown.menu {
     .is-dropdown-submenu {
       border: 0;
       text-align: center;
       min-width: initial;
-      left: -25%;
+      left: calc(50% - 8px);
       top: 36px;
 
       > li.is-dropdown-submenu-item {
@@ -116,7 +116,7 @@
             color: lighten($black, 30%);
           }
         }
-        
+
         &:first-child {
           padding-top: 6px;
         }
