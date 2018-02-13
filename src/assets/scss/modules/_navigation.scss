@@ -76,6 +76,12 @@
     position: relative;
   }
 
+  .menu:not(.submenu) .menu-item > a {
+    &:hover {
+      color: $yellow;
+    }
+  }
+
   .menu:not(.submenu) .menu-item.current-menu-item > a {
     &:after {
       content: '';
