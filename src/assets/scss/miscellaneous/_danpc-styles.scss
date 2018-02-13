@@ -1,0 +1,72 @@
+//Callouts
+
+
+.callout.large h1 {//front page opening text "Ensuring..."
+	@include breakpoint (medium) {
+	max-width: 1200px;
+	margin-top: 100px;
+	}
+}
+
+	div.module-events__header.callout.text-center {
+		background-color: $yellow;
+	}
+
+//Module Events - dpc-180203
+
+//"Events"
+h2.text-left.events {
+	display: block;
+	width: 30%;
+	min-width: 300px;
+	font-size: 1.8rem;
+	border-bottom: 3px solid $orange;
+	line-height: 2;
+}
+
+//contains 4 Event modules
+div.module-events__events.columns.political-action {
+	width: 30%;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+//contains one event
+.module-events__event.political-action.cell{
+	border: none;
+	border-bottom: 2px solid $light-grey;
+	display: flex;
+	flex-basis: 80px;	
+}
+
+//Event content
+.module-events__event-content {
+	display: flex;
+}
+
+//date
+.module-events__event-content > a {
+	color: $orange;
+	font-size: 1.3rem;
+	font-weight: 400;
+	font-family: $oswald;
+	margin-top: -7px;
+}
+
+//Event title
+.module-events__event-content h5 {
+	color: $black;
+	font-size: 1rem;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+//arrow
+.module-events__event-cta a.button.small {
+	font-size: 1.8rem;
+	padding: .5em;
+	line-height: .2;
+	background: transparent;
+	color: $orange;
+}

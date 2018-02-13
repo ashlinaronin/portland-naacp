@@ -1,7 +1,3 @@
-.callout.large h1{ /*180109-dpc*/
-	color: $white;
-}
-
 h1, h2 {
   font-family: $oswald;
   font-weight: 700;
@@ -10,7 +6,17 @@ h1, h2 {
 	span {
 		color: $yellow;
 	}
-	
+}
+h2 {
+	font-size: 2.6rem;
+	line-height: 1.5;
+}
+h3 {
+  font-family: $oswald;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black;
+	margin-top: 1.5rem !important;
 }
 
 h4 {
@@ -23,6 +29,10 @@ h4 {
 h5 {
   font-family: $glegoo;
   font-weight: 700;
+	color: $purple;
+	& span {
+		color: $black;
+	}
 }
 
 a.button {
@@ -39,3 +49,11 @@ p {
   font-family: $open-sans;
   font-weight: 300;
 }
+
+
+
+
+
+
+
+
