@@ -14,8 +14,8 @@ get_header(); ?>
       </div><br><br><br><br><br>
 	</div>
 
-    <div class="module-events callout large">
-      <div class="module-events__header callout text-center">
+    <div class="module-events callout large grid-x">
+      <div class="module-events__header callout text-center next-meeting">
         <h3>Next general session</h3>
         <h2>Sunday, August 27th</h2>
         <h5><span>12-2 PM</span> | Concordia University Hall</h5>
@@ -24,10 +24,11 @@ get_header(); ?>
           <a class="button hollow">More info</a>
         </div>
       </div>
-      <h2 class="text-left events">Events</h2>
-<!--      <div class="module-events__events grid-x align-justify grid-margin-2 warning align-left">-->
-      <div class="module-events__events columns political-action">
-        <div class="module-events__event large-auto political-action cell">
+		</div>
+	<div class="grid-x grid-margin-x events-news"><!--dpc-added container for events plus news-->
+      <div class="module-events__events political-action medium-12 large-4 cell" >
+				<h2 class="text-left events">Events</h2>
+        <div class="module-events__event political-action">
           <div class="module-events__event-content">
             <a>10/08</a>
             <h5>Political Action Committee Meeting</h5>
@@ -36,7 +37,7 @@ get_header(); ?>
             <a class="button small">></a>
           </div>
         </div>
-        <div class="module-events__event large-auto political-action cell">
+        <div class="module-events__event political-action">
           <div class="module-events__event-content">
             <a>10/08</a>
             <h5>Political Action Committee Meeting</h5>
@@ -45,7 +46,7 @@ get_header(); ?>
             <a class="button small">></a>
           </div>
         </div>
-        <div class="module-events__event large-auto political-action cell">
+        <div class="module-events__event political-action">
           <div class="module-events__event-content">
             <a>10/08</a>
             <h5>Political Action Committee Meeting</h5>
@@ -54,7 +55,7 @@ get_header(); ?>
             <a class="button small">></a>
           </div>
         </div>
-        <div class="module-events__event large-auto political-action cell">
+        <div class="module-events__event political-action">
           <div class="module-events__event-content">
             <a>10/08</a>
             <h5>Political Action Committee Meeting</h5>
@@ -64,16 +65,16 @@ get_header(); ?>
           </div>
         </div>
       </div>
-    </div>
+    
 
-  <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
-  <div class="module-news callout large">
-    <h2 class="text-center">Latest news</h2>
-    <div class="grid-x grid-margin-2 align-justify align-middle">
+  <?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
+  <div class="module-news callout medium-12 large-8 cell grid-x grid-margin-x">
+    <h2 class="text-left latest-news cell">Latest news</h2>
+    <!--<div class="grid-x grid-margin-2 align-justify align-middle">-->
       <?php while ($the_query -> have_posts()): $the_query -> the_post(); ?>
-        <div class="module-news__news-item large-auto cell">
+        <div class="module-news__news-item medium-6 cell">
           <div class="module-news__news-item-content">
-            <p><?php the_time( get_option( 'date_format' )); ?></p>
+            <p class="date"><?php the_time( get_option( 'date_format' )); ?></p>
             <h5><?php the_title(); ?></h5>
             <p><?php the_excerpt(__('more...)')); ?></p>
           </div>
@@ -82,8 +83,30 @@ get_header(); ?>
           </div>
         </div>
       <?php endwhile; ?>
-    </div>
   </div>
+		
+ </div><!--end events-news-container-->
+
+
+
+	
+	
+<div class="grid-x grid-margin-x">
+	<div class="cell medium-4">
+		<h2 class="cell">Experimenting</h2>
+		<div class="test cell">Medium-3</div>
+		<div class="test cell">Medium-3</div>
+		<div class="test cell">Medium-3</div>
+		<div class="test cell">Medium-3</div>
+	</div>
+	<div class="cell medium-8 grid-x grid-margin-x">
+		<h2 class="cell">Latest News</h2>
+		<div class="test-2 cell medium-6">Box 1</div>
+		<div class="test-2 cell medium-6">Box 2</div>
+		<div class="test-2 cell medium-6">Box 3</div>
+		<div class="test-2 cell medium-6">Box 4</div>
+	</div>
+</div>
   <?php wp_reset_postdata(); ?>
 
   <?php get_template_part('template-parts/inspirational-closing-cta'); ?>
