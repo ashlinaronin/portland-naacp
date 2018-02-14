@@ -3,7 +3,7 @@ $primary: #2199E8;
 //Callouts
 
 
-.callout.large h1 {//front page opening text "Ensuring..."
+.callout.large h1 {//front page h1
 	margin-left: auto;
 	margin-right: auto;
 	@include breakpoint (medium) {
@@ -11,8 +11,13 @@ $primary: #2199E8;
 	margin-top: 100px;
 	}
 }
-div.module-events.callout {//"Next General Session..." container
+.module-events.callout {//front page "Next General Session"
 	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	@include breakpoint (medium) {
+	max-width: 1200px;
+	}
 }
 .module-events__header.next-meeting {//"Next General Session..." text area
 	margin-top: -180px;
@@ -27,6 +32,7 @@ div.module-events.callout {//"Next General Session..." container
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
+	max-width: 2000px;
 }
 
 //"Events" and "Latest News"
@@ -102,8 +108,34 @@ h2.cell {
 .test {
 	background-color: $primary;
 	text-align: center;
+	outline: 1px solid;
 }
 .test-2 {
 	background-color: darkgrey;
 	text-align: center;
+	outline: 1px solid;
+}
+
+//Closing CTA
+.module__closing-cta.callout {
+	background: transparent;
+	border: none;
+	padding: 3em 1em 0;
+	margin-bottom: 0;
+	& h1 {
+		color: $purple;
+		margin-top: 0;
+	}
+	& a.button {
+		border: 2px solid $purple;
+		margin-bottom: 0;
+	}
+}
+.cta-photos {
+	height: 250px;
+	min-height: 200px;
+	width: 100%;
+	margin: 0 auto;
+	background: url("http://portland-naacp.local/wp-content/uploads/2018/02/full_width_group-180x250.jpg")no-repeat center;
+	background-size: cover;
 }

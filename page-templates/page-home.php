@@ -70,7 +70,6 @@ get_header(); ?>
   <?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
   <div class="module-news callout medium-12 large-8 cell grid-x grid-margin-x">
     <h2 class="text-left latest-news cell">Latest news</h2>
-    <!--<div class="grid-x grid-margin-2 align-justify align-middle">-->
       <?php while ($the_query -> have_posts()): $the_query -> the_post(); ?>
         <div class="module-news__news-item medium-6 cell">
           <div class="module-news__news-item-content">
@@ -81,17 +80,15 @@ get_header(); ?>
           <div class="module-news__news-item-cta">
             <a class="button hollow news expanded" href="<?php the_permalink(); ?>">></a>
           </div>
-        </div>
+        </div><!--end cell-->
       <?php endwhile; ?>
   </div>
 		
  </div><!--end events-news-container-->
 
-
-
 	
 	
-<div class="grid-x grid-margin-x">
+<!--<div class="grid-x grid-margin-x">
 	<div class="cell medium-4">
 		<h2 class="cell">Experimenting</h2>
 		<div class="test cell">Medium-3</div>
@@ -99,15 +96,17 @@ get_header(); ?>
 		<div class="test cell">Medium-3</div>
 		<div class="test cell">Medium-3</div>
 	</div>
-	<div class="cell medium-8 grid-x grid-margin-x">
-		<h2 class="cell">Latest News</h2>
-		<div class="test-2 cell medium-6">Box 1</div>
-		<div class="test-2 cell medium-6">Box 2</div>
-		<div class="test-2 cell medium-6">Box 3</div>
-		<div class="test-2 cell medium-6">Box 4</div>
+	<div class="foo cell medium-8 grid-x grid-margin-x">
+		<h2 class="latest-news cell">Latest News</h2>
+		<div class="test-2 cell medium-6">Box 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus auctor venenatis. </div>
+		<div class="test-2 cell medium-6">Box 2 - Nullam maximus vitae ex et gravida. In varius dignissim vestibulum. Vivamus id erat tempus, tempor massa a, venenatis. Aenean luctus auctor venenatis. </div>
+		<div class="test-2 cell medium-6">Box 3 - Aenean luctus auctor venenatis. </div>
+		<div class="test-2 cell medium-6">Box 4 - In varius dignissim vestibulum. Vivamus id erat tempus, tempor massa a, venenatis.</div>
 	</div>
-</div>
+</div>-->
   <?php wp_reset_postdata(); ?>
+					<div class="cta-photos">
+					</div>
 
   <?php get_template_part('template-parts/inspirational-closing-cta'); ?>
 
