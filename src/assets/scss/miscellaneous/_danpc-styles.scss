@@ -200,6 +200,18 @@ span.simcal-day-label.simcal-day-number {/*numbers*/
 td.simcal-today span.simcal-day-label.simcal-day-number {
 	color: white;
 }
+.simcal-event-details p {/*styles "-" btwn start/end times*/
+	font-weight: bold;
+}
+.qtip-content span.simcal-event-start.simcal-event-start-date, 
+.qtip-content span.simcal-event-start.simcal-event-start-time, 
+.qtip-content span.simcal-event-end.simcal-event-end-time {/*popup date/time*/
+	font-size: .8rem;
+}
+.qtip-content span.simcal-event-address.simcal-event-start-location {/*popup address*/
+	font-size: .7rem;
+	text-align: center;
+}
 	
 
 	/*List version*/
