@@ -7,7 +7,7 @@
     <div>
         <h1><?php the_field('footer_message'); ?></h1>
     </div>
-    <div>
+    <div class="cta-links">
 
       <?php
         if (have_rows('footer_cta-links')):

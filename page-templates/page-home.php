@@ -8,7 +8,7 @@ get_header(); ?>
 
 	<div class="c-hero callout large text-center">
 	       <h1>Ensuring the <span>political</span>, <span>educational</span>, <span>social</span> and <span>economic equality of rights</span> of all persons and to <span>eliminate racial hatred and discrimination</span></h1>
-      <div class="expanded stacked-for-small button-group margin-horizontal-2 button-group--home-cta">
+      <div class="expanded stacked-for-small button-group button-group--home-cta">
         <a class="button">Learn more</a>
         <a class="button hollow">Join us</a>
       </div><br><br><br><br><br>

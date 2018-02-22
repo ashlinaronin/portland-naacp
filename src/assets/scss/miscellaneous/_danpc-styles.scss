@@ -1,4 +1,4 @@
-$primary: #2199E8;
+
 
 //Callouts
 
@@ -21,7 +21,7 @@ $primary: #2199E8;
 }
 .module-events__header.next-meeting {//"Next General Session..." text area
 	margin-top: -180px;
-	background-color: $yellow;
+	background-color: $secondary-color;
 }
 
 
@@ -106,7 +106,7 @@ h2.cell {
 	border-bottom: 3px solid;
 }
 .test {
-	background-color: $primary;
+	background-color: $primary-color;
 	text-align: center;
 	outline: 1px solid;
 }
@@ -123,11 +123,11 @@ h2.cell {
 	padding: 3em 1em 0;
 	margin-bottom: 0;
 	& h1 {
-		color: $purple;
+		color: $primary-color;
 		margin-top: 0;
 	}
 	& a.button {
-		border: 2px solid $purple;
+		border: 2px solid $primary-color;
 		margin-bottom: 0;
 	}
 }
@@ -139,6 +139,27 @@ h2.cell {
 	background: url("http://portland-naacp.local/wp-content/uploads/2018/02/full_width_group-180x250.jpg")no-repeat center;
 	background-size: cover;
 }
+
+//Get Involved
+.large.callout-get-involved,
+.large .callout.secondary {
+	background-color: $white;
+	border: none;
+}
+.stacked-for-small.button-group-get-involved {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a.button.button-get-involved {
+	font-size: 1.2em;
+	margin-right: 20px;
+	padding: .5em;
+	&.last {
+		margin-right: 0;
+	}
+}
+
 
 //Calendar
 .page-template-page-calendar .callout.large {
@@ -203,6 +224,15 @@ td.simcal-today span.simcal-day-label.simcal-day-number {
 .simcal-event-details p {/*styles "-" btwn start/end times*/
 	font-weight: bold;
 }
+.simcal-event-description p {/*keeps description light*/
+	font-weight: normal;
+}
+.list-view,
+.grid-view {
+	text-align: left;	
+	color: black;
+	margin-bottom: -20px;
+}
 .qtip-content span.simcal-event-start.simcal-event-start-date, 
 .qtip-content span.simcal-event-start.simcal-event-start-time, 
 .qtip-content span.simcal-event-end.simcal-event-end-time {/*popup date/time*/
@@ -214,12 +244,12 @@ td.simcal-today span.simcal-day-label.simcal-day-number {
 }
 	
 
-	/*List version*/
+	/*Calendar - List version*/
 .simcal-default-calendar-list span.simcal-event-title {
 	font-size: 1rem;
 	color: white;
 	background-color: #FFC003;
-	padding: 3px 5px;
+	padding: 5px 5px 3px;
 	border-radius: 3px;	
 }
 span.simcal-event-start,

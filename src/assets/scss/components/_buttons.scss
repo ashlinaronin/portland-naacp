@@ -18,24 +18,26 @@
 }
 
 //Buttons-danpc
-
 .button-group--home-cta {
-    margin-top: 1em;
-  	max-width: 200px;
-  	margin: 2em auto;
-  	padding: 0;
-  	a.button {
-  		font-size: 1.25em;
-  		background: $yellow;
-  		color: $purple;
-  		margin-right: auto;
-  		padding: .5em;
-  		-webkit-flex: .47 1 0 !important;
-  		-ms-flex: .47 1 0 !important;
-  		flex: .47 1 0 !important;
-    }
-}
-.button-group--home-cta {
+	margin-top: 1em;
+	max-width: 200px;
+	margin: 2em auto;
+	padding: 0;
+	a.button {
+		font-size: 1.25em;
+		background: $yellow;
+		color: $purple;
+		margin-right: auto;
+		padding: .5em;
+		-webkit-flex: .47 1 0 !important;
+		-ms-flex: .47 1 0 !important;
+		flex: .47 1 0 !important;
+		&:hover {
+			background-color: $dark-yellow;
+			color: $white;
+			transition: background-color 0.25s ease-out, color 0.25s ease-out;
+		}
+	}
 	a.button.hollow {
 		background: transparent;
 		color: $yellow;
@@ -45,11 +47,68 @@
 		-ms-flex: .47 100px 0;
 		flex: .47 100px 0;
 		padding: .5em;
+		&:hover {
+			background-color: $dark-purple;
+			border-color: $dark-yellow;
+			color: $white;
+			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
+		}
 	}
 	@include breakpoint (medium) {
 		max-width: 400px;
 	}
 }
+.button-group--home-meeting a.button:hover {
+	background-color: $dark-purple;
+	color: $white;
+	transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+.button-group--home-meeting a.button.hollow:hover {
+	background-color: $dark-yellow;
+	border-color: $dark-purple;
+	color: $white;
+	transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+.cta-links {//closing cta
+	display: flex;
+	justify-content: space-around;
+	margin-top: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	.home & {//Home page
+		max-width: 320px;//change depending on length of link message
+	}
+	.page-template-page-get-involved & {//Get-involved page
+		max-width: 320px;
+	}
+	.page-template-page-issues & {//Issues page
+		max-width: 320px;
+	}
+	& a.button {
+		font-size: 1.2em;
+		padding: .5em;
+		flex: 1;
+		margin-right: 20px;
+		&:hover {
+			background-color: $dark-purple;
+			transition: background-color 0.25s ease-out;
+		}
+	}
+	& a.button.hollow {
+		margin-right: 0;
+		&:hover {
+			background-color: $light-grey;
+			border-color: $dark-purple;
+			color: $dark-purple;
+			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
+		}
+	}
+}
+
+
+
+
 
 .button-group--home-meeting {
 	font-size: 1.25em;
@@ -82,4 +141,24 @@
 		}
 	}
 }
+
+//Get Involved
+a.button.button-get-involved {
+	font-size: 1.2em;
+	margin-right: 20px;
+	padding: .5em;
+	&.last {
+		margin-right: 0;
+	}
+}
+a.button.button-get-involved:hover {
+	background-color: $dark-nav-color;
+}
+a.button.hollow.button-get-involved:hover {
+	border-color: $dark-nav-color;
+	background-color: $white;
+	color: $dark-nav-color;
+	transition: border-color 0.25s ease-out, color 0.25s ease-out;
+}
+
 
