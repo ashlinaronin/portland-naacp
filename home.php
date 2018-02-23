@@ -11,7 +11,7 @@ get_header(); ?>
 	    setup_postdata($first_post);
 	  ?>
 
-    <div class="callout large">
+    <div class="callout large news-title ">
       <div class="callout secondary">
         <h2><?php the_title(); ?></h2>
         <p><?php the_time( get_option( 'date_format' ))?></p>
@@ -25,9 +25,9 @@ get_header(); ?>
     ?>
 
     <div class="grid-x grid-padding-x">
-    <main class="small-6 cell">
+    <main class="small-6 medium-8 cell">
       <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
-        <div class="callout secondary">
+        <div class="callout secondary news-item">
           <a href="<?php the_permalink(); ?>">
             <h5><?php the_title(); ?> (<?php the_time( get_option( 'date_format' ))?>)</h5>
           </a>
@@ -35,12 +35,12 @@ get_header(); ?>
         </div>
       <?php endforeach; ?>
 
-      <div class="callout secondary">
+      <div class="callout secondary pagination">
         Pagination Controls
       </div>
     </main>
 
-    <aside class="small-6 cell">
+    <aside class="small-6 medium-3 cell align-right">
       <div class="callout secondary">
         <h3>Sidebar of news related functionality</h3>
         <ul>

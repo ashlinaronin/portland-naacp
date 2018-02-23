@@ -1,8 +1,15 @@
+//Header
+/*.site-header {
+	padding: 24px;
+	padding-right: 0;
+	background: $purple url("http://portland-naacp.local/wp-content/uploads/2018/02/logo-circle-200x68.png")no-repeat 30px;
+}*/
+
+
+//Navigation
 
 
 //Callouts
-
-
 .callout.large h1 {//front page h1
 	margin-left: auto;
 	margin-right: auto;
@@ -116,6 +123,7 @@ h2.cell {
 	outline: 1px solid;
 }
 
+
 //Closing CTA
 .module__closing-cta.callout {
 	background: transparent;
@@ -140,6 +148,7 @@ h2.cell {
 	background-size: cover;
 }
 
+
 //Get Involved
 .large.callout-get-involved,
 .large .callout.secondary {
@@ -151,13 +160,34 @@ h2.cell {
 	margin-left: auto;
 	margin-right: auto;
 }
-a.button.button-get-involved {
-	font-size: 1.2em;
-	margin-right: 20px;
-	padding: .5em;
-	&.last {
-		margin-right: 0;
-	}
+
+
+//Issues
+.callout-issues,
+.secondary.callout-issues {
+	background-color: $white;
+	border: none;
+}
+
+
+//News
+.news-title,
+.callout.secondary.news-item,
+aside .callout.secondary,
+.callout.secondary.pagination {
+	background-color: $white;
+}
+.news-title {
+	border: none;
+}
+.callout.secondary.news-item {
+	text-align: left;
+	border: none;
+	border-bottom: 2px solid #ddd;
+}
+aside {
+	text-align: left;
+	margin-left: auto;
 }
 
 
@@ -169,7 +199,6 @@ a.button.button-get-involved {
 	background-color: transparent;
 	border: none;
 }
-
 .page-template-page-calendar .callout.secondary {
 	background-color: white; 
 }

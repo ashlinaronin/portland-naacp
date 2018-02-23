@@ -7,13 +7,13 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <div class="text-center">
-  <div class="callout large">
+  <div class="callout large callout-issues">
     <div class="callout secondary">
       <h2>Issues lead-in copy</h2>
     </div>
   </div>
 
-  <div class="callout large">
+  <div class="callout large callout-issues">
   <?php if ( have_rows('issues')): ?>
     <?php while( have_rows('issues')): the_row();
       $issue = get_sub_field('issue');
@@ -27,7 +27,7 @@ get_header(); ?>
   <?php endif; ?>
   </div>
 
-  <div class="callout large secondary">
+  <div class="callout large secondary callout-issues">
     <h3><?php get_field('headline-description'); ?></h3>
 
     <?php if ( have_rows('links')): ?>
