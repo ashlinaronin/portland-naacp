@@ -76,13 +76,14 @@
     position: relative;
   }
 
-  .menu:not(.submenu) .menu-item > a {
+  .menu-item:not(.is-dropdown-submenu-item) > a {
     &:hover {
       color: $yellow;
     }
   }
 
-  .menu:not(.submenu) .menu-item.current-menu-item > a {
+
+  .menu-item.current-menu-item:not(.is-dropdown-submenu-item) > a {
     &:after {
       content: '';
       background-color: #FFC003;
