@@ -7,7 +7,7 @@
 
 @include foundation-global-styles;
 //@include foundation-grid;
-//@include foundation-flex-grid;
+@include foundation-flex-grid;
 
 @include foundation-xy-grid-classes;
 @include foundation-typography;
@@ -58,13 +58,12 @@
   Add your scss files below to structure your project styles
 */
 
-@import "_flexbox.scss";
 // Global
 @import "global/_accessibility";
 @import "global/colors";
 @import "global/wp-admin";
 @import "global/wp-overrides";
-@import 'global/typography';
+@import "global/typography";
 
 // Modules
 @import "modules/navigation";
@@ -84,3 +83,7 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
+
+// Other
+@import "miscellaneous/danpc-styles";
+

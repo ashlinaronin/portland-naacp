@@ -1,0 +1,303 @@
+//Header
+/*.site-header {
+	padding: 24px;
+	padding-right: 0;
+	background: $purple url("http://portland-naacp.local/wp-content/uploads/2018/02/logo-circle-200x68.png")no-repeat 30px;
+}*/
+
+
+//Navigation
+
+
+//Callouts
+.callout.large h1 {//front page h1
+	margin-left: auto;
+	margin-right: auto;
+	@include breakpoint (medium) {
+	max-width: 1200px;
+	margin-top: 100px;
+	}
+}
+.module-events.callout {//front page "Next General Session"
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	@include breakpoint (medium) {
+	max-width: 1200px;
+	}
+}
+.module-events__header.next-meeting {//"Next General Session..." text area
+	margin-top: -180px;
+	background-color: $secondary-color;
+}
+
+
+//Module Events - dpc-180203
+
+//contains h2 plus 4 Event modules
+.grid-margin-x.events-news {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	max-width: 2000px;
+}
+
+//"Events" and "Latest News"
+h2.text-left.events,
+h2.text-left.latest-news {
+	font-size: 1.8rem;
+	border-bottom: 3px solid $orange;
+	line-height: 2;
+	color: $black;
+}
+
+//contains one event
+.module-events__event.political-action {
+	border: none;
+	border-bottom: 2px solid $light-grey;
+	display: flex;
+	flex-basis: 80px; //controls minimum height of cell	
+}
+
+//Event content
+.module-events__event-content {//aligns tops of event date and title
+	display: flex;
+}
+
+//date
+.module-events__event-content > a,
+.module-news__news-item-content .date {
+	color: $orange;
+	font-size: 1.3rem;
+	font-weight: 400;
+	font-family: $oswald;
+	margin-top: -7px;
+}
+
+//Event title and News title
+.module-events__event-content h5 {
+	color: $black;
+	font-size: 1rem;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+.module-news__news-item-content h5 {
+	color: $black;
+	font-size: 1.1rem;
+}
+
+//News container
+.module-news.callout {
+	border: none;
+	padding: 0;
+}
+
+//News content
+.module-news__news-item-content p {
+	color: $black;
+}
+
+//arrow
+.module-events__event-cta a.button.small {
+	font-size: 1.8rem;
+	padding: .5em;
+	line-height: .2;
+	background: transparent;
+	color: $orange;
+}
+
+//Tests
+h2.cell {
+	color: black;
+	text-transform: uppercase;
+	border-bottom: 3px solid;
+}
+.test {
+	background-color: $primary-color;
+	text-align: center;
+	outline: 1px solid;
+}
+.test-2 {
+	background-color: darkgrey;
+	text-align: center;
+	outline: 1px solid;
+}
+
+
+//Closing CTA
+.module__closing-cta.callout {
+	background: transparent;
+	border: none;
+	padding: 3em 1em 0;
+	margin-bottom: 0;
+	& h1 {
+		color: $primary-color;
+		margin-top: 0;
+	}
+	& a.button {
+		border: 2px solid $primary-color;
+		margin-bottom: 0;
+	}
+}
+.cta-photos {
+	height: 250px;
+	min-height: 200px;
+	width: 100%;
+	margin: 0 auto;
+	background: url("http://portland-naacp.local/wp-content/uploads/2018/02/full_width_group-180x250.jpg")no-repeat center;
+	background-size: cover;
+}
+
+
+//Get Involved
+.large.callout-get-involved,
+.large .callout.secondary {
+	background-color: $white;
+	border: none;
+}
+.stacked-for-small.button-group-get-involved {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+//Issues
+.callout-issues,
+.secondary.callout-issues {
+	background-color: $white;
+	border: none;
+}
+
+
+//News
+.news-title,
+.callout.secondary.news-item,
+aside .callout.secondary,
+.callout.secondary.pagination {
+	background-color: $white;
+}
+.news-title {
+	border: none;
+}
+.callout.secondary.news-item {
+	text-align: left;
+	border: none;
+	border-bottom: 2px solid #ddd;
+}
+aside {
+	text-align: left;
+	margin-left: auto;
+}
+
+
+//Calendar
+.page-template-page-calendar .callout.large {
+	max-width: 1248px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+	border: none;
+}
+.page-template-page-calendar .callout.secondary {
+	background-color: white; 
+}
+.simcal-nav h3,
+span.simcal-event-title { /*month, event titles*/
+	text-transform: none;
+	font-family: "Glegoo", sans-serif;
+}
+.simcal-default-calendar .simcal-current h3 {
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ddd;
+}
+span.simcal-event-title {
+	font-size: .7rem;
+}
+.simcal-nav,
+th.simcal-nav.simcal-current {
+	border-top: 2px solid #ddd;
+}
+th.simcal-week-day {
+	font-size: 1.2rem;
+}
+i.simcal-icon-left:before,
+i.simcal-icon-right:before,
+span.simcal-day-label {/*arrows*/
+	color: #f56330;
+	font-size: 1rem;
+}
+td.simcal-day div {/*border*/
+	border: 2px solid #ddd;
+} 
+.simcal-today span.simcal-day-label.simcal-day-number {
+	color: white !important;
+}
+td.simcal-day.simcal-today {/*border*/
+	border: 2px solid #f56330;
+} 
+.simcal-today span.simcal-day-label.simcal-day-number,
+.simcal-day-has-events span.simcal-day-label.simcal-day-number {
+	color: white !important;
+}
+span.simcal-day-label.simcal-day-number {/*numbers*/
+	color: #f56330;
+	text-align: right;
+	padding: 10px;
+	font-size: 1rem;
+	font-weight: 700;
+}
+td.simcal-today span.simcal-day-label.simcal-day-number {
+	color: white;
+}
+.simcal-event-details p {/*styles "-" btwn start/end times*/
+	font-weight: bold;
+}
+.simcal-event-description p {/*keeps description light*/
+	font-weight: normal;
+}
+.list-view,
+.grid-view {
+	text-align: left;	
+	color: black;
+	margin-bottom: -20px;
+}
+.qtip-content span.simcal-event-start.simcal-event-start-date, 
+.qtip-content span.simcal-event-start.simcal-event-start-time, 
+.qtip-content span.simcal-event-end.simcal-event-end-time {/*popup date/time*/
+	font-size: .8rem;
+}
+.qtip-content span.simcal-event-address.simcal-event-start-location {/*popup address*/
+	font-size: .7rem;
+	text-align: center;
+}
+	
+
+	/*Calendar - List version*/
+.simcal-default-calendar-list span.simcal-event-title {
+	font-size: 1rem;
+	color: white;
+	background-color: #FFC003;
+	padding: 5px 5px 3px;
+	border-radius: 3px;	
+}
+span.simcal-event-start,
+span.simcal-event-end,
+span.simcal-event-address {
+	text-transform: none;
+	color: black;
+	font-weight: bold;
+	font-size: 1rem;
+	padding-bottom: 0px;
+}
+.simcal-event-description p {
+	text-transform: none;
+	color: black;
+	font-weight: 400;
+	font-size: 1rem;	
+}
+.simcal-event-details a {
+	text-transform: none;
+	font-style: italic;
+	font-size: 1rem;	
+}
