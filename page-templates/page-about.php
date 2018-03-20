@@ -28,11 +28,6 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="callout large secondary">
-    <h3>Our community (?)</h3>
-    <p>Various logos of community "partners" (?) that we work with, with links to their
-      relevant content (website, jobs, etc.)</p>
-  </div>
 
 <?php get_template_part('template-parts/inspirational-closing-cta'); ?>
 
