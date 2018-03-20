@@ -8,7 +8,7 @@ get_header(); ?>
 
   <div class="grid-x grid-padding-x">
     <div class="cell small-8">
-      <div class="callout secondary">
+      <div>
         <h3>About NAACP</h3>
 	      <?php
 	      	$aboutPost = get_post();
@@ -17,7 +17,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="cell small-4">
-      <div class="callout secondary">
+      <div>
         <h3>Sidebar of org highlights / CTAs</h3>
         <ul>
           <li>History</li>
@@ -28,7 +28,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="callout large secondary">
+  <div>
     <h3>Our community (?)</h3>
     <p>Various logos of community "partners" (?) that we work with, with links to their
       relevant content (website, jobs, etc.)</p>
