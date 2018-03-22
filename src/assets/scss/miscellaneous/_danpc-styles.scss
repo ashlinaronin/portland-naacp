@@ -294,10 +294,18 @@ span.simcal-event-address {
 	text-transform: none;
 	color: black;
 	font-weight: 400;
-	font-size: 1rem;	
+	font-size: 1rem;
 }
 .simcal-event-details a {
 	text-transform: none;
 	font-style: italic;
 	font-size: 1rem;	
+}
+
+// remove callout class from module-news in html
+
+.module-news__news-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
