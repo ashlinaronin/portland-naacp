@@ -76,7 +76,14 @@
     position: relative;
   }
 
-  .menu .is-active > a, .menu a:hover:not(.button) {
+  .menu-item:not(.is-dropdown-submenu-item) > a {
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+
+  .menu-item.current-menu-item:not(.is-dropdown-submenu-item) > a {
     &:after {
       content: '';
       background-color: #FFC003;
@@ -88,12 +95,58 @@
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu > li:not(.menu-text) > a { padding: 1rem; }
 
-  .dropdown.menu .submenu { border: 0; }
-  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
-  .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
+  .dropdown.menu {
+    .is-dropdown-submenu {
+      border: 0;
+      text-align: center;
+      min-width: initial;
+
+      > li.is-dropdown-submenu-item {
+        width: initial;
+        padding: 0 8px 0 8px;
+        background: $yellow;
+
+        a {
+          &:link {
+            color: $black;
+          }
+
+          &:visited, &:active {
+            color: $purple;
+          }
+
+          &:hover, &:focus {
+            color: lighten($black, 30%);
+          }
+        }
+
+        &:first-child {
+          padding-top: 6px;
+        }
+
+        &:last-child {
+          padding-bottom: 6px;
+        }
+      }
+
+      // Submenu box top arrow
+      &:before {
+        content: '';
+        position: absolute;
+        left: 46%;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $yellow;
+      }
+    }
+  }
+
+  // Hide default WP submenu carrot
   .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
 }
 

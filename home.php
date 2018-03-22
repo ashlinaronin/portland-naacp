@@ -11,10 +11,12 @@ get_header(); ?>
 	    setup_postdata($first_post);
 	  ?>
 
-    <div class="callout large news-title ">
+    <div class="callout large news-title">
       <div class="callout secondary">
-        <h2><?php the_title(); ?></h2>
-        <p><?php the_time( get_option( 'date_format' ))?></p>
+        <h2>Latest News</h2>
+        <a href="<?php the_permalink(); ?>">
+          <h5><?php the_title(); ?> (<?php the_time( get_option( 'date_format' ))?>)</h5>
+        </a>
         <p><?php the_excerpt(); ?></p>
       </div>
     </div>
