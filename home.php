@@ -31,7 +31,8 @@ get_header(); ?>
       <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
         <div class="callout secondary news-item">
           <a href="<?php the_permalink(); ?>">
-            <h5><?php the_title(); ?> (<?php the_time( get_option( 'date_format' ))?>)</h5>
+	          <h5><?php the_time( get_option( 'date_format' ))?></h5>
+            <h4><?php the_title(); ?></h4>
           </a>
           <p><?php the_excerpt(); ?></p>
         </div>
