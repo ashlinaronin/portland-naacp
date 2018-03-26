@@ -10,6 +10,8 @@
 
 ?>
 
+<?php get_template_part('template-parts/inspirational-closing-cta'); ?>
+
 		</section>
 		<div class="footer-container" data-sticky-footer>
 			<footer class="footer grid-x grid-padding-x">

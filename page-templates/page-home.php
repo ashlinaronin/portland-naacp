@@ -108,6 +108,4 @@ get_header(); ?>
 					<div class="cta-photos">
 					</div>
 
-  <?php get_template_part('template-parts/inspirational-closing-cta'); ?>
-
 <?php get_footer();

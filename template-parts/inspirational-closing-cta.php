@@ -1,17 +1,12 @@
-<?php
-  $link_1 = get_sub_field('link_1');
-  $link_2 = get_sub_field('link_2');
-?>
-
 <div class="module__closing-cta callout large text-center">
     <div>
-        <h1><?php the_field('footer_message'); ?></h1>
+        <h1><?php the_field('footer_message', 'option'); ?></h1>
     </div>
     <div class="cta-links">
 
       <?php
-        if (have_rows('footer_cta-links')):
-          while(have_rows('footer_cta-links')): the_row();
+        if (have_rows('footer_cta-links', 'option')):
+          while(have_rows('footer_cta-links', 'option')): the_row();
             $link_1 = get_sub_field('link_1');
             $link_2 = get_sub_field('link_2');
 

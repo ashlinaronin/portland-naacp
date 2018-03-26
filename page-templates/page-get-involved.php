@@ -69,6 +69,4 @@ get_header(); ?>
 </div>
 
 
-<?php get_template_part('template-parts/inspirational-closing-cta'); ?>
-
 <?php get_footer();
