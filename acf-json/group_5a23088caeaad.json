@@ -1,0 +1,64 @@
+{
+    "key": "group_5a23088caeaad",
+    "title": "Become a Member",
+    "fields": [
+        {
+            "key": "field_5a2308cc7917f",
+            "label": "Membership Copy",
+            "name": "membership_copy",
+            "type": "textarea",
+            "instructions": "Copy leading into the form enticing visitors to become a member",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a2308a209e8e",
+            "label": "Membership Form Link",
+            "name": "membership_form_link",
+            "type": "text",
+            "instructions": "Code to automatically load form created in GravityForms. If you need to make a change there, find the form in the GravityForms plugin.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "Page section with membership form & information",
+    "modified": 1522043853
+}

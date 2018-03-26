@@ -1,0 +1,179 @@
+{
+    "key": "group_5a23065d63e57",
+    "title": "Lead-in",
+    "fields": [
+        {
+            "key": "field_5a22fdfe98ee6",
+            "label": "Main Heading",
+            "name": "lead-in_heading",
+            "type": "textarea",
+            "instructions": "Make this engaging and exciting (and short)!",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 1,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a22ff8f1b4b2",
+            "label": "Copy",
+            "name": "lead-in_copy",
+            "type": "textarea",
+            "instructions": "3-4 concise sentences describing the value of or encouraging site visitors to join in whatever piece of NAACP's work you're promoting.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a24f70756074",
+            "label": "Include call-to-action links?",
+            "name": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "No",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5a2300477acb0",
+            "label": "CTA Links",
+            "name": "lead-in_CTA",
+            "type": "group",
+            "instructions": "These are the big 3 call-to-action links at the end of the lead-in section.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a24f70756074",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_5a23026732ed5",
+                    "label": "Link 1",
+                    "name": "lead-in_link-1",
+                    "type": "link",
+                    "instructions": "First call-to-action link",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5a23028732ed6",
+                    "label": "Link 2",
+                    "name": "lead-in_link-2",
+                    "type": "link",
+                    "instructions": "Second call-to-action link",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5a23029432ed7",
+                    "label": "Link 3",
+                    "name": "lead-in_link-3",
+                    "type": "link",
+                    "instructions": "Third call-to-action link",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "10"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "77"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "79"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "Lead-in copy template for pages",
+    "modified": 1522043895
+}

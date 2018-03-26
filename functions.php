@@ -42,8 +42,11 @@ require_once( 'library/enqueue-scripts.php' );
 /** Add theme support */
 require_once( 'library/theme-support.php' );
 
-/** Create custom post types */
-require_once( 'functions/custom-post-types.php' );
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+
+}
 
 /** Add Nav Options to Customer */
 require_once( 'library/custom-nav.php' );
