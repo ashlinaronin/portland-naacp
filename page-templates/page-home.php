@@ -68,7 +68,7 @@ get_header(); ?>
     
 
   <?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
-  <div class="module-news callout medium-12 large-8 cell grid-x grid-margin-x">
+  <div class="module-news medium-12 large-8 cell grid-x grid-margin-x">
     <h2 class="text-left latest-news cell">Latest news</h2>
       <?php while ($the_query -> have_posts()): $the_query -> the_post(); ?>
         <div class="module-news__news-item medium-6 cell">
