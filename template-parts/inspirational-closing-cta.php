@@ -2,7 +2,7 @@
     <div>
         <h4><?php the_field('footer_message', 'option'); ?></h4>
     </div>
-    <div class="cta-links">
+    <div class="cta-links button-group stacked-for-small align-center">
 
       <?php
         if (have_rows('footer_cta-links', 'option')):
