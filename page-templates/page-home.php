@@ -87,23 +87,7 @@ get_header(); ?>
  </div><!--end events-news-container-->
 
 	
-	
-<!--<div class="grid-x grid-margin-x">
-	<div class="cell medium-4">
-		<h2 class="cell">Experimenting</h2>
-		<div class="test cell">Medium-3</div>
-		<div class="test cell">Medium-3</div>
-		<div class="test cell">Medium-3</div>
-		<div class="test cell">Medium-3</div>
-	</div>
-	<div class="foo cell medium-8 grid-x grid-margin-x">
-		<h2 class="latest-news cell">Latest News</h2>
-		<div class="test-2 cell medium-6">Box 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus auctor venenatis. </div>
-		<div class="test-2 cell medium-6">Box 2 - Nullam maximus vitae ex et gravida. In varius dignissim vestibulum. Vivamus id erat tempus, tempor massa a, venenatis. Aenean luctus auctor venenatis. </div>
-		<div class="test-2 cell medium-6">Box 3 - Aenean luctus auctor venenatis. </div>
-		<div class="test-2 cell medium-6">Box 4 - In varius dignissim vestibulum. Vivamus id erat tempus, tempor massa a, venenatis.</div>
-	</div>
-</div>-->
+
   <?php wp_reset_postdata(); ?>
 					<div class="cta-photos">
 					</div>
