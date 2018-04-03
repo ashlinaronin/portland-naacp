@@ -37,3 +37,66 @@
   border: none;
   color: $white;
 }
+
+
+//News dpc-180203
+.news-title,
+.callout.secondary.news-item,
+aside .callout.secondary,
+.callout.secondary.pagination {
+	background-color: $white;
+}
+.news-title {
+	border: none;
+}
+aside {
+	text-align: left;
+	margin-left: auto;
+}
+//News container
+.module-news.callout {
+	border: none;
+	padding: 0;
+}
+//News h2 
+h2.text-left.latest-news {
+	font-size: 1.8rem;
+	border-bottom: 3px solid $orange;
+	line-height: 2;
+	color: $black;
+}
+//News content
+.module-news__news-item-content p {
+	color: $black;
+}
+//News title
+.module-news__news-item-content h5 {
+	color: $black;
+	font-size: 1.1rem;
+}
+//News date
+.module-news__news-item-content .date {
+	color: $orange;
+	font-size: 1.3rem;
+	font-weight: 400;
+	font-family: $oswald;
+	margin-top: -7px;
+}
+
+.module-news__news-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.callout.secondary.news-item {
+	text-align: left;
+	border: none;
+	border-bottom: 2px solid #ddd;
+}
+
+.module-news__news-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+

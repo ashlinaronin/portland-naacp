@@ -68,3 +68,64 @@
 		width: 90%;
 	}
 }
+
+
+
+//Events - dpc-180203
+
+//Wraps h2 plus 4 Event modules
+.grid-margin-x.events-news {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	max-width: 2000px;
+}
+
+//Events h2
+h2.text-left.events {
+	font-size: 1.8rem;
+	border-bottom: 3px solid $orange;
+	line-height: 2;
+	color: $black;
+}
+
+//Single event
+.module-events__event.political-action {
+	border: none;
+	border-bottom: 2px solid $light-grey;
+	display: flex;
+	flex-basis: 80px; //controls minimum height of cell	
+}
+
+//Event content
+.module-events__event-content {//aligns tops of event date and title
+	display: flex;
+}
+
+//Event date
+.module-events__event-content > a {
+	color: $orange;
+	font-size: 1.3rem;
+	font-weight: 400;
+	font-family: $oswald;
+	margin-top: -7px;
+}
+
+//Event title
+.module-events__event-content h5 {
+	color: $black;
+	font-size: 1rem;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+//Event arrow
+.module-events__event-cta a.button.small {
+	font-size: 1.8rem;
+	padding: .5em;
+	line-height: .2;
+	background: transparent;
+	color: $orange;
+}
+
+
