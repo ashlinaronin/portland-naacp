@@ -175,8 +175,9 @@ h2.text-left.latest-news {
 	border-bottom: 2px solid #ddd;
 }
 
-
-
-
-
+.module-news__news-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
