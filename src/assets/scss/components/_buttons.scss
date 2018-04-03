@@ -33,8 +33,8 @@
 		-ms-flex: .47 1 0 !important;
 		flex: .47 1 0 !important;
 		&:hover {
-			background-color: $dark-yellow;
-			color: $white;
+			background-color: $white;
+			color: $yellow;
 			transition: background-color 0.25s ease-out, color 0.25s ease-out;
 		}
 	}
@@ -48,9 +48,9 @@
 		flex: .47 100px 0;
 		padding: .5em;
 		&:hover {
-			background-color: $dark-purple;
-			border-color: $dark-yellow;
-			color: $white;
+			background-color: $white;
+			color: $purple;
+			border-color: $white;
 			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
 		}
 	}
@@ -59,36 +59,28 @@
 	}
 }
 .button-group--home-meeting a.button:hover {
-	background-color: $dark-purple;
-	color: $white;
+	background-color: $white;
+	color: $purple;
 	transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
 .button-group--home-meeting a.button.hollow:hover {
-	background-color: $dark-yellow;
-	border-color: $dark-purple;
-	color: $white;
+	background-color: $white;
+	border-color: $white;
+	color: $yellow;
 	transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
 }
 
 .cta-links {//closing cta
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	margin-top: 24px;
 	margin-left: auto;
 	margin-right: auto;
-	.home & {//Home page
-		max-width: 320px;//change depending on length of link message
-	}
-	.page-template-page-get-involved & {//Get-involved page
-		max-width: 320px;
-	}
-	.page-template-page-issues & {//Issues page
-		max-width: 320px;
-	}
+	max-width: 250px;
 	& a.button {
 		font-size: 1.2em;
 		padding: .5em;
-		flex: 1;
+		flex: .18;
 		margin-right: 20px;
 		&:hover {
 			background-color: $dark-purple;
@@ -102,7 +94,11 @@
 			border-color: $dark-purple;
 			color: $dark-purple;
 			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
+			outline: inherit;
 		}
+	}
+	@include breakpoint (medium) {
+		max-width: 400px;
 	}
 }
 

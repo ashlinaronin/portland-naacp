@@ -1,3 +1,9 @@
+//General text styles
+a:hover {
+	text-decoration: underline;
+}
+
+
 //Header
 /*.site-header {
 	padding: 24px;
@@ -130,13 +136,25 @@ h2.cell {
 	border: none;
 	padding: 3em 1em 0;
 	margin-bottom: 0;
-	& h1 {
+	& h4 {
 		color: $primary-color;
 		margin-top: 0;
 	}
 	& a.button {
 		border: 2px solid $primary-color;
 		margin-bottom: 0;
+		&:hover {
+			background-color: $white;
+			color: $purple;
+			border-color: $purple;
+			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
+		}
+	}
+	& a.button.hollow:hover {
+			background-color: $primary-color;
+			color: $white;
+			border-color: $purple;
+			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
 	}
 }
 .cta-photos {
@@ -192,6 +210,11 @@ aside {
 
 
 //Calendar
+.goto {//jumplink to List View on same page
+	text-align: left;
+	text-transform: lowercase;
+	font-style: italic;
+}
 .page-template-page-calendar .callout.large {
 	max-width: 1248px;
 	margin-left: auto;
@@ -256,12 +279,23 @@ td.simcal-today span.simcal-day-label.simcal-day-number {
 .simcal-event-description p {/*keeps description light*/
 	font-weight: normal;
 }
+.simcal-default-calendar-list ul.simcal-events li.simcal-event {
+	margin-bottom: 30px;
+}
 .list-view,
 .grid-view {
 	text-align: left;	
 	color: black;
 	margin-bottom: -20px;
+	
 }
+.goto {
+	font-size: .8em;
+	text-align: left;
+	text-transform: lowercase;
+	font-style: italic;
+}
+
 .qtip-content span.simcal-event-start.simcal-event-start-date, 
 .qtip-content span.simcal-event-start.simcal-event-start-time, 
 .qtip-content span.simcal-event-end.simcal-event-end-time {/*popup date/time*/
@@ -300,6 +334,7 @@ span.simcal-event-address {
 	text-transform: none;
 	font-style: italic;
 	font-size: 1rem;	
+	/*testing command line activity by adding this line and saving*/
 }
 
 .module-news__news-item {
