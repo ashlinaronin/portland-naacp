@@ -94,7 +94,6 @@
 			border-color: $dark-purple;
 			color: $dark-purple;
 			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
-			outline: inherit;
 		}
 	}
 	@include breakpoint (medium) {

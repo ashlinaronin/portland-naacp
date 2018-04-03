@@ -1,9 +1,3 @@
-//General text styles
-a:hover {
-	text-decoration: underline;
-}
-
-
 //Header
 /*.site-header {
 	padding: 24px;
@@ -12,10 +6,10 @@ a:hover {
 }*/
 
 
-//Navigation
-
-
 //Callouts
+.module__closing-cta.callout {
+	background-color: $white;
+}
 .callout.large h1 {//front page h1
 	margin-left: auto;
 	margin-right: auto;
@@ -37,126 +31,6 @@ a:hover {
 	background-color: $secondary-color;
 }
 
-
-//Module Events - dpc-180203
-
-//contains h2 plus 4 Event modules
-.grid-margin-x.events-news {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	max-width: 2000px;
-}
-
-//"Events" and "Latest News"
-h2.text-left.events,
-h2.text-left.latest-news {
-	font-size: 1.8rem;
-	border-bottom: 3px solid $orange;
-	line-height: 2;
-	color: $black;
-}
-
-//contains one event
-.module-events__event.political-action {
-	border: none;
-	border-bottom: 2px solid $light-grey;
-	display: flex;
-	flex-basis: 80px; //controls minimum height of cell	
-}
-
-//Event content
-.module-events__event-content {//aligns tops of event date and title
-	display: flex;
-}
-
-//date
-.module-events__event-content > a,
-.module-news__news-item-content .date {
-	color: $orange;
-	font-size: 1.3rem;
-	font-weight: 400;
-	font-family: $oswald;
-	margin-top: -7px;
-}
-
-//Event title and News title
-.module-events__event-content h5 {
-	color: $black;
-	font-size: 1rem;
-	margin-left: 40px;
-	margin-right: 20px;
-}
-.module-news__news-item-content h5 {
-	color: $black;
-	font-size: 1.1rem;
-}
-
-//News container
-.module-news.callout {
-	border: none;
-	padding: 0;
-}
-
-//News content
-.module-news__news-item-content p {
-	color: $black;
-}
-
-//arrow
-.module-events__event-cta a.button.small {
-	font-size: 1.8rem;
-	padding: .5em;
-	line-height: .2;
-	background: transparent;
-	color: $orange;
-}
-
-//Tests
-h2.cell {
-	color: black;
-	text-transform: uppercase;
-	border-bottom: 3px solid;
-}
-.test {
-	background-color: $primary-color;
-	text-align: center;
-	outline: 1px solid;
-}
-.test-2 {
-	background-color: darkgrey;
-	text-align: center;
-	outline: 1px solid;
-}
-
-
-//Closing CTA
-.module__closing-cta.callout {
-	background: transparent;
-	border: none;
-	padding: 3em 1em 0;
-	margin-bottom: 0;
-	& h4 {
-		color: $primary-color;
-		margin-top: 0;
-	}
-	& a.button {
-		border: 2px solid $primary-color;
-		margin-bottom: 0;
-		&:hover {
-			background-color: $white;
-			color: $purple;
-			border-color: $purple;
-			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
-		}
-	}
-	& a.button.hollow:hover {
-			background-color: $primary-color;
-			color: $white;
-			border-color: $purple;
-			transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
-	}
-}
 .cta-photos {
 	height: 250px;
 	min-height: 200px;
@@ -179,7 +53,6 @@ h2.cell {
 	margin-right: auto;
 }
 
-
 //Issues
 .callout-issues,
 .secondary.callout-issues {
@@ -188,7 +61,66 @@ h2.cell {
 }
 
 
-//News
+
+//Events - dpc-180203
+
+//Wraps h2 plus 4 Event modules
+.grid-margin-x.events-news {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	max-width: 2000px;
+}
+
+//Events h2
+h2.text-left.events {
+	font-size: 1.8rem;
+	border-bottom: 3px solid $orange;
+	line-height: 2;
+	color: $black;
+}
+
+//Single event
+.module-events__event.political-action {
+	border: none;
+	border-bottom: 2px solid $light-grey;
+	display: flex;
+	flex-basis: 80px; //controls minimum height of cell	
+}
+
+//Event content
+.module-events__event-content {//aligns tops of event date and title
+	display: flex;
+}
+
+//Event date
+.module-events__event-content > a {
+	color: $orange;
+	font-size: 1.3rem;
+	font-weight: 400;
+	font-family: $oswald;
+	margin-top: -7px;
+}
+
+//Event title
+.module-events__event-content h5 {
+	color: $black;
+	font-size: 1rem;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+//Event arrow
+.module-events__event-cta a.button.small {
+	font-size: 1.8rem;
+	padding: .5em;
+	line-height: .2;
+	background: transparent;
+	color: $orange;
+}
+
+
+//News dpc-180203
 .news-title,
 .callout.secondary.news-item,
 aside .callout.secondary,
@@ -198,149 +130,53 @@ aside .callout.secondary,
 .news-title {
 	border: none;
 }
-.callout.secondary.news-item {
-	text-align: left;
-	border: none;
-	border-bottom: 2px solid #ddd;
-}
 aside {
 	text-align: left;
 	margin-left: auto;
 }
-
-
-//Calendar
-.goto {//jumplink to List View on same page
-	text-align: left;
-	text-transform: lowercase;
-	font-style: italic;
-}
-.page-template-page-calendar .callout.large {
-	max-width: 1248px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: transparent;
+//News container
+.module-news.callout {
 	border: none;
+	padding: 0;
 }
-.page-template-page-calendar .callout.secondary {
-	background-color: white; 
+//News h2 
+h2.text-left.latest-news {
+	font-size: 1.8rem;
+	border-bottom: 3px solid $orange;
+	line-height: 2;
+	color: $black;
 }
-.simcal-nav h3,
-span.simcal-event-title { /*month, event titles*/
-	text-transform: none;
-	font-family: "Glegoo", sans-serif;
+//News content
+.module-news__news-item-content p {
+	color: $black;
 }
-.simcal-default-calendar .simcal-current h3 {
-	padding-bottom: 20px;
-	border-bottom: 2px solid #ddd;
+//News title
+.module-news__news-item-content h5 {
+	color: $black;
+	font-size: 1.1rem;
 }
-span.simcal-event-title {
-	font-size: .7rem;
-}
-.simcal-nav,
-th.simcal-nav.simcal-current {
-	border-top: 2px solid #ddd;
-}
-th.simcal-week-day {
-	font-size: 1.2rem;
-}
-i.simcal-icon-left:before,
-i.simcal-icon-right:before,
-span.simcal-day-label {/*arrows*/
-	color: #f56330;
-	font-size: 1rem;
-}
-td.simcal-day div {/*border*/
-	border: 2px solid #ddd;
-} 
-.simcal-today span.simcal-day-label.simcal-day-number {
-	color: white !important;
-}
-td.simcal-day.simcal-today {/*border*/
-	border: 2px solid #f56330;
-} 
-.simcal-today span.simcal-day-label.simcal-day-number,
-.simcal-day-has-events span.simcal-day-label.simcal-day-number {
-	color: white !important;
-}
-span.simcal-day-label.simcal-day-number {/*numbers*/
-	color: #f56330;
-	text-align: right;
-	padding: 10px;
-	font-size: 1rem;
-	font-weight: 700;
-}
-td.simcal-today span.simcal-day-label.simcal-day-number {
-	color: white;
-}
-.simcal-event-details p {/*styles "-" btwn start/end times*/
-	font-weight: bold;
-}
-.simcal-event-description p {/*keeps description light*/
-	font-weight: normal;
-}
-.simcal-default-calendar-list ul.simcal-events li.simcal-event {
-	margin-bottom: 30px;
-}
-.list-view,
-.grid-view {
-	text-align: left;	
-	color: black;
-	margin-bottom: -20px;
-	
-}
-.goto {
-	font-size: .8em;
-	text-align: left;
-	text-transform: lowercase;
-	font-style: italic;
-}
-
-.qtip-content span.simcal-event-start.simcal-event-start-date, 
-.qtip-content span.simcal-event-start.simcal-event-start-time, 
-.qtip-content span.simcal-event-end.simcal-event-end-time {/*popup date/time*/
-	font-size: .8rem;
-}
-.qtip-content span.simcal-event-address.simcal-event-start-location {/*popup address*/
-	font-size: .7rem;
-	text-align: center;
-}
-	
-
-	/*Calendar - List version*/
-.simcal-default-calendar-list span.simcal-event-title {
-	font-size: 1rem;
-	color: white;
-	background-color: #FFC003;
-	padding: 5px 5px 3px;
-	border-radius: 3px;	
-}
-span.simcal-event-start,
-span.simcal-event-end,
-span.simcal-event-address {
-	text-transform: none;
-	color: black;
-	font-weight: bold;
-	font-size: 1rem;
-	padding-bottom: 0px;
-}
-.simcal-event-description p {
-	text-transform: none;
-	color: black;
+//News date
+.module-news__news-item-content .date {
+	color: $orange;
+	font-size: 1.3rem;
 	font-weight: 400;
-	font-size: 1rem;
+	font-family: $oswald;
+	margin-top: -7px;
 }
-.simcal-event-details a {
-	text-transform: none;
-	font-style: italic;
-	font-size: 1rem;	
-	/*testing command line activity by adding this line and saving*/
-}
-
-// remove callout class from module-news in html
 
 .module-news__news-item {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+.callout.secondary.news-item {
+	text-align: left;
+	border: none;
+	border-bottom: 2px solid #ddd;
+}
+
+
+
+
+
+
