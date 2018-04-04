@@ -8,10 +8,7 @@ get_header(); ?>
   <div class="text-center">
     <div class="callout large">
       <div class="callout secondary">
-		<?php
-          $calendarPost = get_post();
-          echo apply_filters( 'the_content', $calendarPost->post_content );
-		?>
+		    <?php the_field('calendar_shortcode'); ?>
       </div>
     </div>
   </div>
