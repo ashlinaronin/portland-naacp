@@ -15,7 +15,7 @@ get_header(); ?>
 	</div>
 
     <div class="module-events callout large grid-x">
-      <div class="module-events__header callout text-center next-meeting">
+      <div class="module-events__header callout text-center next-meeting small-10">
         <h3>Next general session</h3>
         <h2>Sunday, August 27th</h2>
         <h5><span>12-2 PM</span> | Concordia University Hall</h5>

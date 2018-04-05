@@ -14,7 +14,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	@include breakpoint (medium) {
-	max-width: 1200px;
+	max-width: 1248px; // changed this to match mocks - adam
 	margin-top: 100px;
 	}
 }
@@ -23,12 +23,13 @@
 	margin-left: auto;
 	margin-right: auto;
 	@include breakpoint (medium) {
-	max-width: 1200px;
+	max-width: 1248px; // changed this to match mocks - adam
 	}
 }
 .module-events__header.next-meeting {//"Next General Session..." text area
 	margin-top: -180px;
 	background-color: $secondary-color;
+	border:none; // added this to remove the 1px grey border foundation added - adam
 }
 
 .cta-photos {

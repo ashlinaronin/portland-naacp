@@ -3,25 +3,37 @@ h1, h2 {
   font-weight: 700;
   text-transform: uppercase;
   color: $purple;
-	span {
-		color: $yellow;
-	}
+  span {
+    color: $yellow;
+  }
+}
+h1 {
+  font-size: rem-calc(48);
+  line-height: rem-calc(54);
+  margin-bottom: rem-calc(18);
 }
 h2 {
-	font-size: 2.6rem;
-	line-height: 1.5;
+  font-size: rem-calc(32);
+  line-height: rem-calc(36);
+  margin-bottom: rem-calc(12);
 }
 h3 {
   font-family: $oswald;
   font-weight: 500;
+  font-size: rem-calc(24);
+  line-height: rem-calc(32);
+  margin-bottom: rem-calc(16);
   text-transform: uppercase;
   color: $black;
-	margin-top: 1.5rem !important;
+  margin-top: 1.5rem !important;
 }
 
 h4 {
   font-family: $oswald;
   font-weight: 500;
+  font-size: rem-calc(24);
+  line-height: rem-calc(32);
+  margin-bottom: rem-calc(16);
   text-transform: uppercase;
   color: $purple;
 }
@@ -29,10 +41,13 @@ h4 {
 h5 {
   font-family: $glegoo;
   font-weight: 700;
-	color: $purple;
-	& span {
-		color: $black;
-	}
+  font-size: rem-calc(20);
+  line-height: rem-calc(24);
+  margin-bottom: rem-calc(18);
+  color: $purple;
+  & span {
+    color: $black;
+  }
 }
 
 a.button {
@@ -48,12 +63,7 @@ a {
 p {
   font-family: $open-sans;
   font-weight: 400;
+  font-size: rem-calc(18);
+  line-height: rem-calc(24);
+  margin-bottom: rem-calc(12);
 }
-
-
-
-
-
-
-
-
