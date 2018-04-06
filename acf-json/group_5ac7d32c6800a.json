@@ -1,11 +1,11 @@
 {
-    "key": "group_5a2626fca3ee2",
+    "key": "group_5ac7d32c6800a",
     "title": "Committees List",
     "fields": [
         {
-            "key": "field_5a2626fca8192",
+            "key": "field_5ac7d33b0ae15",
             "label": "Committees",
-            "name": "Committees",
+            "name": "committees",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -18,16 +18,16 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "Add Issue",
+            "layout": "row",
+            "button_label": "Add Committee",
             "sub_fields": [
                 {
-                    "key": "field_5a2626fcaa33a",
+                    "key": "field_5ac7d3730ae16",
                     "label": "Committee Name",
-                    "name": "Committee_name",
+                    "name": "committee_name",
                     "type": "text",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -41,12 +41,12 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5a2626fcaa3e8",
+                    "key": "field_5ac7d4740ae17",
                     "label": "Committee Description",
-                    "name": "Committee_description",
+                    "name": "committee_description",
                     "type": "textarea",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -60,10 +60,10 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_5a26274d5040a",
+                    "key": "field_5ac7d4ba0ae18",
                     "label": "Image",
                     "name": "image",
-                    "type": "image",
+                    "type": "repeater",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -72,16 +72,37 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "Add image",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ac808580ae19",
+                            "label": "committee member",
+                            "name": "committee_member",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
                 }
             ]
         }
@@ -104,6 +125,6 @@
         "the_content"
     ],
     "active": 1,
-    "description": "Page section on issues",
-    "modified": 1522043864
+    "description": "",
+    "modified": 1523058924
 }

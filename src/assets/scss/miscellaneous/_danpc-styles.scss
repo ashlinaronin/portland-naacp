@@ -7,25 +7,7 @@
 
 
 //Callouts
-.module__closing-cta.callout {
-	background-color: $white;
-}
-.callout.large h1 {//front page h1
-	margin-left: auto;
-	margin-right: auto;
-	@include breakpoint (medium) {
-	max-width: 1200px;
-	margin-top: 100px;
-	}
-}
-.module-events.callout {//front page "Next General Session"
-	border: none;
-	margin-left: auto;
-	margin-right: auto;
-	@include breakpoint (medium) {
-	max-width: 1200px;
-	}
-}
+
 .module-events__header.next-meeting {//"Next General Session..." text area
 	margin-top: -180px;
 	background-color: $secondary-color;
@@ -40,24 +22,10 @@
 	background-size: cover;
 }
 
-
-//Get Involved
-.large.callout-get-involved,
-.large .callout.secondary {
-	background-color: $white;
-	border: none;
-}
-.stacked-for-small.button-group-get-involved {
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-//Issues
-.callout-issues,
-.secondary.callout-issues {
-	background-color: $white;
-	border: none;
+.c-hero.callout.large {
+	background: url("http://portland-naacp.local/wp-content/uploads/2018/04/home-page-march.jpg") no-repeat;
+	background-size: cover;
+	outline: inherit;
 }
 
 

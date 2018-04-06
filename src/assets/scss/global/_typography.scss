@@ -45,6 +45,10 @@ a {
   color: $purple;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 p {
   font-family: $open-sans;
   font-weight: 400;
