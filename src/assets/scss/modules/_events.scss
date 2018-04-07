@@ -75,10 +75,9 @@
 
 //Wraps h2 plus 4 Event modules
 .grid-margin-x.events-news {
-	width: 90%;
+	max-width: rem-calc(1248);
 	margin: 0 auto;
 	display: flex;
-	max-width: 2000px;
 }
 
 //Events h2

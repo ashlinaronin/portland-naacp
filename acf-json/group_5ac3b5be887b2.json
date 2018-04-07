@@ -1,0 +1,43 @@
+{
+    "key": "group_5ac3b5be887b2",
+    "title": "Calendar Shortcode",
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "14"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "fields": [
+        {
+            "key": "field_5ac3b5ce28add",
+            "label": "Calendar Shortcode",
+            "name": "calendar_shortcode",
+            "type": "text",
+            "instructions": "Paste the calendar shortcode from the \"Calendars\" plugin here. \r\n\r\nYou can find this shortcode by hovering over \"Calendars\" on the sidebar and selecting \"All Calendars.\" Copy and paste the value from the \"Shortcode\" column of the calendar you wish to load.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "modified": 1522825066
+}

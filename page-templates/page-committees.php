@@ -21,14 +21,35 @@ get_header(); ?>
 			<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 			
 
-<?php // display ACF Committee fields - dpc180405 ?>
+<?php // display ACF Committee fields (Lead-in) - dpc180405 ?>
 			
-	<?php while( have_rows('Committees') ): the_row(); ?> 
-			<h3><?php the_sub_field('Committee_name'); ?></h3> 
-			<p class="committee-description"><?php the_sub_field('Committee_description'); ?></p> 
-			<img src="<?php the_sub_field('image'); ?>" class="float-right committee" alt=""/>        
-			<p class="clearfloat">&nbsp;</p>
-	<?php endwhile; ?> 
+	<?php
+
+		// check if the repeater field has rows of data
+		if( have_rows('committees') ):
+
+			// loop through the rows of data
+				while ( have_rows('committees') ) : the_row(); ?>
+
+				<h3><?php	the_sub_field('committee_name'); ?></h3>
+				<p class="committee-description"><?php	the_sub_field('committee_description'); ?></p>
+
+	<?php
+				endwhile;
+
+		else :
+
+				// no rows found etc., etc.
+		endif;
+
+	?>
+			
+			
+	<?php //while( have_rows('committees') ): the_row(); ?> 
+			<h3><?php //the_sub_field('Committee_name'); ?></h3> 
+			<p class="committee-description"><?php //the_sub_field('Committee_description'); ?></p> 
+			<img src="<?php //the_sub_field('image'); ?>" class="float-right committee" alt=""/>        
+	<?php //endwhile; ?> 
 			
 			
 		</div>

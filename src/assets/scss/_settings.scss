@@ -69,7 +69,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1248);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: $purple,
@@ -107,11 +107,16 @@ $print-transparent-backgrounds: true;
 // --------------
 
 $breakpoints: (
+  //small: 0,
+  //medium: 640px,
+  //large: 1024px,
+  //xlarge: 1200px,
+  //xxlarge: 1440px,
   small: 0,
-  medium: 640px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  medium: 636px,
+  large: 1020px,
+  xlarge: 1248px,
+  xxlarge: 1248px,
 );
 $print-breakpoint: large;
 $breakpoint-classes: (small medium large);
@@ -122,8 +127,10 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 20px,
-  medium: 30px,
+  //small: 20px,
+  //medium: 30px,
+  small: rem-calc(24),
+  medium: rem-calc(48),
 );
 $grid-column-align-edge: true;
 $grid-column-alias: 'columns';
@@ -141,12 +148,12 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 48, 'line-height': 54),
+    'h2': ('font-size': 32, 'line-height': 36),
+    'h3': ('font-size': 24, 'line-height': 32),
+    'h4': ('font-size': 24, 'line-height': 32),
+    'h5': ('font-size': 20, 'line-height': 24),
+    'h6': ('font-size': 18),
   ),
   medium: (
     'h1': ('font-size': 48, 'line-height': 54),
@@ -160,7 +167,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: rem-calc(24);
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
@@ -856,8 +863,10 @@ $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
-  small: 20px,
-  medium: 30px
+  //small: 20px,
+  //medium: 30px,
+  small: rem-calc(24),
+  medium: rem-calc(48),
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
