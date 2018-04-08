@@ -50,7 +50,7 @@
         </div>
 
         <div class="small-6 cell">
-          <label for="updates-email">Get updates</label>
+          <label for="updates-email" class="updates">Get updates</label>
           <div class="input-group">
             <input id="updates-email" class="input-group-field" type="email" placeholder="Enter your email address">
             <div class="input-group-button">

@@ -9,8 +9,12 @@ get_header(); ?>
 <div class="text-center">
   <div class="callout large callout-issues">
     <div class="callout secondary">
-      <h2>Issues lead-in copy</h2>
-    </div>
+<?php // display ACF Committee fields (Lead-in) - dpc180407 ?>
+			
+<h2><?php the_field('lead-in_heading'); ?></h2>
+<p><?php the_field('lead-in_copy'); ?></p>
+
+		    </div>
   </div>
 
   <div class="callout large callout-issues">
@@ -20,7 +24,7 @@ get_header(); ?>
       $issue_description = get_sub_field('issue_description');
     ?>
       <div class="callout secondary">
-        <h5><?php echo $issue; ?></h5>
+        <h3><?php echo $issue; ?></h3>
 	      <?php echo $issue_description; ?>
       </div>
     <?php endwhile; ?>
