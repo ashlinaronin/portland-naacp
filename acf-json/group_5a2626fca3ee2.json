@@ -24,29 +24,29 @@
         {
             "key": "field_5a2626fca8192",
             "label": "Committees",
-            "name": "Committees",
+            "name": "committees",
             "type": "repeater",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_5a2626fcaa33a",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "Add Issue",
+            "layout": "row",
+            "button_label": "Add Committee",
             "sub_fields": [
                 {
                     "key": "field_5a2626fcaa33a",
                     "label": "Committee Name",
-                    "name": "Committee_name",
+                    "name": "committee_name",
                     "type": "text",
-                    "instructions": "",
-                    "required": 0,
+                    "instructions": "Add committee name",
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -62,10 +62,10 @@
                 {
                     "key": "field_5a2626fcaa3e8",
                     "label": "Committee Description",
-                    "name": "Committee_description",
+                    "name": "committee_description",
                     "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
+                    "instructions": "Add committee description",
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -76,14 +76,14 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": ""
+                    "new_lines": "br"
                 },
                 {
                     "key": "field_5a26274d5040a",
-                    "label": "Image",
-                    "name": "image",
-                    "type": "image",
-                    "instructions": "",
+                    "label": "Images",
+                    "name": "images",
+                    "type": "repeater",
+                    "instructions": "Add image",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -91,19 +91,40 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "collapsed": "field_5ac8fa2a2fc9a",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "Add image",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ac8fa2a2fc9a",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
                 }
             ]
         }
     ],
-    "modified": 1523146991
+    "modified": 1523148090
 }

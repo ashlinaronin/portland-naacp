@@ -1,6 +1,25 @@
 {
     "key": "group_5a24ef0f29c58",
     "title": "Cross-Site Links",
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "10"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "3-column section of cross-site links",
     "fields": [
         {
             "key": "field_5a24ef1253f38",
@@ -249,24 +268,5 @@
             ]
         }
     ],
-    "location": [
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "10"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
-    "active": 1,
-    "description": "3-column section of cross-site links",
-    "modified": 1522043870
+    "modified": 1523148090
 }
