@@ -26,7 +26,7 @@
                     "label": "Committee Name",
                     "name": "committee_name",
                     "type": "text",
-                    "instructions": "The Political Action Committee (PAC) is one of the NAACP’s most powerful tools in fighting systemic ethnic divisions and discrimination. It plays a critical role in working towards eliminating racism in Oregon by influencing leaders and legislative bodies at the city, regional, and state levels.  During the 2017 legislative session, we helped to pass legislation to require verbatim recordings of grand jury proceedings, reduce simple drug crimes from felonies to misdemeanors, and require the capture of demographic data for all traffic stops. To prepare its members, the committee held a “Legislation 101” training in 2017.",
+                    "instructions": "Enter committee name",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -41,12 +41,36 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5ac8fd00945ac",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "Add image",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_5ac7d4740ae17",
                     "label": "Committee Description",
                     "name": "committee_description",
                     "type": "textarea",
-                    "instructions": "The executive committee steers the overall Branch and when necessary acts as a “rapid response team.” It consists of elected board members, including the president, vice presidents, secretary and treasurer, along with committee chairs. They meet monthly or more often to discuss pertinent issues and set the agenda for the regularly scheduled general membership meeting.",
-                    "required": 0,
+                    "instructions": "Enter committee description",
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -58,149 +82,6 @@
                     "maxlength": "",
                     "rows": "",
                     "new_lines": ""
-                },
-                {
-                    "key": "field_5ac7d4ba0ae18",
-                    "label": "Political Action",
-                    "name": "images",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "row",
-                    "button_label": "Add image",
-                    "sub_fields": [
-                        {
-                            "key": "field_5ac808580ae19",
-                            "label": "Image",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5ac814785982c",
-                    "label": "Political Action (copy)",
-                    "name": "images_copy",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "",
-                                "operator": "==",
-                                "value": ""
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "row",
-                    "button_label": "Add image",
-                    "sub_fields": [
-                        {
-                            "key": "field_5ac814785982d",
-                            "label": "Image",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "",
-                            "preview_size": "thumbnail",
-                            "library": "",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5ac8148a5982e",
-                    "label": "Political Action (copy2)",
-                    "name": "images_copy2",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "row",
-                    "button_label": "Add image",
-                    "sub_fields": [
-                        {
-                            "key": "field_5ac8148a5982f",
-                            "label": "Image",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ]
                 }
             ]
         }
@@ -224,5 +105,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1523061995
+    "modified": 1523121719
 }

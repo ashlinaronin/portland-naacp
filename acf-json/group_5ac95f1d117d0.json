@@ -1,0 +1,46 @@
+{
+    "key": "group_5ac95f1d117d0",
+    "title": "Resources",
+    "fields": [
+        {
+            "key": "field_5ac95f2ab46d8",
+            "label": "Resource Category",
+            "name": "resource_category",
+            "type": "repeater",
+            "instructions": "Enter a resource category",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "254"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1523147379
+}

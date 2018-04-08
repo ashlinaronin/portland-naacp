@@ -18,9 +18,15 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
-			<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 			
 
+<?php // display ACF Committee fields (Lead-in) - dpc180407 ?>
+			
+<h2><?php the_field('lead-in_heading'); ?></h2>
+<p><?php the_field('lead-in_copy'); ?></p>
+
+			
+			
 <?php // display ACF Committee fields (Lead-in) - dpc180405 ?>
 			
 	<?php
@@ -34,14 +40,32 @@ get_header(); ?>
 				<h3><?php	the_sub_field('committee_name'); ?></h3>
 				<p class="committee-description"><?php	the_sub_field('committee_description'); ?></p>
 
+
+				<?php
+
+				// check if the repeater field has rows of data
+				if( have_rows('images') ):
+
+					// loop through the rows of data
+						while ( have_rows('images') ) : the_row(); ?>
+
+								<img src="<?php the_sub_field('image'); ?>" class="committee-image" />
+
+				<?php
+						endwhile;
+
+				else :
+
+						// no rows found
+
+				endif;
+
+				?>
 	<?php
 				endwhile;
-
 		else :
-
-				// no rows found etc., etc.
+				// no rows found
 		endif;
-
 	?>
 			
 			
@@ -55,6 +79,7 @@ get_header(); ?>
 		</div>
 		
 		
+<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 		
 		
 		<footer>
