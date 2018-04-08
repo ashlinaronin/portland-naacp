@@ -18,38 +18,36 @@
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php //dynamic_sidebar( 'footer-widgets' ); ?>
 
-        <div class="small-6 footer__upper cell">
+        <div class="small-7 footer__upper cell">
           <!-- Upper Footer -->
           <ul class="menu align-spaced">
             <li>
-              <a href="#"><h4>Get Involved</h4></a>
+              <a href="/get-involved"><h4>Get Involved</h4></a>
             </li>
             <li>
-              <a href="#"><h4>Issues</h4></a>
+              <a href="/issues"><h4>Issues</h4></a>
             </li>
             <li>
-              <a href="#"><h4>News</h4></a>
+              <a href="/news"><h4>News</h4></a>
+            </li>
+            <li>
+              <a href="/calendar"><h4>Calendar</h4></a>
+            </li>
+            <li>
+              <a href="/about"><h4>About</h4></a>
               <ul class="menu vertical footer__sub-category-list">
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 2</a></li>
-                <li><a href="#">Category 3</a></li>
+                <li><a href="/history">History</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/committees">Committees</a></li>
               </ul>
             </li>
             <li>
-              <a href="#"><h4>Calendar</h4></a>
-            </li>
-            <li>
-              <a href="#"><h4>About</h4></a>
-              <ul class="menu vertical footer__sub-category-list">
-                <li><a href="#">Committees</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+              <a href="/resources"><h4>Resources</h4></a>
             </li>
           </ul>
         </div>
 
-        <div class="small-6 cell">
+        <div class="small-5 cell">
           <label for="updates-email" class="updates">Get updates</label>
           <div class="input-group">
             <input id="updates-email" class="input-group-field" type="email" placeholder="Enter your email address">
@@ -59,6 +57,7 @@
           </div>
         </div>
 
+<p class="divider">&nbsp;</p>
 
         <!-- Lower Footer -->
         <div class="footer__lower">
