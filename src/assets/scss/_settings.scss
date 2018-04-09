@@ -113,13 +113,14 @@ $breakpoints: (
   //xlarge: 1200px,
   //xxlarge: 1440px,
   small: 0,
+	small-medium: 476px,
   medium: 636px,
   large: 1020px,
   xlarge: 1248px,
   xxlarge: 1248px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small small-medium medium large);
 
 // 3. The Grid
 // -----------
@@ -129,7 +130,8 @@ $grid-column-count: 12;
 $grid-column-gutter: (
   //small: 20px,
   //medium: 30px,
-  small: rem-calc(24),
+  small: rem-calc(20),
+  small-medium: rem-calc(24),
   medium: rem-calc(48),
 );
 $grid-column-align-edge: true;
@@ -148,6 +150,14 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
+    'h1': ('font-size': 40, 'line-height': 46),
+    'h2': ('font-size': 28, 'line-height': 32),
+    'h3': ('font-size': 20, 'line-height': 26),
+    'h4': ('font-size': 18, 'line-height': 24),
+    'h5': ('font-size': 18, 'line-height': 24),
+    'h6': ('font-size': 16),
+  ),
+  small-medium: (
     'h1': ('font-size': 48, 'line-height': 54),
     'h2': ('font-size': 32, 'line-height': 36),
     'h3': ('font-size': 24, 'line-height': 32),

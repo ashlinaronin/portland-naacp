@@ -73,6 +73,23 @@
 
 //Events - dpc-180203
 
+//front page "Next General Session"
+.module-events.callout {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	@include breakpoint (medium) {
+	max-width: 1248px; // changed this to match mocks - adam
+	}
+}
+
+//"Next General Session" text area
+.module-events__header.next-meeting {
+	margin-top: -180px;
+	background-color: $secondary-color;
+	border:none; // added this to remove the 1px grey border foundation added - adam
+}
+
 //Wraps h2 plus 4 Event modules
 .grid-margin-x.events-news {
 	max-width: rem-calc(1248);

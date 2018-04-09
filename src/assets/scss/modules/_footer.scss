@@ -44,7 +44,6 @@
 //Footer navigation - dpc180407
 
 .footer__upper.cell ul.menu.align-spaced {
-		border-right: 2px solid #ccc;
 		& li a {
 		padding: .5rem 1rem;
 		& h4 {
@@ -55,12 +54,10 @@
 		}
 	}
 }
-
 .footer__sub-category-list a {
 	font-size: 1rem;
 	padding: .7rem 1rem;
 }
-	
 label.updates {
 	font-family: "Oswald", Arial, sans-serif;
 	font-size: 1rem;
@@ -68,3 +65,13 @@ label.updates {
 	text-transform: uppercase;
 }
 
+.divider {
+	width: 100%;
+	border-bottom: 2px solid #ddd;
+}
+.footer__lower ul.menu.align-center {
+	margin: .5rem 0;
+	& li {
+		font-size: .6rem;
+	}
+}

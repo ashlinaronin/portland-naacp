@@ -17,11 +17,11 @@
 			<footer class="footer grid-x grid-padding-x">
               <?php do_action( 'foundationpress_before_footer' ); ?>
 
-			  <div class="small-6 footer__upper cell">
+			  <div class="small-7 footer__upper cell">
 				  <?php dynamic_sidebar( 'footer-left-widgets' ); ?>
 			  </div>
 
-			  <div class="small-6 cell">
+			  <div class="small-5 cell">
 				<label for="updates-email" class="updates">Get updates</label>
 				<div class="input-group">
 				  <input id="updates-email" class="input-group-field" type="email" placeholder="Enter your email address">
@@ -30,7 +30,7 @@
 				  </div>
 				</div>
 			  </div>
-			  
+
 			  <div class="footer__lower">
 				  <?php dynamic_sidebar( 'footer-widgets' ); ?>
 			  </div>
