@@ -15,78 +15,27 @@
 		</section>
 		<div class="footer-container" data-sticky-footer>
 			<footer class="footer grid-x grid-padding-x">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php //dynamic_sidebar( 'footer-widgets' ); ?>
+              <?php do_action( 'foundationpress_before_footer' ); ?>
 
-        <div class="small-6 footer__upper cell">
-          <!-- Upper Footer -->
-          <ul class="menu align-spaced">
-            <li>
-              <a href="#"><h4>Get Involved</h4></a>
-            </li>
-            <li>
-              <a href="#"><h4>Issues</h4></a>
-            </li>
-            <li>
-              <a href="#"><h4>News</h4></a>
-              <ul class="menu vertical footer__sub-category-list">
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 2</a></li>
-                <li><a href="#">Category 3</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><h4>Calendar</h4></a>
-            </li>
-            <li>
-              <a href="#"><h4>About</h4></a>
-              <ul class="menu vertical footer__sub-category-list">
-                <li><a href="#">Committees</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+			  <div class="small-6 footer__upper cell">
+				  <?php dynamic_sidebar( 'footer-left-widgets' ); ?>
+			  </div>
 
-        <div class="small-6 cell">
-          <label for="updates-email" class="updates">Get updates</label>
-          <div class="input-group">
-            <input id="updates-email" class="input-group-field" type="email" placeholder="Enter your email address">
-            <div class="input-group-button">
-              <input type="submit" class="button" value="Sign Up">
-            </div>
-          </div>
-        </div>
+			  <div class="small-6 cell">
+				<label for="updates-email" class="updates">Get updates</label>
+				<div class="input-group">
+				  <input id="updates-email" class="input-group-field" type="email" placeholder="Enter your email address">
+				  <div class="input-group-button">
+					<input type="submit" class="button" value="Sign Up">
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="footer__lower">
+				  <?php dynamic_sidebar( 'footer-widgets' ); ?>
+			  </div>
 
-
-        <!-- Lower Footer -->
-        <div class="footer__lower">
-          <ul class="menu align-center">
-            <li>
-              <a href="#"><h4>Donate</h4></a>
-            </li>
-            <li>
-              <a href="#"><h4>Join</h4></a>
-            </li>
-            <li>
-              <a href="#"><h4>T</h4></a>
-            </li>
-            <li>
-              <a href="#"><h4>F</h4></a>
-            </li>
-          </ul>
-
-          <div class="text-center">
-            <h5>Portland NAACP Chapter Information</h5>
-            <h5>Address</h5>
-            <h5>Main Contact Email</h5>
-            <h5>Etc.</h5>
-          </div>
-
-        </div>
-
-				<?php do_action( 'foundationpress_after_footer' ); ?>
+              <?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer>
 		</div>
 
