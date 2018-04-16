@@ -27,54 +27,75 @@ get_header(); ?>
 
 			
 			
-<?php // display ACF Committee fields (Lead-in) - dpc180405 ?>
-			
-	<?php
+<!--ACF Repeater with nested image repeater using image variables plus conditional link to another page-->
 
+<?php
+// check if the repeater field has rows of data
+if( have_rows('committee_information') ):
+ 	// loop through the rows of data
+    while ( have_rows('committee_information') ) : the_row(); ?>
+
+		<!--display sub field values-->
+		<h3 class="committee-title"><?php the_sub_field('title'); ?></h3>
+
+		<?php 
 		// check if the repeater field has rows of data
-		if( have_rows('committees') ):
-
+		if( have_rows('images') ):
 			// loop through the rows of data
-				while ( have_rows('committees') ) : the_row(); ?>
+				while ( have_rows('images') ) : the_row(); ?>
 
-				<h3><?php	the_sub_field('committee_name'); ?></h3>
-				<p class="committee-description"><?php	the_sub_field('committee_description'); ?></p>
+				<?php 
+				$image = get_sub_field('image');
+				if( !empty($image) ): 
 
+					// vars
+					$title = $image['title'];
+					$alt = $image['alt'];
+					$caption = $image['caption'];
 
-				<?php
+					// thumbnail
+					$size = 'thumbnail';
+					$thumb = $image['sizes'][ $size ];
+					$width = $image['sizes'][ $size . '-width' ];
+					$height = $image['sizes'][ $size . '-height' ];
 
-				// check if the repeater field has rows of data
-				if( have_rows('images') ):
-
-					// loop through the rows of data
-						while ( have_rows('images') ) : the_row(); ?>
-
-								<img src="<?php the_sub_field('image'); ?>" class="committee-image" />
-
-				<?php
-						endwhile;
-
-				else :
-
-						// no rows found
-
-				endif;
-
-				?>
-	<?php
-				endwhile;
+					//thumbnail image plus caption
+					if( $caption ): ?>
+							<div class="committee-chair">
+						<?php endif; ?>
+							<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+						<?php if( $caption ): ?>
+								<p class="wp-caption-text"><?php echo $caption; ?></p>
+							</div>
+					<?php endif; ?>
+				<?php endif; ?>				
+					
+				<?php endwhile;
 		else :
 				// no rows found
 		endif;
-	?>
+		?>		
+
+		<!--Committee Description-->
+			<div class="committee-description">
+				<?php the_sub_field('description'); ?>
+			</div>
+
+				<?php //conditional link to another page
+				$link = get_sub_field('link');
+				if( !empty($link) ): ?> 
+					<a href="<?php the_sub_field('link'); ?>" >Learn more...</a>
+				<?php endif; ?>
+		
+		<p class="clear"></p>	
 			
-			
-	<?php //while( have_rows('committees') ): the_row(); ?> 
-			<h3><?php //the_sub_field('Committee_name'); ?></h3> 
-			<p class="committee-description"><?php //the_sub_field('Committee_description'); ?></p> 
-			<img src="<?php //the_sub_field('image'); ?>" class="float-right committee" alt=""/>        
-	<?php //endwhile; ?> 
-			
+		<?php   endwhile;
+else :
+    // no rows found
+endif;
+?>		
+<!--end ACF Repeater with nested image repeater using image variables plus conditional link to another page-->
+					
 			
 		</div>
 		

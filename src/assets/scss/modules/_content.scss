@@ -55,3 +55,36 @@
 
   }
 }
+
+
+/*ACF Pro NAACP Committees dpc20180414*/
+
+h3.committee-title {
+	font-weight: bold;
+}
+.committee-description {
+	clear: right;
+	> p {
+		font-size: 1rem;
+	}
+}
+.committee-chair {
+	max-width: 150px;
+	margin: 0 10px -20px 0;
+	float: left;
+	:last-child {
+		margin-right: 20px;
+	}
+}
+
+p.wp-caption-text {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+.wp-caption-text span {
+	font-size: .6rem;
+}
+.clear {
+	clear: both;
+}
