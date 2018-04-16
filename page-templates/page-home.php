@@ -78,7 +78,7 @@ get_header(); ?>
             <p><?php the_excerpt(__('more...)')); ?></p>
           </div>
           <div class="module-news__news-item-cta">
-            <a class="button hollow news expanded" href="<?php the_permalink(); ?>">></a>
+            <a class="button hollow news expanded" href="<?php the_permalink(); ?>">Read more ></a>
           </div>
         </div><!--end cell-->
       <?php endwhile; ?>
