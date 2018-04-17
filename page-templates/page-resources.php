@@ -20,83 +20,121 @@ get_header(); ?>
 			<?php the_content(); ?>
 			
 			
-<!--ACF Resource Category Repeater with nested sub-category repeater and conditional sub_fields-->
-					
-<div class="accordion" data-accordion data-allow-all-closed="true">
-	<div class="accordion-item" data-accordion-item>
-		<a href="#" class="accordion-title">Healthcare</a> 
-		<div class="accordion-content" data-tab-content>
+
+<!--ACF Resource Category Repeater with nested Sub-category Repeater, nested Resource Repeater and conditional sub_fields-->					
+			
 <?php
 
 // check if the Resource Category Repeater field has rows of data
-if( have_rows('resource_category_repeater') ):?>
+if( have_rows('resource_category_repeater') ):
 
-	<?php
+// loop through the rows of data
+while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 
-		// loop through the rows of data
-    while ( have_rows('resource_category_repeater') ) : the_row(); ?>
-			
 <div class="accordion" data-accordion data-allow-all-closed="true">
 	<div class="accordion-item" data-accordion-item>
-		<a href="#" class="accordion-title"><?php the_sub_field('sub_category_name'); ?></a> 
+		<a href="#" class="accordion-title"><?php the_sub_field('category_name'); ?></a> 
 		<div class="accordion-content" data-tab-content>
-			
-				<?php
 
-				// check if the Resource Repeater field has rows of data
-				if( have_rows('resource_repeater') ):
+	<!--display sub_field values-->
+	
+	<!--Category Name-->
+	<h2 class="category-name"><?php the_sub_field('category_name'); ?></h2>
 
-				// loop through the rows of data
-					while ( have_rows('resource_repeater') ) : the_row(); ?>
+		<?php
+
+		// check if the Resource Sub-category Repeater field has rows of data
+		if( have_rows('sub_category_repeater') ):
+
+		// loop through the rows of data
+			while ( have_rows('sub_category_repeater') ) : the_row(); ?>
+
+				<div class="accordion" data-accordion data-allow-all-closed="true">
+					<div class="accordion-item" data-accordion-item>
+						<a href="#" class="accordion-title"><?php the_sub_field('sub_category_name'); ?></a> 
+						<div class="accordion-content" data-tab-content>
 
 						<!--display sub_field values-->
 
-					<!--Name-->
-						<h5 class="resource-name"><?php the_sub_field('resource_name'); ?></h5>
+						<!--Category Name-->
+						<h3 class="sub-category-name"><?php the_sub_field('sub_category_name'); ?></h3>
 
-					<!--Link-->
-						<div class="resource-website-link"><?php $link = get_sub_field('resource_website_link'); 
-						if( $link ): ?>
-								<a class="button" href="<?php echo $link; ?>" target="_blank">Visit them on the web...</a>
-							<?php endif;?></div> 
+							<?php
 
-					<!--Description-->
-						<p class="resource-description"><?php the_sub_field('resource_description'); ?></p>
+							// check if the Resource Repeater field has rows of data
+							if( have_rows('resource_repeater') ):
 
-					<!--Contact person-->
-						<div class="contact-person"><?php $contact = get_sub_field('contact_person');
-						if( $contact ): ?>
-								<p><span>Contact: </span><?php echo $contact; ?></p>
-							<?php endif;?></div>
+							// loop through the rows of data
+								while ( have_rows('resource_repeater') ) : the_row(); ?>
 
-					<!--Phone-->
-						<div class="resource-phone"><?php $phone = get_sub_field('phone');
-						if( $phone ): ?>
-								<p><span>Phone: </span><?php echo ('<a href="tel:'.$phone.'">'.$phone.'</a>'); ?></p>
-							<?php endif;?></div>
+									<!--display sub_field values-->
 
-					<!--Email-->
-						<div class="resource-email"><?php $email = get_sub_field('email');
-						if( $email ): ?>
-								<p><?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>'); ?></p>
-							<?php endif;?></div>
+									<!--Name-->
+										<h5 class="resource-name"><?php the_sub_field('resource_name'); ?></h5>
 
-					<!--Additional notes-->
-						<div class="additional-notes"><?php $notes = get_sub_field('additional_notes');
-						if( $notes ): ?>
-								<p><span>Additional Notes: </span><?php echo $notes; ?></p>
-							<?php endif;?></div>
+									<!--Description-->
+										<div class="resource-description"><?php $description = get_sub_field('resource_description');
+										if( $description ): ?>
+												<p><?php echo $description; ?></p>
+											<?php endif;?></div>
 
-				<?php
-						endwhile;
-				else :
-						// no rows found
-				endif;
-				?>	
+									<!--Contact person-->
+										<div class="contact-person"><?php $contact = get_sub_field('contact_person');
+										if( $contact ): ?>
+												<p><span>Contact: </span><?php echo $contact; ?></p>
+											<?php endif;?></div>
 
-						</div><!--end accordion sub-category content-->
-					</div><!--end accordion sub-category pane-->
-				</div><!--end accordion sub-category wrapper-->					
+									<!--Address-->
+										<div class="resource-address"><?php $address = get_sub_field('resource_address');
+										if( $address ): ?>
+												<p><span>Address: </span><?php echo $address; ?></p>
+											<?php endif;?></div>
+
+									<!--Phone-->
+										<div class="resource-phone"><?php $phone = get_sub_field('phone');
+										if( $phone ): ?>
+												<p><span>Phone: </span><?php echo ('<a href="tel:'.$phone.'">'.$phone.'</a>'); ?></p>
+											<?php endif;?></div>
+
+									<!--Email-->
+										<div class="resource-email"><?php $email = get_sub_field('email');
+										if( $email ): ?>
+												<p>Email: <?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>'); ?></p>
+											<?php endif;?></div>
+
+									<!--Additional notes-->
+										<div class="additional-notes"><?php $notes = get_sub_field('additional_notes');
+										if( $notes ): ?>
+												<p><span>Additional Notes: </span><?php echo $notes; ?></p>
+											<?php endif;?></div>
+
+									<!--Website-->
+										<div class="resource-website-link"><?php $link = get_sub_field('resource_website_link'); 
+										if( $link ): ?>
+												<a class="button" href="<?php echo $link; ?>" target="_blank">Visit them on the web...</a>
+											<?php endif;?></div> 
+
+									<?php
+											endwhile;
+									else :
+											// no rows found
+									endif;
+									?>	
+
+								</div><!--end accordion sub-category content-->
+							</div><!--end accordion sub-category pane-->
+						</div><!--end accordion sub-category wrapper-->					
+
+			<?php
+					endwhile;
+			else :
+					// no rows found
+			endif;
+			?>	
+
+		</div><!--end accordion content-->
+	</div><!--end accordion pane-->
+</div><!--end accordion wrapper-->					
 			
 <?php
     endwhile;
@@ -104,11 +142,8 @@ else :
     // no rows found
 endif;
 ?>			
-<!--end ACF Resource Category Repeater with nested sub-category repeater and conditional sub_fields-->	
 
-		</div><!--end accordion content-->
-	</div><!--end accordion pane-->
-</div><!--end accordion wrapper-->					
+<!--end ACF Resource Category Repeater with nested Sub-category Repeater, nested Resource Repeater and conditional sub_fields-->	
 			
 </div><!--end entry-content-->
 		
