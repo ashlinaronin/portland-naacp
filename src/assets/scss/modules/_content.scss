@@ -57,7 +57,7 @@
 }
 
 
-/*ACF Pro NAACP Committees dpc20180414*/
+/*ACF Pro NAACP Committees dpc*/
 
 h3.committee-title {
 	font-weight: bold;
@@ -77,6 +77,15 @@ h3.committee-title {
 	}
 }
 
+
+/*ACF Pro NAACP Resources dpc*/
+
+.accordion-title {
+	font-size: 1.25rem;
+}
+h5.resource-name {
+	margin-top: 3rem;
+}
 p.wp-caption-text {
 	text-align: center;
 	font-style: italic;
@@ -88,7 +97,12 @@ p.wp-caption-text {
 .clear {
 	clear: both;
 }
-
-.accordion-title {
-	font-size: 1.25rem;
+.accordion-content p {
+	font-size: 1rem;
+}
+.accordion-content p span {
+	font-weight: bold;
+}
+p.resource-address {
+	margin-top: -10px;
 }

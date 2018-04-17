@@ -79,9 +79,10 @@ while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 											<?php endif;?></div>
 
 									<!--Address-->
-										<div class="resource-address"><?php $address = get_sub_field('resource_address');
+										<div class="resource-address"><?php $address = get_sub_field('resource_address1');
 										if( $address ): ?>
-												<p><span>Address: </span><?php echo $address; ?></p>
+											<p><span>Address: </span></p>
+											<p class="resource-address"><?php echo $address; ?></p>
 											<?php endif;?></div>
 
 									<!--Contact person-->
@@ -99,7 +100,7 @@ while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 									<!--Email-->
 										<div class="resource-email"><?php $email = get_sub_field('email');
 										if( $email ): ?>
-												<p>Email: <?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>'); ?></p>
+												<p><span>Email: </span><?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>'); ?></p>
 											<?php endif;?></div>
 
 									<!--Additional notes-->
