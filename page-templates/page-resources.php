@@ -20,117 +20,97 @@ get_header(); ?>
 			<?php the_content(); ?>
 			
 			
-<!--ACF Resource Repeater with conditional sub_fields-->
-
+<!--ACF Resource Category Repeater with nested sub-category repeater and conditional sub_fields-->
+					
+<div class="accordion" data-accordion data-allow-all-closed="true">
+	<div class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title">Healthcare</a> 
+		<div class="accordion-content" data-tab-content>
 <?php
 
-// check if the repeater field has rows of data for HEALTHCARE
-if( have_rows('resource_information_healthcare') ):
+// check if the Resource Category Repeater field has rows of data
+if( have_rows('resource_category_repeater') ):?>
 
- 	// loop through the rows of data
-    while ( have_rows('resource_information_healthcare') ) : the_row(); ?>
+	<?php
 
-        <!--display sub_field values-->
-				<!--Name-->
-        <h3 class="resource-name"><?php the_sub_field('resource_name'); ?></h3>
+		// loop through the rows of data
+    while ( have_rows('resource_category_repeater') ) : the_row(); ?>
+			
+<div class="accordion" data-accordion data-allow-all-closed="true">
+	<div class="accordion-item" data-accordion-item>
+		<a href="#" class="accordion-title"><?php the_sub_field('sub_category_name'); ?></a> 
+		<div class="accordion-content" data-tab-content>
+			
+				<?php
 
-				<!--Description-->
-				<p class="resource-description"><?php the_sub_field('resource_description'); ?></p>
+				// check if the Resource Repeater field has rows of data
+				if( have_rows('resource_repeater') ):
 
-				<!--Link-->
-				<div class="resource-link"><?php $link = get_sub_field('resource_link'); 
-				if( $link ): ?>
-						<a class="button" href="<?php echo $link; ?>">Visit them on the web...</a>
-					<?php endif;?></div> 
+				// loop through the rows of data
+					while ( have_rows('resource_repeater') ) : the_row(); ?>
 
-				<!--Contact person-->
-				<div class="resource-contact-person"><?php $contact = get_sub_field('resource_contact_person');
-				if( $contact ): ?>
-						<p><span>Contact: </span><?php echo $contact; ?></p>
-					<?php endif;?></div>
+						<!--display sub_field values-->
 
-				<!--Address-->
-				<div class="resource-address"><?php $address = get_sub_field('address');
-				if( $address ): ?>
-						<p><span>Address: </span><?php echo $address; ?></p>
-					<?php endif;?></div>
+					<!--Name-->
+						<h5 class="resource-name"><?php the_sub_field('resource_name'); ?></h5>
 
-				<!--Phone-->
-				<div class="resource-phone"><?php $phone = get_sub_field('phone');
-				if( $phone ): ?>
-						<p><span>Phone: </span><?php echo $phone; ?></p>
-					<?php endif;?></div>
+					<!--Link-->
+						<div class="resource-website-link"><?php $link = get_sub_field('resource_website_link'); 
+						if( $link ): ?>
+								<a class="button" href="<?php echo $link; ?>" target="_blank">Visit them on the web...</a>
+							<?php endif;?></div> 
 
-				<!--Phone-->
-				<div class="resource-email"><?php $email = get_sub_field('email');
-				if( $email ): ?>
-						<p><?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>') ; ?></p>
-					<?php endif;?></div>
+					<!--Description-->
+						<p class="resource-description"><?php the_sub_field('resource_description'); ?></p>
 
-<?php		
+					<!--Contact person-->
+						<div class="contact-person"><?php $contact = get_sub_field('contact_person');
+						if( $contact ): ?>
+								<p><span>Contact: </span><?php echo $contact; ?></p>
+							<?php endif;?></div>
+
+					<!--Phone-->
+						<div class="resource-phone"><?php $phone = get_sub_field('phone');
+						if( $phone ): ?>
+								<p><span>Phone: </span><?php echo ('<a href="tel:'.$phone.'">'.$phone.'</a>'); ?></p>
+							<?php endif;?></div>
+
+					<!--Email-->
+						<div class="resource-email"><?php $email = get_sub_field('email');
+						if( $email ): ?>
+								<p><?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>'); ?></p>
+							<?php endif;?></div>
+
+					<!--Additional notes-->
+						<div class="additional-notes"><?php $notes = get_sub_field('additional_notes');
+						if( $notes ): ?>
+								<p><span>Additional Notes: </span><?php echo $notes; ?></p>
+							<?php endif;?></div>
+
+				<?php
+						endwhile;
+				else :
+						// no rows found
+				endif;
+				?>	
+
+						</div><!--end accordion sub-category content-->
+					</div><!--end accordion sub-category pane-->
+				</div><!--end accordion sub-category wrapper-->					
+			
+<?php
     endwhile;
 else :
     // no rows found
 endif;
 ?>			
-<!--end ACF Resource Repeater with conditional sub_fields for HEALTHCARE-->
-					
+<!--end ACF Resource Category Repeater with nested sub-category repeater and conditional sub_fields-->	
+
+		</div><!--end accordion content-->
+	</div><!--end accordion pane-->
+</div><!--end accordion wrapper-->					
 			
-<?php
-
-// check if the repeater field has rows of data for LEGAL SERVICES
-if( have_rows('resource_information_legal') ):
-
- 	// loop through the rows of data
-    while ( have_rows('resource_information_legal') ) : the_row(); ?>
-
-        <!--display sub_field values-->
-				<!--Name-->
-        <h3 class="resource-name"><?php the_sub_field('resource_name'); ?></h3>
-
-				<!--Description-->
-				<p class="resource-description"><?php the_sub_field('resource_description'); ?></p>
-
-				<!--Link-->
-				<div class="resource-link"><?php $link = get_sub_field('resource_link'); 
-				if( $link ): ?>
-						<a class="button" href="<?php echo $link; ?>">Visit them on the web...</a>
-					<?php endif;?></div> 
-
-				<!--Contact person-->
-				<div class="resource-contact-person"><?php $contact = get_sub_field('resource_contact_person');
-				if( $contact ): ?>
-						<p><span>Contact: </span><?php echo $contact; ?></p>
-					<?php endif;?></div>
-
-				<!--Address-->
-				<div class="resource-address"><?php $address = get_sub_field('address');
-				if( $address ): ?>
-						<p><span>Address: </span><?php echo $address; ?></p>
-					<?php endif;?></div>
-
-				<!--Phone-->
-				<div class="resource-phone"><?php $phone = get_sub_field('phone');
-				if( $phone ): ?>
-						<p><span>Phone: </span><?php echo $phone; ?></p>
-					<?php endif;?></div>
-
-				<!--Phone-->
-				<div class="resource-email"><?php $email = get_sub_field('email');
-				if( $email ): ?>
-						<p><?php echo ('<a href="mailto:$email">$email</a>') ; ?></p>
-					<?php endif;?></div>
-
-<?php		
-    endwhile;
-else :
-    // no rows found
-endif;
-?>			
-<!--end ACF Resource Repeater with conditional sub_fields-->
-					
-			
-		</div><!--end entry-content-->
+</div><!--end entry-content-->
 		
 		
 <?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>

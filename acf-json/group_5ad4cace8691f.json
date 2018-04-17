@@ -1,11 +1,11 @@
 {
     "key": "group_5ad4cace8691f",
-    "title": "Resources Generic",
+    "title": "RESOURCES",
     "fields": [
         {
             "key": "field_5ad4cad6a0509",
-            "label": "resource-repeater",
-            "name": "resource-repeater",
+            "label": "Resource Category Repeater",
+            "name": "resource_category_repeater",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -19,11 +19,11 @@
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "",
+            "button_label": "Add New Category",
             "sub_fields": [
                 {
                     "key": "field_5ad4caffa050a",
-                    "label": "resource-category",
+                    "label": "Healthcare",
                     "name": "",
                     "type": "accordion",
                     "instructions": "",
@@ -40,10 +40,10 @@
                 },
                 {
                     "key": "field_5ad4cce7766b1",
-                    "label": "category name",
-                    "name": "category_name",
+                    "label": "Sub-category Name",
+                    "name": "sub_category_name",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "Start a new sub-category",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -59,8 +59,8 @@
                 },
                 {
                     "key": "field_5ad4cc5b766ae",
-                    "label": "resource category repeater",
-                    "name": "resource_category_repeater",
+                    "label": "Resource repeater",
+                    "name": "resource_repeater",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -73,12 +73,12 @@
                     "collapsed": "",
                     "min": 0,
                     "max": 0,
-                    "layout": "table",
-                    "button_label": "",
+                    "layout": "row",
+                    "button_label": "Add New Resource",
                     "sub_fields": [
                         {
                             "key": "field_5ad4ccfc766b2",
-                            "label": "resource name",
+                            "label": "Resource Name",
                             "name": "resource_name",
                             "type": "text",
                             "instructions": "",
@@ -96,29 +96,10 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5ad4cd04766b3",
-                            "label": "resource email",
-                            "name": "resource_email",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
                             "key": "field_5ad4cd0b766b4",
-                            "label": "resource website link",
+                            "label": "Resource Website Link",
                             "name": "resource_website_link",
-                            "type": "text",
+                            "type": "url",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -128,15 +109,31 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "placeholder": "http:\/\/example.com"
                         },
                         {
                             "key": "field_5ad4cd13766b5",
-                            "label": "resource description",
+                            "label": "Resource Description",
                             "name": "resource_description",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5ad501810f7d9",
+                            "label": "Contact Person",
+                            "name": "contact_person",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -154,10 +151,29 @@
                         },
                         {
                             "key": "field_5ad4cd1b766b6",
-                            "label": "resource phone",
-                            "name": "resource_phone",
+                            "label": "Phone",
+                            "name": "phone",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Phone of contact person",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "(503) 555-1212",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ad4cd04766b3",
+                            "label": "Email",
+                            "name": "email",
+                            "type": "email",
+                            "instructions": "Email address of contact person",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -168,8 +184,26 @@
                             "default_value": "",
                             "placeholder": "",
                             "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "append": ""
+                        },
+                        {
+                            "key": "field_5ad501a60f7da",
+                            "label": "Additional Notes",
+                            "name": "additional_notes",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
                         }
                     ]
                 }
@@ -190,8 +224,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1523895589
+    "modified": 1523909889
 }
