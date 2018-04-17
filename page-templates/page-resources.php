@@ -78,16 +78,16 @@ while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 												<p><?php echo $description; ?></p>
 											<?php endif;?></div>
 
-									<!--Contact person-->
-										<div class="contact-person"><?php $contact = get_sub_field('contact_person');
-										if( $contact ): ?>
-												<p><span>Contact: </span><?php echo $contact; ?></p>
-											<?php endif;?></div>
-
 									<!--Address-->
 										<div class="resource-address"><?php $address = get_sub_field('resource_address');
 										if( $address ): ?>
 												<p><span>Address: </span><?php echo $address; ?></p>
+											<?php endif;?></div>
+
+									<!--Contact person-->
+										<div class="contact-person"><?php $contact = get_sub_field('contact_person');
+										if( $contact ): ?>
+												<p><span>Contact: </span><?php echo $contact; ?></p>
 											<?php endif;?></div>
 
 									<!--Phone-->
