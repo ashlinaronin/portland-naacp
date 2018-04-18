@@ -25,6 +25,12 @@
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
+			
+				<?php // display ACF Committee fields (Lead-in) - dpc180407 ?>
+
+				<h2><?php the_field('lead-in_heading'); ?></h2>
+				<p><?php the_field('lead-in_copy'); ?></p>
+			
 			<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>
 		<footer>
