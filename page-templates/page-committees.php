@@ -88,6 +88,7 @@ if( have_rows('committee_information') ):
 				<?php endif; ?>
 		
 		<p class="clear"></p>	
+		<p class="divider">&nbsp;</p>				
 			
 		<?php   endwhile;
 else :
@@ -95,7 +96,6 @@ else :
 endif;
 ?>		
 <!--end ACF Repeater with nested image repeater using image variables plus conditional link to another page-->
-					
 			
 		</div>
 		

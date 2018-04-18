@@ -295,6 +295,25 @@
                                     },
                                     "default_value": "",
                                     "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5ad6d724ce002",
+                                    "label": "Divider",
+                                    "name": "divider",
+                                    "type": "text",
+                                    "instructions": "Leave this alone. It acts as a divider.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "&nbsp;",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
                         }
@@ -323,5 +342,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1523982472
+    "modified": 1524029674
 }

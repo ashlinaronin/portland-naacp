@@ -51,7 +51,7 @@ while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 
 				<div class="accordion" data-accordion data-allow-all-closed="true">
 					<div class="accordion-item" data-accordion-item>
-						<a href="#" class="accordion-title"><?php the_sub_field('sub_category_name'); ?></a> 
+						<a href="#" class="accordion-title accordion-sub-category"><?php the_sub_field('sub_category_name'); ?></a> 
 						<div class="accordion-content" data-tab-content>
 
 						<!--display sub_field values-->
@@ -114,6 +114,8 @@ while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 										if( $link ): ?>
 												<a class="button" href="<?php echo $link; ?>" target="_blank">Visit them on the web...</a>
 											<?php endif;?></div> 
+
+										<p class="divider"><?php the_sub_field('divider'); ?></p>
 
 									<?php
 											endwhile;

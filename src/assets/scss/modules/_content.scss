@@ -83,6 +83,9 @@ h3.committee-title {
 .accordion-title {
 	font-size: 1.25rem;
 }
+.accordion-title.accordion-sub-category {
+	text-transform: capitalize;
+}
 h5.resource-name {
 	margin-top: 3rem;
 }
@@ -105,4 +108,9 @@ p.wp-caption-text {
 }
 p.resource-address {
 	margin-top: -10px;
+}
+p.divider {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
 }
