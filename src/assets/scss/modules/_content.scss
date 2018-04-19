@@ -62,18 +62,22 @@
 h3.committee-title {
 	font-weight: bold;
 }
+.image-group {
+	float: left;
+	margin-right: 15px;
+	display: flex;
+}
+.committee-chair {
+	max-width: 150px;
+	margin: 0 10px -20px 0;
+}
 .committee-description {
 	clear: right;
 	> p {
 		font-size: 1rem;
 	}
-}
-.committee-chair {
-	max-width: 150px;
-	margin: 0 10px -20px 0;
-	float: left;
-	:last-child {
-		margin-right: 20px;
+	> ol {
+		margin-left: 0;
 	}
 }
 

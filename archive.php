@@ -22,7 +22,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>Blog Page?
 			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 		<?php endwhile; ?>
 

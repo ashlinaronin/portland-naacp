@@ -38,11 +38,13 @@ if( have_rows('committee_information') ):
 		<!--display sub field values-->
 		<h3 class="committee-title"><?php the_sub_field('title'); ?></h3>
 
+		<div class="image-group">
 		<?php 
 		// check if the repeater field has rows of data
 		if( have_rows('images') ):
 			// loop through the rows of data
 				while ( have_rows('images') ) : the_row(); ?>
+
 
 				<?php 
 				$image = get_sub_field('image');
@@ -69,12 +71,13 @@ if( have_rows('committee_information') ):
 							</div>
 					<?php endif; ?>
 				<?php endif; ?>				
-					
-				<?php endwhile;
+								
+		<?php endwhile;
 		else :
 				// no rows found
 		endif;
 		?>		
+		</div>
 
 		<!--Committee Description-->
 			<div class="committee-description">
