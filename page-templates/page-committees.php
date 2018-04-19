@@ -63,7 +63,7 @@ if( have_rows('committee_information') ):
 
 					//thumbnail image plus caption
 					if( $caption ): ?>
-							<div class="committee-chair">
+							<div class="committee-leader">
 						<?php endif; ?>
 							<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 						<?php if( $caption ): ?>

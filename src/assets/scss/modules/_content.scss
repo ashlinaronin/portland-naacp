@@ -66,6 +66,7 @@ h3.committee-title {
 	float: left;
 	margin-right: 15px;
 	display: flex;
+	flex-wrap: wrap;
 }
 .committee-chair {
 	max-width: 150px;

@@ -31,7 +31,7 @@ if( have_rows('resource_category_repeater') ):
 // loop through the rows of data
 while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 
-<div class="accordion" data-accordion data-allow-all-closed="true">
+<div class="accordion" data-accordion data-multi-expand="false" data-allow-all-closed="true">
 	<div class="accordion-item" data-accordion-item>
 		<a href="#" class="accordion-title"><?php the_sub_field('category_name'); ?></a> 
 		<div class="accordion-content" data-tab-content>
@@ -49,7 +49,7 @@ while ( have_rows('resource_category_repeater') ) : the_row(); ?>
 		// loop through the rows of data
 			while ( have_rows('sub_category_repeater') ) : the_row(); ?>
 
-				<div class="accordion" data-accordion data-allow-all-closed="true">
+				<div class="accordion" data-accordion data-multi-expand="false" data-allow-all-closed="true">
 					<div class="accordion-item" data-accordion-item>
 						<a href="#" class="accordion-title accordion-sub-category"><?php the_sub_field('sub_category_name'); ?></a> 
 						<div class="accordion-content" data-tab-content>
