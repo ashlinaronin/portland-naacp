@@ -22,18 +22,21 @@
 	color: $white;
 	text-align: center;	
 }
-tribe-events-category-committee-meetings h2.tribe-events-list-event-title {//Committee Meetings Category - list view
+.tribe-events-category-committee-meetings h2.tribe-events-list-event-title {//Committee Meetings Category - list view
 	background-color: $purple !important;
 	border: 2px solid $purple;
-	a.url {
-		color: $white;		
+	a {
+		color: $white !important;
+		padding: 10px; 
+	}
 }
 .tribe-events-category-general-meetings h3.tribe-events-month-event-title, //General Meetings Category
 .tribe-events-category-general-meetings h2.tribe-events-list-event-title	{ //General Meetings Category - list view
 	background-color: $white !important;
 	border: 2px solid $purple;
-	a.url {
-		color: $purple;		
+	a {
+		color: $purple;
+		padding: 10px;
 	}
 }
 .tribe-events-category-general-meetings h4.entry-title.summary {//General Meetings Category popup
@@ -44,8 +47,9 @@ tribe-events-category-committee-meetings h2.tribe-events-list-event-title {//Com
 .tribe-events-category-special-events h3.tribe-events-month-event-title, //Special Events Category
 .tribe-events-category-special-events h2.tribe-events-list-event-title	{ //Special Events Category - list view
 	background-color: $yellow !important;
-	a.url {
-		color: $purple;		
+	a {
+		color: $purple;	
+		padding: 10px;
 	}
 }
 .tribe-events-category-special-events h4.entry-title.summary {//Special Events Category popup
