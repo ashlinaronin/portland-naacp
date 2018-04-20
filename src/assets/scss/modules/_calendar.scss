@@ -22,6 +22,28 @@
 	color: $white;
 	text-align: center;	
 }
+.tribe-events-category-general-meetings h3.tribe-events-month-event-title { //General Meetings Category
+	background-color: $white !important;
+	border: 2px solid $purple;
+	a.url {
+		color: $purple;		
+	}
+}
+.tribe-events-category-general-meetings h4.entry-title.summary {//General Meetings Category popup
+	background-color: $white !important;
+	color: $purple !important;
+	border: 2px solid $purple;
+}
+.tribe-events-category-special-events h3.tribe-events-month-event-title { //Special Events Category
+	background-color: $yellow !important;
+	a.url {
+		color: $purple;		
+	}
+}
+.tribe-events-category-special-events h4.entry-title.summary {//Special Events Category popup
+	background-color: $yellow !important;
+	color: $purple;
+}
 #tribe-events-content .tribe-events-abbr,
 .tribe-events-abbr.tribe-event-date-start,
 .tribe-events-tooltip .tribe-events-event-body {
