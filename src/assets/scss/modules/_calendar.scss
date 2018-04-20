@@ -1,4 +1,51 @@
-//Calendar
+//Events Calendar
+
+.tribe-events-calendar thead th {
+	font-family: "Oswald", Arial, sans-serif;
+	background-color: $white;
+	color: $purple;
+	font-weight: 700;
+	padding: .5em 0;
+	white-space: nowrap;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.25rem;	
+}
+#tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type="submit"], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a { //various buttons
+	font-family: "Oswald", Arial, sans-serif;
+	background-color: $orange;
+	color: #fff;	
+}
+#tribe-events-content .tribe-events-tooltip h4 { //tooltip
+	background-color: $purple;
+	color: $white;
+	text-align: center;	
+}
+#tribe-events-content .tribe-events-abbr,
+.tribe-events-abbr.tribe-event-date-start,
+.tribe-events-tooltip .tribe-events-event-body {
+	font-size: 1rem;
+	color: #000;
+}
+.tribe-event-description p {
+	font-size: 1.2rem;
+	color: $black;
+}
+#tribe-events-content .tribe-events-calendar div[id*="tribe-events-event-"] h3.tribe-events-month-event-title {//actual event
+	background-color: $purple;
+}
+.tribe-events-calendar td a {
+	color: $white;
+}
+button:hover, .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a, .tribe-events-calendar td div[id*="tribe-events-daynum-"] {
+	font-size: 1rem;
+	text-align: right;
+}
+
+
+
+//Simple Calendar (this plugin is disabled)
 
 .page-template-page-calendar .callout.large {
 	max-width: 1248px;
