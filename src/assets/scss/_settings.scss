@@ -87,7 +87,7 @@ $body-background: $white;
 $body-font-color: $black;
 $body-font-family: $open-sans;
 $body-antialiased: true;
-$global-margin: 1rem;
+$global-margin: 4rem;
 $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
@@ -130,9 +130,7 @@ $grid-column-count: 12;
 $grid-column-gutter: (
   //small: 20px,
   //medium: 30px,
-  small: rem-calc(20),
-  small-medium: rem-calc(24),
-  medium: rem-calc(48),
+  small: rem-calc(48),
 );
 $grid-column-align-edge: true;
 $grid-column-alias: 'columns';
@@ -875,8 +873,7 @@ $grid-columns: 12;
 $grid-margin-gutters: (
   //small: 20px,
   //medium: 30px,
-  small: rem-calc(24),
-  medium: rem-calc(48),
+  small: rem-calc(48),
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

@@ -1,10 +1,9 @@
 .callout, .callout.small, .callout.medium, .callout.large  {
-  max-width:rem-calc(1248);
   margin:0 auto;
 }
 
 .container .c-hero.callout.large {
-	background: url("http://portland-naacp.local/wp-content/uploads/2018/04/home-page-march.jpg") no-repeat;
+	background: url("http://portland-naacp.local/wp-content/uploads/2018/04/home-page-march.jpg") #3b2c96 no-repeat;
 	background-size: cover;
 	padding: 2rem 1rem 3rem;
 	@include breakpoint (small-medium) {
@@ -67,7 +66,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	@include breakpoint (medium) {
-		max-width: 1200px;
+		max-width: 1248px;
 	}
 }
 .module__closing-cta.callout {
@@ -75,6 +74,8 @@
 }
 
 
+
+//Home Page
 
 //Get Involved
 .large.callout-get-involved,
@@ -89,9 +90,54 @@
 }
 
 //Issues
+.callout.large.callout-issues.lead-in {
+	background-color: $yellow;
+	padding: 0;
+	.callout.secondary {
+		background-color: $yellow;
+	}
+	@include breakpoint (medium) {
+		padding: 1em;
+	}
+	@include breakpoint (large) {
+		padding: 2em;
+	}
+}
+.callout.large.callout-issues.focus {
+	padding: 0;
+	.callout.secondary {
+		padding-bottom: 50px;
+		border-bottom: 1px solid #ccc;
+	}
+	@include breakpoint (medium) {
+		padding: 1em;
+	}
+	@include breakpoint (large) {
+		padding: 2em;
+	}
+}
+.focus .callout.secondary {
+	background: url("/wp-content/uploads/2018/04/police-30percent.png")no-repeat 95% bottom;
+	&:nth-child(2) {
+		background: url("/wp-content/uploads/2018/04/protest-30percent.png")no-repeat 95% bottom;
+	}
+	&:nth-child(3) {
+		background: url("/wp-content/uploads/2018/04/health-justice-30percent.png")no-repeat 90% bottom;
+	}
+}
 .callout-issues,
 .secondary.callout-issues {
 	background-color: $white;
 	border: none;
 	font-style: normal;
+}
+.small-4.cell.card {
+	border: 4px solid $purple;
+	margin-right: 10px;
+	h4, p, a {
+		flex-basis: 100px;
+	}
+}
+.grid-x > .small-4 {
+	width: 20%;
 }

@@ -6,8 +6,8 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
-<div class="text-center">
-  <div class="callout large callout-issues">
+<div class="text-center content-container">
+  <div class="callout large callout-issues lead-in">
     <div class="callout secondary">
 <?php // display ACF Committee fields (Lead-in) - dpc180407 ?>
 			
@@ -17,7 +17,7 @@ get_header(); ?>
 		    </div>
   </div>
 
-  <div class="callout large callout-issues">
+  <div class="callout large callout-issues focus">
   <?php if ( have_rows('issues')): ?>
     <?php while( have_rows('issues')): the_row();
       $issue = get_sub_field('issue');
@@ -42,17 +42,17 @@ get_header(); ?>
     		$link3 = get_sub_field('link_3');
       ?>
 
-        <div class="small-4 cell card">
+        <div class="stacked-for-small small-4 cell card">
           <h4><?php echo($link1['headline']) ?></h4>
           <p><?php echo($link1['copy']) ?></p>
           <a href="<?php echo($link1['link']['url']); ?>" target="<?php echo($link1['link']['target']); ?>"><?php echo($link1['link']['title']); ?></a>
         </div>
-        <div class="small-4 cell card">
+        <div class="stacked-for-small small-4 cell card">
           <h4><?php echo($link2['headline']) ?></h4>
           <p><?php echo($link2['copy']) ?></p>
           <a href="<?php echo($link2['link']['url']); ?>" target="<?php echo($link2['link']['target']); ?>"><?php echo($link2['link']['title']); ?></a>
         </div>
-        <div class="small-4 cell card">
+        <div class="stacked-for-small small-4 cell card">
           <h4><?php echo($link3['headline']) ?></h4>
           <p><?php echo($link3['copy']) ?></p>
           <a href="<?php echo($link3['link']['url']); ?>" target="<?php echo($link3['link']['target']); ?>"><?php echo($link3['link']['title']); ?></a>
