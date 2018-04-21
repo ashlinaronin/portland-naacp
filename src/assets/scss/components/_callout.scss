@@ -1,10 +1,9 @@
 .callout, .callout.small, .callout.medium, .callout.large  {
-  max-width:rem-calc(1248);
   margin:0 auto;
 }
 
 .container .c-hero.callout.large {
-	background: url("http://portland-naacp.local/wp-content/uploads/2018/04/home-page-march.jpg") no-repeat;
+	background: url("http://portland-naacp.local/wp-content/uploads/2018/04/home-page-march.jpg") #3b2c96 no-repeat;
 	background-size: cover;
 	padding: 2rem 1rem 3rem;
 	@include breakpoint (small-medium) {
@@ -67,7 +66,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	@include breakpoint (medium) {
-		max-width: 1200px;
+		max-width: 1248px;
 	}
 }
 .module__closing-cta.callout {

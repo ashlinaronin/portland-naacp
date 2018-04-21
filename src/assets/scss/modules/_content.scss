@@ -1,3 +1,7 @@
+.container {
+  margin-left:4rem;
+  margin-right:4rem;
+}
 .main-wrap {
   @include xy-grid-container;
   @include xy-grid();
