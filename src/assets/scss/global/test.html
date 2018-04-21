@@ -1,0 +1,59 @@
+<!--ACF Group repeater, Year repeater, Document repeater, Title, Sub-title, Date, Link-->					
+			
+<?php
+
+// check if the repeater field has rows of data
+if( have_rows('group_repeater') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('group_repeater') ) : the_row(); ?>
+
+      <?php// display a sub field value ?>
+			<p class="group"><?php the_sub_field('group'); ?></p>
+
+				<?php
+
+				// check if the repeater field has rows of data
+				if( have_rows('year_repeater') ):
+
+					// loop through the rows of data
+						while ( have_rows('year_repeater') ) : the_row(); ?>
+
+							<?php// display a sub field value ?>
+							<p class="doc-year"><?php the_sub_field('year'); ?></p>
+			
+								<?php
+
+								// check if the repeater field has rows of data
+								if( have_rows('document_repeater') ):
+
+									// loop through the rows of data
+										while ( have_rows('document_repeater') ) : the_row(); ?>
+
+											<?php// display sub-field values ?>
+											<h3 class="doc-title"><?php the_sub_field('document_title','document_subtitle'); ?></h3>
+											<p class="doc-date"><?php the_sub_field('document_date'); ?></p>
+											<a class="doc-link" href="<?php echo the_sub_field('document_link'); ?>">View Document</a>
+			
+								<?php
+										endwhile;
+								else :
+										// no rows found
+								endif;
+								?>
+			
+				<?php
+						endwhile;
+				else :
+						// no rows found
+				endif;
+				?>
+			
+<?php				 
+    endwhile;
+else :
+    // no rows found
+endif;
+?>
+
+<!--end ACF Group repeater, Year repeater, Document repeater, Title, Sub-title, Date, Link-->	
