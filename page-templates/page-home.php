@@ -27,42 +27,7 @@ get_header(); ?>
 
         <div class="module-events__events political-action cell medium-12 large-4" >
   				<h2 class="cell text-left events">Events</h2>
-          <div class="cell module-events__event political-action">
-            <div class="module-events__event-content">
-              <a>10/08</a>
-              <h5>Political Action Committee Meeting</h5>
-            </div>
-            <div class="module-events__event-cta">
-              <a class="button small">></a>
-            </div>
-          </div>
-          <div class="cell module-events__event political-action">
-            <div class="module-events__event-content">
-              <a>10/08</a>
-              <h5>Political Action Committee Meeting</h5>
-            </div>
-            <div class="module-events__event-cta">
-              <a class="button small">></a>
-            </div>
-          </div>
-          <div class="cell module-events__event political-action">
-            <div class="module-events__event-content">
-              <a>10/08</a>
-              <h5>Political Action Committee Meeting</h5>
-            </div>
-            <div class="module-events__event-cta">
-              <a class="button small">></a>
-            </div>
-          </div>
-          <div class="cell module-events__event political-action">
-            <div class="module-events__event-content">
-              <a>10/08</a>
-              <h5>Political Action Committee Meeting</h5>
-            </div>
-            <div class="module-events__event-cta">
-              <a class="button small">></a>
-            </div>
-          </div>
+	        <?php dynamic_sidebar( 'home-page-events-widget' ); ?>
         </div>
       
 
