@@ -44,7 +44,7 @@
             "key": "field_5a2308a209e8e",
             "label": "Membership Form Link",
             "name": "membership_form_link",
-            "type": "text",
+            "type": "oembed",
             "instructions": "Code to automatically load form created in GravityForms. If you need to make a change there, find the form in the GravityForms plugin.",
             "required": 0,
             "conditional_logic": 0,
