@@ -12,7 +12,6 @@ get_header(); ?>
         <a class="button">Learn more</a>
         <a class="button hollow">Join us</a>
       </div>
-      <br><br><br><br><br>
 	</div>
 
   <div class="grid-x module-events callout large">
