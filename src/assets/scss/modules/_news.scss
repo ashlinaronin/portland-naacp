@@ -1,40 +1,16 @@
 .module-news {
-  background-color: $white;
 
-  > h2 {
-    color: $white;
-  }
+  margin-bottom:8rem;
 
   &__news-item {
     margin-top:22px;
-    padding-bottom:24px;
-
-    &-content {
-      > a {
-        color: $orange;
-        line-height: 36px;
+    &:nth-child(3n), &:nth-child(4n) {
+      hr {
+        display:none;
       }
     }
-
-    &-cta {
-      .button {
-        background: $orange;
-        margin-bottom: 0;
-      }
-    }
-
-    // &:not(:last-child) {
-      // margin-right: 14px;
-    // }
   }
 }
-
-.button.news {
-  background: $orange;
-  border: none;
-  color: $white;
-}
-
 
 //News dpc-180203
 .news-title,
@@ -57,27 +33,11 @@ aside {
 }
 //News h2 
 h2.text-left.latest-news {
-//	font-size: 1.8rem;
 	border-bottom: 4px solid $orange;
   line-height: 3rem;
 	color: $black;
+  padding-bottom:1rem;
   margin-bottom:0;
-}
-//News content
-//.module-news__news-item-content p {
-//	color: $black;
-//}
-//News title
-//.module-news__news-item-content h5 {
-//	color: $black;
-//	font-size: 1.1rem;
-//News date
-.module-news__news-item-content .date {
-	color: $orange;
-	font-size: 1.3rem;
-	font-weight: 400;
-	font-family: $oswald;
-	//margin-top: -7px;
 }
 
 .module-news__news-item {

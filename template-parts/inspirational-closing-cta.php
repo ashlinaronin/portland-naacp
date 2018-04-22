@@ -1,6 +1,6 @@
 <div class="module__closing-cta callout large text-center">
     <div>
-        <h4><?php the_field('footer_message', 'option'); ?></h4>
+        <h1><?php the_field('footer_message', 'option'); ?></h1>
     </div>
     <div class="cta-links button-group stacked-for-small align-center">
 

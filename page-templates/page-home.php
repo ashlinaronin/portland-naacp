@@ -25,7 +25,7 @@ get_header(); ?>
 	<div class="grid-container events-news"><!--dpc-added container for events plus news-->
     <div class="grid-x grid-padding-x">
 
-        <div class="module-events__events political-action cell medium-12 large-4" >
+        <div class="module-events__events cell medium-12 large-4" >
   				<h2 class="cell text-left events">Events</h2>
 	        <?php dynamic_sidebar( 'home-page-events-widget' ); ?>
         </div>
@@ -38,12 +38,11 @@ get_header(); ?>
             <?php while ($the_query -> have_posts()): $the_query -> the_post(); ?>
               <div class="module-news__news-item cell">
                 <div class="module-news__news-item-content">
-                  <p class="date"><?php the_time( get_option( 'date_format' )); ?></p>
-                  <h5><?php the_title(); ?></h5>
-                  <p><?php the_excerpt(__('more...)')); ?></p>
-                </div>
-                <div class="module-news__news-item-cta">
-                  <a class="button hollow news expanded" href="<?php the_permalink(); ?>">Read more ></a>
+                  <h4 class="date"><?php the_time( get_option( 'date_format' )); ?></h4>
+                  <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                  <?php the_excerpt(); ?>
+                  <a href="<?php the_permalink(); ?>">Read more ></a>
+                  <hr class="light-grey-hr" />
                 </div>
               </div><!--end cell-->
             <?php endwhile; ?>

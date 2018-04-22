@@ -1,5 +1,7 @@
 .module-events {
 
+	margin-bottom:8rem;
+
   &__header {
     background-color: $yellow;
     width: 80%;
@@ -22,7 +24,7 @@
       	}
     &-content {
       > a {
-        line-height: 36px;
+        line-height: 3rem;
       }
     }
 
@@ -83,19 +85,19 @@
 	border:none;
 }
 
-//Wraps h2 plus 4 Event modules
+/*//Wraps h2 plus 4 Event modules
 .grid-margin-x.events-news {
 	max-width: rem-calc(1248);
 	margin: 0 auto;
 	display: flex;
-}
+}*/
 
 //Events h2
 h2.text-left.events {
-//	font-size: 1.8rem;
 	border-bottom: 4px solid $orange;
  	line-height: 3rem;
 	color: $black;
+	padding-bottom:1rem;
 	margin-bottom:0;
 }
 
@@ -122,13 +124,13 @@ h2.text-left.events {
 }
 
 //Event title
-.module-events__event-content h5 {
+/*.module-events__event-content h5 {
 	color: $black;
-//	font-size: 1rem;
+	font-size: 1rem;
 	margin-left: 40px;
 	margin-right: 20px;
 	margin-bottom:0;
-}
+}*/
 
 //Event arrow
 .module-events__event-cta a.button.small {
