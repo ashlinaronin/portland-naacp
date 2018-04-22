@@ -17,12 +17,12 @@ get_header(); ?>
 		    </div>
   </div>
 
-  <div class="callout large callout-issues focus">
+<?php //display ACF Issues Title/Description fields ?>
+	<div class="callout large callout-issues focus">
   <?php if ( have_rows('issues')): ?>
-    <?php while( have_rows('issues')): the_row();
-      $issue = get_sub_field('issue');
-      $issue_description = get_sub_field('issue_description');
-    ?>
+    <?php while( have_rows('issues')): the_row(); ?>
+    <?php $issue = get_sub_field('issue'); ?>
+      <?php $issue_description = get_sub_field('issue_description');?>
       <div class="callout secondary">
         <h3><?php echo $issue; ?></h3>
 	      <?php echo $issue_description; ?>
@@ -34,6 +34,7 @@ get_header(); ?>
   <div class="callout large secondary callout-issues">
     <h3><?php get_field('headline-description'); ?></h3>
 
+		<div class="card-divider"></div>
     <?php if ( have_rows('links')): ?>
       <div class="grid-x">
       <?php while( have_rows('links')): the_row();

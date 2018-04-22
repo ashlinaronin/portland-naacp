@@ -15,31 +15,12 @@ get_header(); ?>
       <br><br><br><br><br>
 	</div>
 
-<<<<<<< HEAD
-    <div class="module-events callout large grid-x">
-      <div class="module-events__header callout text-center next-meeting small-10">
+  <div class="grid-x module-events callout large">
+    <div class="module-events__header callout text-center next-meeting small-10">
         <h3>Next general session</h3>
         <a href="/event/naacp-general-meeting/all/"><h2>Every 4th Saturday</h2>
         <h5><span>12-2 PM</span> | Click for Location</h5></a>
 		</div>
-	<div class="grid-x grid-margin-x events-news"><!--dpc-added container for events plus news-->
-      <div class="module-events__events political-action medium-12 large-4 cell" >
-				<h2 class="text-left events">Events</h2>
-        <div class="module-events__event political-action">
-          <div class="module-events__event-content">
-            <a>10/08</a>
-            <h5>Political Action Committee Meeting</h5>
-=======
-  <div class="grid-x module-events callout large">
-    <div class="module-events__header callout text-center next-meeting small-10">
-      <h3>Next general session</h3>
-      <h2>Sunday, August 27th</h2>
-      <h5><span>12-2 PM</span> | Concordia University Hall</h5>
-      <div class="large button-group stacked-for-small align-center button-group--home-meeting">
-        <a class="button">RSVP on F</a>
-        <a class="button hollow">More info</a>
-      </div>
-    </div>
 	</div>
 	<div class="grid-container events-news"><!--dpc-added container for events plus news-->
     <div class="grid-x grid-padding-x">
@@ -54,7 +35,6 @@ get_header(); ?>
             <div class="module-events__event-cta">
               <a class="button small">></a>
             </div>
->>>>>>> cdb80116a614e1bdbf52dadf2c0cf89fdd198ccf
           </div>
           <div class="cell module-events__event political-action">
             <div class="module-events__event-content">
