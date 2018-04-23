@@ -94,84 +94,31 @@ section#tribe-events-countdown-widget-2 {
 	margin-bottom: 20px;
 }
 
-
-
-//Simple Calendar (this plugin is disabled)
-
-.page-template-page-calendar .callout.large {
-	max-width: 1248px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: transparent;
-	border: none;
+//Home Page Events Widget
+section.large-12.columns.widget.tribe-events-adv-list-widget {
+	margin-top: 16px;
 }
-.page-template-page-calendar .callout.secondary {
-	background-color: white; 
+.tribe-mini-calendar-event .list-date .list-dayname,
+.tribe-mini-calendar-event .list-date .list-daynumber {
+	color: $orange;
+	//font-size: 2rem;
 }
-.simcal-nav h3,
-span.simcal-event-title { /*month, event titles*/
-	text-transform: none;
+.tribe-events-duration {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+.tribe-mini-calendar-event .list-info h2 {
+	text-transform: unset;	
+}
+h2.tribe-events-title a {
 	font-family: "Glegoo", sans-serif;
-}
-.simcal-default-calendar .simcal-current h3 {
-	padding-bottom: 20px;
-	border-bottom: 2px solid #ddd;
-}
-span.simcal-event-title {
-	font-size: .7rem;
-}
-.simcal-nav,
-th.simcal-nav.simcal-current {
-	border-top: 2px solid #ddd;
-}
-th.simcal-week-day {
-	font-size: 1.2rem;
-}
-i.simcal-icon-left:before,
-i.simcal-icon-right:before,
-span.simcal-day-label {/*arrows*/
-	color: #f56330;
-	font-size: 1rem;
-}
-td.simcal-day div {/*border*/
-	border: 2px solid #ddd;
-} 
-.simcal-today span.simcal-day-label.simcal-day-number {
-	color: white !important;
-}
-td.simcal-day.simcal-today {/*border*/
-	border: 2px solid #f56330;
-} 
-.simcal-today span.simcal-day-label.simcal-day-number,
-.simcal-day-has-events span.simcal-day-label.simcal-day-number {
-	color: white !important;
-}
-span.simcal-day-label.simcal-day-number {/*numbers*/
-	color: #f56330;
-	text-align: right;
-	padding: 10px;
-	font-size: 1rem;
 	font-weight: 700;
+	font-size: 1.66667rem;
+	line-height: 2rem;
+	margin-bottom: 1.5rem;
 }
-td.simcal-today span.simcal-day-label.simcal-day-number {
-	color: white;
-}
-.simcal-event-details p {/*styles "-" btwn start/end times*/
-	font-weight: bold;
-}
-.simcal-event-description p {/*keeps description light*/
-	font-weight: normal;
-}
-.simcal-default-calendar-list ul.simcal-events li.simcal-event {
-	margin-bottom: 30px;
-}
-
-.qtip-content span.simcal-event-start.simcal-event-start-date, 
-.qtip-content span.simcal-event-start.simcal-event-start-time, 
-.qtip-content span.simcal-event-end.simcal-event-end-time {/*popup date/time*/
-	font-size: .8rem;
-}
-.qtip-content span.simcal-event-address.simcal-event-start-location {/*popup address*/
-	font-size: .7rem;
-	text-align: center;
+.tribe-mini-calendar-event {
+	border-bottom: 2px solid #E6E6E6;
 }

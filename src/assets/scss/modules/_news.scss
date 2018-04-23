@@ -12,6 +12,24 @@
   }
 }
 
+//Home Page Latest News
+.module-news__news-item-content span {//Read article arrows
+	color: $orange;
+	font-weight: 700;
+}
+.text-left.latest-news.cell {
+	span {
+	font-family: "Oswald", Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $purple;		
+	}
+	a {
+		margin-bottom: 0;
+		line-height: 1;
+	}
+}
+
 //News dpc-180203
 .news-title,
 .callout.secondary.news-item,

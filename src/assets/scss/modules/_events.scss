@@ -53,7 +53,7 @@
 
 
 
-//Events - dpc-180203
+//Home Page - dpc-180203
 
 //"Next General Session" text area
 .module-events__header.next-meeting {
@@ -70,6 +70,19 @@ h2.text-left.events {
 	padding-bottom:1rem;
 	margin-bottom:0;
 }
+.text-left.events.cell {
+	span {
+	font-family: "Oswald", Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $purple;		
+	}
+	a {
+		margin-bottom: 0;
+		line-height: 1;
+	}
+}
+
 
 //Single event
 .module-events__event {
