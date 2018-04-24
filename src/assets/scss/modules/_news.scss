@@ -55,7 +55,10 @@ h2.text-left.latest-news {
   line-height: 3rem;
 	color: $black;
   padding-bottom:1rem;
-  margin-bottom:0;
+  margin-bottom: 2rem;
+	@include breakpoint (medium) {
+		margin-bottom: 0;
+	}
 }
 
 .module-news__news-item {

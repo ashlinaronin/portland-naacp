@@ -82,12 +82,14 @@
 		line-height: 2.66667rem;
 	}
 }
-.module-events__header.callout.text-center.next-meeting.small-10 a h5 {//dpc - 
+.module-events__header.callout.text-center.next-meeting.small-10 h5 {//dpc - 
 	font-size: 1.5rem;
 	line-height: 1.5;
+	margin-bottom: 1.5rem;
 	@include breakpoint (medium) {
 		font-size: 1.66667rem;
 		line-height: 2rem;
+		margin-bottom: 0;
 	}
 }
 .module__closing-cta.callout {
@@ -95,7 +97,17 @@
 	padding-top:8rem;
 }
 
-
+.module-events.callout.large h5 a.button.large {
+	padding: .5em 2em;
+	margin-bottom: 0;
+	&:hover {
+	background-color: $white;
+	color: $purple;
+	}
+}
+.module-events__header.callout.text-center.next-meeting.small-10 h5 span {
+	padding: 0;
+}
 
 
 
