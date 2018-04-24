@@ -55,14 +55,46 @@
 		padding-bottom:8rem;
 	}
 }
+.module-events.callout.large {
+	@include breakpoint (medium) {
+		padding-top: 2rem;
+	}
+}
+.module-events__header.callout.text-center.next-meeting.small-10 {//dpc - 
+	padding-bottom: 0;
+	margin-bottom: 4rem;
+	@include breakpoint (medium) {
+		padding-bottom: 3rem;
+		margin-bottom: 0;
+	}
+}
 .module-events__header.callout.text-center.next-meeting.small-10 a h2 {//dpc - 
-	font-size: 4rem;
-	margin-bottom: 20px;
+	@include breakpoint (medium) {
+		font-size: 4rem;
+		margin-bottom: 20px;
+	}
+}
+.module-events__header.callout.text-center.next-meeting.small-10 h3 {//dpc - 
+	font-size: 1.5rem;
+	line-height: 1;
+	@include breakpoint (medium) {
+		font-size: 2rem;
+		line-height: 2.66667rem;
+	}
+}
+.module-events__header.callout.text-center.next-meeting.small-10 a h5 {//dpc - 
+	font-size: 1.5rem;
+	line-height: 1.5;
+	@include breakpoint (medium) {
+		font-size: 1.66667rem;
+		line-height: 2rem;
+	}
 }
 .module__closing-cta.callout {
 	background-color: $white;
 	padding-top:8rem;
 }
+
 
 
 

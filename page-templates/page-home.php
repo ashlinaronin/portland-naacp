@@ -33,7 +33,7 @@ get_header(); ?>
         <?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
         <div class="module-news cell medium-12 large-8">
           <h2 class="text-left latest-news cell">Latest news&nbsp;&nbsp;<a href="/news/"><span>View All</span></a></h2>
-          <div class="grid-x grid-padding-x small-up-2">
+          <div class="grid-x grid-padding-x small-up-1 medium-up-2">
             <?php while ($the_query -> have_posts()): $the_query -> the_post(); ?>
               <div class="module-news__news-item cell">
                 <div class="module-news__news-item-content">
