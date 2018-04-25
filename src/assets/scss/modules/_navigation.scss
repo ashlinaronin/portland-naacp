@@ -41,7 +41,9 @@
 	margin-top: -10px;
 }
 .home .container {
+  @include breakpoint(medium) {
 	margin-top: -112px;
+  }
 }
 .top-bar .menu a {
 	font-size: 1.3rem !important;
