@@ -53,18 +53,7 @@
 
 
 
-//Home Page - dpc-180203
-
-//"Next General Session" text area
-.module-events__header.next-meeting {
-	background-color: $secondary-color;
-	border:none;
-	@include breakpoint (medium) {
-		margin-top: -12rem;
-	}
-}
-
-//Events h2
+//Events Calendar widget h2 on Front page
 h2.text-left.events {
 	border-bottom: 4px solid $orange;
  	line-height: 3rem;

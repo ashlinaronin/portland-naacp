@@ -45,7 +45,16 @@
 }
 
 //Home Page
-.module-events.callout {//front page "Next General Session"
+
+//"Next General Session" 
+.module-events__header.next-meeting {
+	background-color: $secondary-color;
+	border:none;
+	@include breakpoint (medium) {
+		margin-top: -12rem;
+	}
+}
+.module-events.callout.large {
 	border: none;
 	margin-left: auto;
 	margin-right: auto;
@@ -54,11 +63,11 @@
 		max-width: 1248px;
 		padding-bottom:8rem;
 	}
-}
-.module-events.callout.large {
 	@include breakpoint (medium) {
 		padding-top: 2rem;
 	}
+}
+.module-events.callout.large {
 }
 .module-events__header.callout.text-center.next-meeting.small-10 {//dpc - 
 	padding-bottom: 0;
