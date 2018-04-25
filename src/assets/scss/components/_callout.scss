@@ -159,15 +159,6 @@
 		padding: 2em;
 	}
 }
-.focus .callout.secondary {
-	background: url("/wp-content/uploads/2018/04/police-30percent.png")no-repeat 95% bottom;
-	&:nth-child(2) {
-		background: url("/wp-content/uploads/2018/04/protest-30percent.png")no-repeat 95% bottom;
-	}
-	&:nth-child(3) {
-		background: url("/wp-content/uploads/2018/04/health-justice-30percent.png")no-repeat 90% bottom;
-	}
-}
 .callout-issues,
 .secondary.callout-issues {
 	background-color: $white;
