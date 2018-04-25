@@ -22,6 +22,19 @@
 	background-color: $purple;
 	color: $white;
 	text-align: center;	
+	padding: 8px;
+}
+
+#tribe-events-content .tribe-events-abbr, 
+abbr.tribe-events-abbr.tribe-event-date-start, 
+.tribe-events-tooltip .tribe-events-event-body {
+	font-family: $glegoo;
+  font-weight: 700;
+  font-size: 1.5rem !important;
+}
+.tribe-event-description p {
+	font-size: 1.4rem !important;
+	font-weight: 500 !important;
 }
 .tribe-events-category-committee-meetings h2.tribe-events-list-event-title {//Committee Meetings Category - list view
 	background-color: $purple !important;
