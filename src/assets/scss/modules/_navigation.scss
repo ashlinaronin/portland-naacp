@@ -37,9 +37,9 @@
 .home .mobile-menu ul li {
 	background-color: $purple;
 }
-.container {
+.home .container {
   @include breakpoint(medium) {
-	margin-top: -112px;
+	margin-top: -114px;
   }
 }
 .top-bar .menu a {
