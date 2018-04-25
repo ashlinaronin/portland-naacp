@@ -25,6 +25,9 @@
 .top-bar .top-bar-left {
 	flex: 48%;
 	max-width: 250px;
+  @include breakpoint(635px) {
+	min-width: 250px;
+  }
 }
 .top-bar-title {
 	flex: 0 0 auto;
@@ -33,6 +36,7 @@
 .top-bar ul {
 	background-color: transparent;
 	margin-top: -10px;
+	margin-right: 4rem;
 }
 .home .mobile-menu ul li {
 	background-color: $purple;
