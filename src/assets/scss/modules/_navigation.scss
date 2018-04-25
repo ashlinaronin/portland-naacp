@@ -24,12 +24,9 @@
 }
 .top-bar .top-bar-left {
 	flex: 48%;
-	//outline: 1px solid $white;
+	max-width: 250px;
   @include breakpoint(645px) {
     flex: 46%;
-  }
-  @include breakpoint(725px) {
-    flex: 30%;
   }
 }
 .top-bar-title {
@@ -43,7 +40,7 @@
 .home .mobile-menu ul li {
 	background-color: $purple;
 }
-.home .container {
+.container {
   @include breakpoint(medium) {
 	margin-top: -112px;
   }
@@ -116,8 +113,9 @@
   }
 
   .top-bar-title a {
-    color: #B9B9B9;
-    padding-left: 1rem;
+//    color: #B9B9B9;
+		color: $white;
+		padding-left: 1rem;
     line-height: 1.8;
   }
 
