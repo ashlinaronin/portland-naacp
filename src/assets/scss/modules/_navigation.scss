@@ -137,6 +137,7 @@
   .menu-item:not(.is-dropdown-submenu-item) > a {
     &:hover {
       color: $yellow;
+			text-decoration: none;
     }
   }
 
