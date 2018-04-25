@@ -203,6 +203,11 @@
       }
     }
   }
+	//Sub-menu positioning
+	.top-bar-right ul li ul.dropdown.menu > li.opens-left > .is-dropdown-submenu {
+		right: -70px;
+		z-index: 100;
+	}
 
   // Hide default WP submenu carrot
   .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
