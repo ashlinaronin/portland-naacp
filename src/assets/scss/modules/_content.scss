@@ -1,3 +1,9 @@
+.lead-in {
+  border-bottom:2px solid $light-grey;
+  margin-top:rem-calc(96);
+  margin-bottom:rem-calc(96);
+  padding-bottom:rem-calc(96);
+}
 .main-wrap {
   @include xy-grid-container;
   @include xy-grid();
@@ -54,6 +60,18 @@
     }
 
   }
+}
+
+.three-column-links {
+  border-top:2px solid $light-grey;
+  margin-top: rem-calc(96);
+  margin-bottom: rem-calc(96);
+  padding-top: rem-calc(96);
+
+  .home & {
+    border-top:none;
+    margin-top:0;
+  } 
 }
 
 
