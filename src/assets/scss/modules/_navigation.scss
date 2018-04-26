@@ -206,14 +206,13 @@
       }
     }
   }
-	//Sub-menu positioning
-	.top-bar-right ul li ul.dropdown.menu > li.opens-left > .is-dropdown-submenu {
-		right: -70px;
-		z-index: 100;
-	}
-	
-	//Dropdown
-.top-bar .dropdown.menu.is-dropdown-submenu > li.is-dropdown-submenu-item a:hover {
+
+//Submenu/Dropdown	
+.dropdown.menu.vertical.submenu.is-dropdown-submenu.first-sub {
+	right: -6rem !important;
+	z-index: 100;
+}	
+.dropdown.menu.vertical.submenu.is-dropdown-submenu.first-sub li a:hover {
 	text-decoration: none;
 }
 
