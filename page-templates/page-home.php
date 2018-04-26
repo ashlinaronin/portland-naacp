@@ -40,7 +40,7 @@ get_header(); ?>
                 <h4 class="date"><?php the_time( get_option( 'date_format' )); ?></h4>
                 <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                 <?php the_excerpt(); ?>
-                <a href="<?php the_permalink(); ?>">Read article</a> <span>>></span>
+                <a href="<?php the_permalink(); ?>">Read article</a> <span>»</span>
                 <hr class="light-grey-hr" />
               </div>
             </div><!--end cell-->
