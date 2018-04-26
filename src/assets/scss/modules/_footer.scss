@@ -1,7 +1,6 @@
 .footer-container {
   margin: 0 auto;
-  border-top: 1px solid $medium-gray;
-  margin-top: rem-calc(96);
+  border-top: 2px solid $light-gray;
 }
 
 .footer {
@@ -93,4 +92,15 @@ label.updates {
 	}
 }
 
+.module__closing-cta {
+  border-top:2px solid $light-grey;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-top: 8rem;
+
+  .home & {
+    border-top:none;
+    margin-top:0;
+  } 
+}
 

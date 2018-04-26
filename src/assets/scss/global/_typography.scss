@@ -19,12 +19,11 @@ h2 {
   margin-bottom: rem-calc(12);
 }
 h3 {
-  font-family: $oswald;
-  font-weight: 500;
+  font-family: $glegoo;
+  font-weight: 700;
   font-size: rem-calc(24);
   line-height: rem-calc(32);
   margin-bottom: rem-calc(16);
-  text-transform: uppercase;
   letter-spacing:.1;
   color: $black;
   margin-top: 1.5rem !important;
@@ -52,9 +51,6 @@ h5,h6 {
   line-height: rem-calc(24);
   margin-bottom: rem-calc(18);
   color: $purple;
-  & span {
-    color: $black;
-  }
   a {
     font-family: $glegoo;
     font-weight: 700;

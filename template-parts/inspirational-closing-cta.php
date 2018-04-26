@@ -1,4 +1,4 @@
-<div class="module__closing-cta callout large text-center">
+<div class="module__closing-cta large text-center">
     <div>
         <h1><?php the_field('footer_message', 'option'); ?></h1>
     </div>
