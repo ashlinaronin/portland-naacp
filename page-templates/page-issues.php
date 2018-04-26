@@ -11,7 +11,7 @@ get_header(); ?>
     <div class="grid-x">
       <div class="cell small-12 medium-10 medium-offset-1">
         <h1><?php the_field('lead-in_heading'); ?></h1>
-        <h5 class="medium-8 medium-offset-2"><?php the_field('lead-in_copy'); ?></h5>
+        <h3><?php the_field('lead-in_copy'); ?></h3>
       </div>
     </div>
   </div>

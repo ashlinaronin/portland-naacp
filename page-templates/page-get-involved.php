@@ -8,8 +8,8 @@ get_header(); ?>
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell small-12 medium-10 medium-offset-1">
-      <h2><?php the_field('lead-in_heading'); ?></h2>
-      <p><?php the_field('lead-in_copy'); ?></p>
+      <h1><?php the_field('lead-in_heading'); ?></h1>
+      <h3><?php the_field('lead-in_copy'); ?></h3>
 
       <?php
         if (have_rows('lead-in_CTA')):
@@ -45,7 +45,7 @@ get_header(); ?>
 
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
-      <h3>Make a donation</h3>
+      <h2>Make a donation</h2>
       <div class="callout secondary">
         Donation form link: <?php the_field('donation_form_link'); ?>
       </div>
@@ -59,7 +59,7 @@ get_header(); ?>
 
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
-      <h3><?php the_field('membership_copy'); ?></h3>
+      <h2><?php the_field('membership_copy'); ?></h2>
       <div class="callout secondary">
         <?php the_field('membership_form_link'); ?>
       </div>
@@ -68,7 +68,7 @@ get_header(); ?>
 
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
-      <h3>Resources</h3>
+      <h2>Resources</h2>
       <div class="callout secondary">
         Relevant resources + local representative contact info
       </div>
