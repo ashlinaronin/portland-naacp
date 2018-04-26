@@ -131,4 +131,8 @@ li {
 		color: $orange;
 		padding-right: 3px;
 	}
+	.footer-container &::before {
+		content: none;
+	}
 }
+

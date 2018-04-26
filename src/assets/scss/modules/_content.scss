@@ -1,8 +1,23 @@
 .lead-in {
   border-bottom:2px solid $light-grey;
-  margin-top:8rem;
-  margin-bottom:8rem;
-  padding-bottom:8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+    @include breakpoint(636px) {
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			padding-bottom: 3rem;
+	}
+    @include breakpoint(medium) {
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+			padding-bottom: 5rem;
+	}
+    @include breakpoint(large) {
+			margin-top: 8rem;
+			margin-bottom: 8rem;
+			padding-bottom: 6rem;
+	}
 }
 .main-wrap {
   @include xy-grid-container;
@@ -74,6 +89,16 @@
   } 
 }
 
+//Pages
+section.container {
+	margin: 0 1rem;
+    @include breakpoint(medium) {
+      margin: 0 2rem;
+	}
+	.home & {
+		margin: 0;
+	}
+}
 
 /*ACF Pro NAACP Committees dpc*/
 

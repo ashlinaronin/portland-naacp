@@ -18,6 +18,12 @@
 }
 
 //Buttons-danpc
+.button-group.stacked-for-small .button {
+	font-size: 1.5rem;
+    @include breakpoint(636px) {
+			margin-right: 1.5rem;
+	}
+}
 .button-group--home-cta {
 	margin-top: 1em;
 	max-width: 225px;
@@ -27,11 +33,7 @@
 		font-size: 1.25em;
 		background: $yellow;
 		color: $purple;
-		margin-right: auto;
 		padding: .5em;
-		-webkit-flex: .47 1 0 !important;
-		-ms-flex: .47 1 0 !important;
-		flex: .47 1 0 !important;
 		&:hover {
 			background-color: $white;
 			color: $yellow;
