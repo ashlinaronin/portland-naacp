@@ -99,8 +99,14 @@
 .title-bar-title {
   a {
     font-size: 1rem;
+		font-weight: 600;
     color: #B9B9B9;
-  }
+		padding-left: 2rem;
+	}
+	a:hover {
+		text-decoration: none;
+		color: $yellow;
+	}
 }
 
 .mobile-menu,
@@ -109,6 +115,10 @@
   .menu .is-active > a {
     background-color: lighten($dark-nav-color, 5%);
   }
+}
+.menu.vertical {
+	margin-top: 2rem;
+	padding-left: .5rem;
 }
 
 // Tablet and desktop menu
