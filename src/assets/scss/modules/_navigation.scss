@@ -42,11 +42,7 @@
 .home .mobile-menu ul li {
 	background-color: $purple;
 }
-.home .container {
-  @include breakpoint(medium) {
-	margin: -122px 0 0;
-  }
-}
+
 .top-bar .menu a {
 	font-size: 1.3rem !important;
 }

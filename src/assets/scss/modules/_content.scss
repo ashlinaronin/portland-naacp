@@ -97,6 +97,9 @@ section.container {
 	}
 	.home & {
 		margin: 0;
+			@include breakpoint(medium) {
+				margin: -122px 0 0;
+		}
 	}
 }
 
