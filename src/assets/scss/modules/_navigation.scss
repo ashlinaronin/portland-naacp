@@ -38,6 +38,7 @@
 	margin-top: -10px;
 	margin-right: 4rem;
 }
+
 .home .mobile-menu ul li {
 	background-color: $purple;
 }
@@ -49,7 +50,7 @@
 .top-bar .menu a {
 	font-size: 1.3rem !important;
 }
-.top-bar-title a {
+.top-bar .top-bar-title a {
 	.portland-branch {
 		font-size: .6rem;
 		text-transform: uppercase;
@@ -62,6 +63,7 @@
 	}
 	&:hover {
 		text-decoration: none;
+		color: $yellow !important;
 	}
 }
 //Logo
@@ -209,6 +211,11 @@
 		right: -70px;
 		z-index: 100;
 	}
+	
+	//Dropdown
+.top-bar .dropdown.menu.is-dropdown-submenu > li.is-dropdown-submenu-item a:hover {
+	text-decoration: none;
+}
 
   // Hide default WP submenu carrot
   .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
