@@ -17,7 +17,7 @@ get_header(); ?>
             $link_1 = get_sub_field('lead-in_link-1');
             $link_2 = get_sub_field('lead-in_link-2');
             $link_3 = get_sub_field('lead-in_link-3');
-            ?>
+      ?>
 
             <div class="expanded stacked-for-small button-group button-group-get-involved">
 
@@ -36,8 +36,6 @@ get_header(); ?>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
-      ?>
-
       </div>
     </div>
   </div>
