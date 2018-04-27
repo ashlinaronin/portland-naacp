@@ -139,6 +139,45 @@
                     "allow_null": 0,
                     "allow_archives": 1,
                     "multiple": 0
+                },
+                {
+                    "key": "field_5ae2a697f9b95",
+                    "label": "Committee Emails",
+                    "name": "committee_emails",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "Add Email",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ae2a7de40a80",
+                            "label": "Email Address",
+                            "name": "email_address",
+                            "type": "email",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
                 }
             ]
         }
@@ -152,7 +191,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 4,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -164,5 +203,5 @@
     ],
     "active": 1,
     "description": "Expand tab to add committee information.",
-    "modified": 1524280392
+    "modified": 1524803594
 }

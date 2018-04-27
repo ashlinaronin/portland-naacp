@@ -70,7 +70,7 @@ get_header(); ?>
 									<?php if ( $caption ): ?>
                                   <p class="wp-caption-text"><?php echo $caption; ?></p>
                                   </div>
-								<?php endif; ?>
+									<?php endif; ?>
 								<?php endif; ?>
 
 							<?php endwhile;
@@ -80,19 +80,43 @@ get_header(); ?>
 						?>
                     </div>
 
-                    <!--Committee Description-->
-                    <div class="committee-description">
-						<?php the_sub_field( 'description' ); ?>
-                    </div>
+									<!--Committee Description-->
+									 	<div class="committee-description">
+											<?php the_sub_field( 'description' ); ?>
+										</div>
 
-					  <?php //conditional link to another page
-					  $link = get_sub_field( 'link' );
-					  if ( ! empty( $link ) ): ?>
-                        <a href="<?php the_sub_field( 'link' ); ?>">Learn more...</a>
-					  <?php endif; ?>
+										<?php //conditional link to another page
+										$link = get_sub_field( 'link' );
+										if ( ! empty( $link ) ): ?>
+											<a href="<?php the_sub_field( 'link' ); ?>">Learn more...</a>
+										<?php endif; ?>
+										<p>&nbsp;</p>
 
-                    <p class="clear"></p>
-                    <p class="divider">&nbsp;</p>
+							<?php
+
+							// check if the repeater field has rows of data
+							if( have_rows('committee_emails') ):
+
+								// loop through the rows of data
+									while ( have_rows('committee_emails') ) : the_row(); ?>
+
+									<?php// display a conditional sub-field value?>
+									<!--Email-->
+									<div class="resource-email"><?php $email = get_sub_field('email_address');
+									if( $email ): ?>
+										<p><span>Email: </span><?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>'); ?></p>
+									<?php endif;?>
+									</div>
+							<?php
+									endwhile;
+							else :
+									// no rows found
+							endif;
+							?>
+
+
+								<p class="clear"></p>
+								<p class="divider">&nbsp;</p>
 
 				  <?php endwhile;
 			  else :
