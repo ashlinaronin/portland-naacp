@@ -19,11 +19,16 @@
 	vertical-align: text-bottom;
 }
 .text-left.latest-news.cell {
+	border-bottom: 4px solid $orange;
+ 	line-height: 3rem;
+	color: $black;
+	padding-bottom:1rem;
+	margin-bottom:0;
 	span {
-	font-family: "Oswald", Arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: $purple;		
+		font-family: "Oswald", Arial, sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $purple;		
 	}
 	a {
 		margin-bottom: 0;

@@ -23,7 +23,6 @@ h3 {
   font-weight: 700;
   font-size: rem-calc(24);
   line-height: rem-calc(32);
-  margin-bottom: rem-calc(24);
   letter-spacing:.1;
   color: $black;
   margin-top: 1.5rem;
@@ -105,11 +104,7 @@ ol, ul {
 
 hr {
   margin:24px 0 0 0;
-  border-bottom: 2px solid;
-
-  &.light-grey-hr {
-    border-color:$light-grey;
-  }
+  border-bottom: 2px solid $light-grey;
 }
 li {
 	font-size: 1.5rem;

@@ -94,12 +94,12 @@ label.updates {
 
 .module__closing-cta {
   border-top:2px solid $light-grey;
-  margin-top: 8rem;
+  margin-top: 6rem;
   margin-bottom: 4rem;
   padding-top: 4rem;
-    @include breakpoint(636px) {
-			margin-bottom: 8rem;
-			padding-top: 8rem;
+    @include breakpoint(medium) {
+			margin-bottom: 6rem;
+			padding-top: 6rem;
 	}
 		.home & {
 			border-top:none;
