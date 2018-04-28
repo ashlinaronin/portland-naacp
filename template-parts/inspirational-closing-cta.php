@@ -1,9 +1,10 @@
 <div class="module__closing-cta large text-center">
-    <div>
+  <div class="grid-container">
+    <div class="footer_message">
         <h1><?php the_field('footer_message', 'option'); ?></h1>
     </div>
-    <div class="cta-links button-group stacked-for-small align-center">
-
+   <!--  <div class="cta-links button-group stacked-for-small align-center"> -->
+    <div class="footer_cta-links">
       <?php
         if (have_rows('footer_cta-links', 'option')):
           while(have_rows('footer_cta-links', 'option')): the_row();
@@ -21,4 +22,5 @@
       ?>
 
     </div>
+  </div>
 </div>
