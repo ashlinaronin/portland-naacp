@@ -179,3 +179,8 @@ p.divider {
 .ninja-forms-form-wrap * {
 	width: 100%;
 }
+.main-contact-form .nf-field-element input, 
+.main-contact-form .nf-field-element select, 
+.main-contact-form .nf-field-element textarea {
+	border: 2px solid #ccc;
+}

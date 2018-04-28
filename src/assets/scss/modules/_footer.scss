@@ -117,14 +117,16 @@ label.updates {
 	flex-align: stretch;
 	align-items: stretch;*/
 }
-.label-above .nf-field-element {
+.label-above.nf-field-container.html-container {
 	font-family: $oswald;
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	font-weight: 600;
+	margin-bottom: 0;
 }
 
-.signup{
+.signup {
+	font-family: $oswald;
 	color: $white !important;
 	text-transform: uppercase;
 	font-size: 1.5rem;
@@ -138,4 +140,8 @@ label.updates {
 }
 .nf-field-element input {
 	height: 4rem !important;
+}
+.ninja-forms-field.email-address.nf-element {
+	margin-top: 10px;
+	border: 3px solid $light-grey;
 }
