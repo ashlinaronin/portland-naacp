@@ -13,7 +13,7 @@ get_header(); ?>
         <h1><?php the_field('lead-in_heading'); ?></h1>
         <?php 
         if(get_field('lead-in_copy')) {
-          echo '<h3>' . the_field('lead-in_copy') . '</h3>';
+          echo '<h3>' . get_field('lead-in_copy') . '</h3>';
         }
 
         if (have_rows('lead-in_CTA')):
@@ -60,7 +60,7 @@ get_header(); ?>
   </div>
   
   <?php // three-column section ?>
-  <div class="grid-x three-column-links">
+  <div class="grid-x grid-margin-x three-column-links">
     <?php if ( have_rows('links')): ?>
       <?php while( have_rows('links')): the_row();
         $link1 = get_sub_field('link_1');
