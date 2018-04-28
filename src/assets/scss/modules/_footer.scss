@@ -76,7 +76,7 @@
 }
 label.updates {
 	font-family: "Oswald", Arial, sans-serif;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -107,3 +107,35 @@ label.updates {
   } 
 }
 
+//Footer Ninja Form - Get Updates
+.nf-form-fields-required {
+	display: none;
+}
+.nf-form-content {
+	display: flex;
+	/*width: 100%;
+	flex-align: stretch;
+	align-items: stretch;*/
+}
+.label-above .nf-field-element {
+	font-family: $oswald;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+#nf-field-19.signup{
+	color: $white !important;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: $purple;
+	padding: 1rem 3rem;
+	border: none;
+}
+.nf-form-cont .one-third.submit-container {
+	margin-left: 0;
+}
+.nf-field-element input {
+	height: 4rem !important;
+}

@@ -10,11 +10,14 @@
   text-transform: uppercase;
   font-weight: bold;
   font-family: $oswald;
-  padding: 1em 2em 1em 2em;
+  padding: 1rem 3rem;
 
   &.hollow {
     border-width: 3px;
   }
+}
+.button.large {
+	font-size: 1.5rem;
 }
 
 //Buttons-danpc
@@ -22,6 +25,14 @@
 	font-size: 1.5rem;
     @include breakpoint(636px) {
 			margin-right: 1.5rem;
+	}
+}
+.module-events.callout.large h5 a.button.large {
+	//padding: 1rem 2rem;
+	margin-bottom: 0;
+	&:hover {
+	background-color: $white;
+	color: $purple;
 	}
 }
 .button-group--home-cta {
@@ -33,7 +44,6 @@
 		font-size: 1.5rem;
 		background: $yellow;
 		color: $purple;
-		padding: 1rem;
 		margin-bottom: 1rem;
 		&:hover {
 			background-color: $white;
@@ -46,10 +56,9 @@
 		color: $yellow;
 		border: 3px solid $yellow;
 		margin-left: auto;
-		-webkit-flex: .47 100px 0;
-		-ms-flex: .47 100px 0;
-		flex: .47 100px 0;
-		padding: .5em;
+		//-webkit-flex: .47 100px 0;
+		//-ms-flex: .47 100px 0;
+		//flex: .47 100px 0;
 		&:hover {
 			background-color: $white;
 			color: $purple;
@@ -81,9 +90,6 @@
 	margin-right: auto;
 	max-width: 250px;
 	& a.button {
-		font-size: 1.2em;
-		padding: .5em;
-		flex: .18;
 		margin-right: 20px;
 		&:hover {
 			background-color: $dark-purple;
@@ -105,7 +111,7 @@
 }
 
 .button-group--home-meeting {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	margin-top: 1em;
 	max-width: 280px;
 	margin: 1em auto 2em auto;
@@ -114,7 +120,6 @@
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	a.button {
-		font-size: 1.25em;
 		background: $purple;
 		color: $yellow;
 		margin-right: auto;

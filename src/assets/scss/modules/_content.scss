@@ -91,16 +91,19 @@
 
 //Pages
 section.container {
-	margin: 0 1rem;
-    @include breakpoint(medium) {
-      margin: 0 2rem;
-	}
+	margin: 0;
 	.home & {
 		margin: 0;
 			@include breakpoint(medium) {
 				margin: -122px 0 0;
 		}
 	}
+}
+.grid-container {
+	max-width: 95%;
+		@include breakpoint(medium) {
+			max-width: 100%;
+	}	
 }
 
 /*ACF Pro NAACP Committees dpc*/

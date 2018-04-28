@@ -4,6 +4,7 @@ Template Name: Issues
 */
 get_header(); ?>
 
+<?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <?php // lead-in?>
 <div class="lead-in text-center">

@@ -22,13 +22,14 @@
 			  </div>
 
 			  <div class="small-12 large-5 cell">
-				<label for="updates-email" class="updates">Get updates</label>
+				<!--<label for="updates-email" class="updates">Get updates</label>
 				<div class="input-group">
 				  <input id="updates-email" class="input-group-field" type="email" placeholder="Enter your email address">
 				  <div class="input-group-button">
 					<input type="submit" class="button" value="Sign Up">
 				  </div>
-				</div>
+				</div>-->
+        <?php dynamic_sidebar( 'footer-right-widgets' ); ?>					
 			  </div>
 
 			  <div class="footer__lower small-12">
