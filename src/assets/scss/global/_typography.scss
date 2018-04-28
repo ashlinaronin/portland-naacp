@@ -81,10 +81,13 @@ a {
   font-family: $open-sans;
   font-weight: 600;
   color: $purple;
+  > h5 {
+    color: $purple;
+  }
 }
 
 a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 p {

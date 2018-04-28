@@ -50,32 +50,9 @@ aside {
 	border: none;
 	padding: 0;
 }
-//News h2 
-h2.text-left.latest-news {
-	border-bottom: 4px solid $orange;
-  line-height: 3rem;
-	color: $black;
-  padding-bottom:1rem;
-  margin-bottom: 2rem;
-	@include breakpoint (medium) {
-		margin-bottom: 0;
-	}
-}
+//News
 
-.module-news__news-item {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.callout.secondary.news-item {
-	text-align: left;
-	border: none;
-	border-bottom: 2px solid #ddd;
-}
-
-.module-news__news-item {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.news-item {
+	margin-bottom:2rem;
 }
 

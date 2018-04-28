@@ -46,6 +46,7 @@ get_header(); ?>
         </a>
         <p><?php the_excerpt(); ?></p>
         <a href="<?php the_permalink(); ?>">Read article</a> <span>»</span>
+        <hr class="light-grey-hr">
       </div>
     <?php endforeach; ?>
 
