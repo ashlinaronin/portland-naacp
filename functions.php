@@ -60,5 +60,8 @@ require_once( 'library/responsive-images.php' );
 /** ACF hack to prevent deletion of repeater fields when updating - dpc180408 */
 require_once( 'library/acf.php' );
 
+/** Add breadcrumb */
+require_once( 'library/breadcrumb.php');
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
