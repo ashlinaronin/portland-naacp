@@ -11,15 +11,16 @@ get_header(); ?>
     <div class="grid-x">
       <div class="cell small-12 medium-10 medium-offset-1">
         <h1><?php the_field('lead-in_heading'); ?></h1>
+        <? php if()
         <h3><?php the_field('lead-in_copy'); ?></h3>
       </div>
     </div>
   </div>
 </div>
 
-<div class="grid-container content">
+<div class="grid-container">
   <?php // issues ?>
-  <div class="grid-x main-content">
+  <div class="grid-x">
   	<div class="cell small-12 medium-8 medium-offset-2">
       <?php if ( have_rows('issues')): ?>
       <?php while( have_rows('issues')): the_row(); ?>
