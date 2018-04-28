@@ -102,7 +102,7 @@ section.container {
 .grid-container {
 	max-width: 95%;
 		@include breakpoint(medium) {
-			max-width: 100%;
+			max-width: 104rem;
 	}	
 }
 
