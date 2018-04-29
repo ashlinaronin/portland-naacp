@@ -4,7 +4,7 @@
         <h1><?php the_field('footer_message', 'option'); ?></h1>
     </div>
    <!--  <div class="cta-links button-group stacked-for-small align-center"> -->
-    <div class="footer_cta-links">
+    <div class="footer_cta-links small-12 ">
       <?php
         if (have_rows('footer_cta-links', 'option')):
           while(have_rows('footer_cta-links', 'option')): the_row();

@@ -22,7 +22,7 @@ get_header(); ?>
 	</div>
 </div>
 <div class="grid-container events-news"><!--dpc-added container for events plus news-->
-  <div class="grid-x grid-padding-x">
+  <div class="grid-x grid-margin-x">
 
       <div class="module-events__events cell medium-12 large-4" >
 				<h2 class="cell text-left events">Events&nbsp;&nbsp;<a href="/events/list/"><span>View All</span></a></h2>

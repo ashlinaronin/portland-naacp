@@ -1,5 +1,4 @@
 //Events Calendar
-//Events Calendar
 
 .tribe-events-calendar thead th {
 	font-family: "Oswald", Arial, sans-serif;
@@ -109,29 +108,54 @@ section#tribe-events-countdown-widget-2 {
 
 //Home Page Events Widget
 section.large-12.columns.widget.tribe-events-adv-list-widget {
-	margin-top: 16px;
-}
-.tribe-mini-calendar-event .list-date .list-dayname,
-.tribe-mini-calendar-event .list-date .list-daynumber {
-	color: $orange;
-	//font-size: 2rem;
-}
-.tribe-events-duration {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-.tribe-mini-calendar-event .list-info h2 {
-	text-transform: unset;	
-}
-h2.tribe-events-title a {
-	font-family: "Glegoo", sans-serif;
-	font-weight: 700;
-	font-size: 1.66667rem;
-	line-height: 2rem;
-	margin-bottom: 1.5rem;
+	margin-top: 20px;
+	padding:0;
 }
 .tribe-mini-calendar-event {
-	border-bottom: 2px solid #E6E6E6;
+	border-bottom: 2px solid $light-grey;
+	padding:0 0 1.8333333333rem 0;
+	margin:0 0 2rem 0;
+	.list-info {
+		margin:0;
+		h2 {
+			margin-right:2rem;
+			margin-bottom:0;
+			text-transform: unset;
+			a {
+				font-family: "Glegoo", sans-serif;
+				font-weight: 700;
+				font-size: 1.6666666667rem;
+				line-height: 2rem;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+	.list-date {
+		background:none;
+		margin:0 2rem 0 0;
+		padding:0;
+		width:auto;
+		overflow:visible;
+		.list-dayname,
+		.list-daynumber {
+			font-family: $oswald;
+			line-height:1.6666666667rem;
+			color: $orange;
+			padding:0;
+		}
+		.list-dayname {
+			font-size:rem-calc(14);
+		}
+		.list-daynumber {
+			font-size:rem-calc(24);
+		}
+	}
+}
+
+p.tribe-events-widget-link {
+	display:none;
+}
+
+.tribe-events-duration {
+	display:none;
 }
