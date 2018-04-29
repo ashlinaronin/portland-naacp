@@ -98,7 +98,7 @@ section.container {
 }
 .grid-container {
 	max-width: 95%;
-		@include breakpoint(medium) {
+		@include breakpoint(large) {
 			max-width: 104rem;
 	}	
 }
@@ -107,6 +107,28 @@ section.container {
 }
 .entry-content {
 	padding-right: 8rem;
+}
+
+	//News
+.blog .lead-in.text-center {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+		@include breakpoint(medium) {
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+			padding-bottom: 4rem;
+		}
+}
+.grid-container.lead-in {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+		@include breakpoint(medium) {
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+			padding-bottom: 4rem;
+		}
 }
 
 /*ACF Pro NAACP Committees dpc*/

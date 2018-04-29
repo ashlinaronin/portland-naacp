@@ -35,7 +35,7 @@ get_header(); ?>
   ?>
 <div class="grid-container">
   <div class="grid-x grid-margin-x">
-  <main class="cell small-8">
+  <main class="cell small-12 medium-7 large-8">
     <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
       <div class="news-item">
         <h4 class="date"><?php the_time( get_option( 'date_format' ))?></h4>
@@ -58,7 +58,7 @@ get_header(); ?>
     </nav>
   </main>
 
-  <aside class="cell small-4">
+  <aside class="cell small-12 medium-5 large-4">
     <?php get_sidebar(); ?>
   </aside>
   </div>
