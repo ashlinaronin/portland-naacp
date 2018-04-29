@@ -172,6 +172,32 @@ p.divider {
 	width: 100%;
 }
 
+//ACF Pro Get-Involved page
+.send-by-mail {
+	margin-bottom: 0;
+}
+.donation-destination {
+	span {
+		font-weight: 600;
+	}
+}
+.paypal-link {
+	margin: 2rem auto;
+	width: 150px;
+}
+.text-center span {
+	font-family: $glegoo;
+	color: $black;
+	font-size: 2rem;
+	text-transform: none;
+	line-height: 1;
+}
+.callout.membership-form {
+	background-color: transparent;
+	max-height: 20%;
+	outline: 10px solid $yellow;
+}
+
 //Contact Form
 .ninja-forms-form-wrap * {
 	width: 100%;

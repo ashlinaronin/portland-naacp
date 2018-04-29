@@ -12,15 +12,15 @@ get_header(); ?>
         <?php 
         if(get_field('lead-in_copy')) {
           echo '<h3>' . get_field('lead-in_copy') . '</h3>';
-        }
+        } ?>
 
-        if (have_rows('lead-in_CTA')):
+       <?php  if (have_rows('lead-in_CTA')):
           while(have_rows('lead-in_CTA')): the_row();
             $link_1 = get_sub_field('lead-in_link-1');
             $link_2 = get_sub_field('lead-in_link-2');
             $link_3 = get_sub_field('lead-in_link-3');
         ?>
-          <div class="small-12 cta-block">
+          <div class="small-12 cta-block get-involved__cta-links">
             <?php if ($link_1): ?>
             <a class="button" href="<?php echo $link_1['url']; ?>"
                target="<?php echo $link_1['target']; ?>"><?php echo $link_1['title']; ?></a>
@@ -45,7 +45,7 @@ get_header(); ?>
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
       <h2 class="text-center">Make a donation</h2>
-      <?php the_field('donation_form_link'); ?>
+      <div class="paypal-link"><?php the_field('donation_form_link'); ?></div>
     </div>
     <div class="cell small-12 medium-8 medium-offset-2">
       <?php the_field('direct_donation_info'); ?>
@@ -55,20 +55,21 @@ get_header(); ?>
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
       <h2 class="text-center"><?php the_field('membership_copy'); ?></h2>
-      <div class="callout secondary">
+      <div class="callout secondary membership-form">
         <?php the_field('membership_form_link'); ?>
       </div>
     </div>
   </div>
 
-  <div class="grid-x main-content">
-    <div class="cell small-12 medium-8 medium-offset-2">
-      <h2 class="text-center">Resources</h2>
-      <div class="callout secondary">
-        Relevant resources + local representative contact info
-      </div>
-    </div>
-  </div>
+<?php //Resources 	?>
+  <?php //<div class="grid-x main-content">
+    //<div class="cell small-12 medium-8 medium-offset-2">
+      //<h2 class="text-center">Resources</h2>
+      //<div class="callout secondary">
+      //  Relevant resources + local representative contact info
+     // </div>
+    //</div>
+  //</div>?>
 </div>
 
 
