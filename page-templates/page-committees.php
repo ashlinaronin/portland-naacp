@@ -92,6 +92,8 @@ get_header(); ?>
 										<?php endif; ?>
 										<p>&nbsp;</p>
 
+							<p class="clear"></p>
+
 							<?php
 
 							// check if the repeater field has rows of data
@@ -115,7 +117,7 @@ get_header(); ?>
 							?>
 
 
-								<p class="clear-after-images"></p>
+								<p class="clear"></p>
 								<p class="divider">&nbsp;</p>
 
 				  <?php endwhile;
