@@ -65,7 +65,7 @@ aside {
 aside.sidebar {
 	.widget ul {
 		list-style-type:none;
-		margin-bottom: 2rem;	
+		margin:1rem 0 2rem 0;
 	}
 	.widget ul li {
 		margin-bottom: .75rem;
@@ -75,10 +75,24 @@ aside.sidebar {
 		font-weight: 600;
 		font-size: 1.5rem;
 		text-transform: unset;	
-		&::before {
+		&:before {
 			content: "»";
 			color: $orange;
 			padding-right: 3px;
+		}
+	}
+	.widget ul.compact-archives {
+		li a {
+			&:before {
+				content: "";
+			}
+		}
+		li strong a {
+			&:before {
+				content: "»";
+				color: $orange;
+				padding-right: 3px;
+			}
 		}
 	}
 }

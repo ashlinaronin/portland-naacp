@@ -60,10 +60,6 @@ get_header(); ?>
 
   <aside class="cell small-4">
     <?php get_sidebar(); ?>
-    <!-- <div class="callout secondary">
-      Some sort of CTA to take them to another section of the site (get involved?)
-    </div> -->
-
   </aside>
   </div>
 
