@@ -47,7 +47,7 @@ get_header(); ?>
     <?php endforeach; ?>
 
     <nav aria-label="Pagination">
-      <ul class="grid-x align-justify">
+      <ul class="no-bullet grid-x align-justify">
         <li class="cell small-6 text-left">
 	        <?php next_posts_link(__('Older Posts')); ?>
         </li>
