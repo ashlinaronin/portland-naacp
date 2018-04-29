@@ -46,9 +46,7 @@ get_header(); ?>
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
       <h2>Make a donation</h2>
-      <div class="callout secondary">
-        Donation form link: <?php the_field('donation_form_link'); ?>
-      </div>
+      <?php the_field('donation_form_link'); ?>
     </div>
     <div class="cell small-12 medium-8 medium-offset-2">
       <?php the_field('direct_donation_info'); ?>
