@@ -22,11 +22,9 @@ get_header(); ?>
 
     <div class="cell small-12 medium-8 medium-offset-2">
         <h4 class="date"><?php the_time( get_option( 'date_format' ))?></h4>
-        <a href="<?php the_permalink(); ?>">
-          <h5><?php the_title(); ?></h5>
-        </a>
+        <h5><?php the_title(); ?></h5>
         <p><?php the_excerpt(); ?></p>
-        <a href="<?php the_permalink(); ?>">Read article</a> <span>»</span>
+        <a class="decorated-link decorated-link--double-right" href="<?php the_permalink(); ?>">Read article</a>
     </div>
   </div>
 </div>
@@ -41,18 +39,23 @@ get_header(); ?>
     <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
       <div class="news-item">
         <h4 class="date"><?php the_time( get_option( 'date_format' ))?></h4>
-        <a href="<?php the_permalink(); ?>">
-          <h5><?php the_title(); ?></h5>
-        </a>
+        <h5><?php the_title(); ?></h5>
         <p><?php the_excerpt(); ?></p>
-        <a href="<?php the_permalink(); ?>">Read article</a> <span>»</span>
+        <a class="decorated-link decorated-link--double-right" href="<?php the_permalink(); ?>">Read article</a>
         <hr class="light-grey-hr">
       </div>
     <?php endforeach; ?>
 
-    <div class="callout secondary pagination">
-      Pagination Controls
-    </div>
+    <nav aria-label="Pagination">
+      <ul class="grid-x align-justify">
+        <li class="cell small-6 text-left">
+	        <?php next_posts_link(__('Older Posts')); ?>
+        </li>
+        <li class="cell small-6 text-right">
+	        <?php previous_posts_link(__('Newer Posts')); ?>
+        </li>
+      </ul>
+    </nav>
   </main>
 
   <aside class="cell small-4">

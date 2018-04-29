@@ -90,6 +90,37 @@ a:hover {
 	/*text-decoration: underline;*/
 }
 
+a.decorated-link {
+
+  &::before, &::after {
+    color: $orange;
+  }
+
+  &--single-left {
+    &::before {
+      content: ' \002039';
+    }
+  }
+
+  &--single-right {
+    &::after {
+      content: ' \00203A';
+    }
+  }
+
+  &--double-left {
+    &::before {
+     content: ' \0000AB';
+    }
+  }
+
+  &--double-right {
+    &::after {
+      content: ' \0000BB';
+    }
+  }
+}
+
 p {
   font-family: $open-sans;
   font-weight: 400;

@@ -63,5 +63,8 @@ require_once( 'library/acf.php' );
 /** Add breadcrumb */
 require_once( 'library/breadcrumb.php');
 
+/** Add classes to pagination and other links */
+require_once('library/link-attributes.php');
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
