@@ -1,7 +1,9 @@
 <div class="module__closing-cta large text-center">
   <div class="grid-container">
-    <div class="footer_message">
+    <div class="grid-x footer_message">
+      <div class="cell small-10 small-offset-1">
         <h1><?php the_field('footer_message', 'option'); ?></h1>
+      </div>
     </div>
    <!--  <div class="cta-links button-group stacked-for-small align-center"> -->
     <div class="footer_cta-links small-12 ">

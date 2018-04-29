@@ -46,6 +46,10 @@ aside .callout.secondary,
 .news-title {
 	border: none;
 }
+p.byline.author {
+	margin-bottom:2rem;
+}
+
 aside {
 	text-align: left;
 	margin-left: auto;
@@ -60,7 +64,6 @@ aside {
 .news-item {
 	margin-bottom:2rem;
 }
-
 // Sidebar Widget
 aside.sidebar {
 	.widget ul {
@@ -78,7 +81,7 @@ aside.sidebar {
 		&:before {
 			content: "»";
 			color: $orange;
-			padding-right: 3px;
+			padding-right: 4px;
 		}
 	}
 	.widget ul.compact-archives {
@@ -91,7 +94,7 @@ aside.sidebar {
 			&:before {
 				content: "»";
 				color: $orange;
-				padding-right: 3px;
+				padding-right: 4px;
 			}
 		}
 	}

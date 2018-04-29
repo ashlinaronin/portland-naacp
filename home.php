@@ -22,7 +22,7 @@ get_header(); ?>
 
     <div class="cell small-12 medium-8 medium-offset-2">
         <h4 class="date"><?php the_time( get_option( 'date_format' ))?></h4>
-        <h5><?php the_title(); ?></h5>
+        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
         <p><?php the_excerpt(); ?></p>
         <a class="decorated-link decorated-link--double-right" href="<?php the_permalink(); ?>">Read article</a>
     </div>
@@ -39,7 +39,7 @@ get_header(); ?>
     <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
       <div class="news-item">
         <h4 class="date"><?php the_time( get_option( 'date_format' ))?></h4>
-        <h5><?php the_title(); ?></h5>
+        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
         <p><?php the_excerpt(); ?></p>
         <a class="decorated-link decorated-link--double-right" href="<?php the_permalink(); ?>">Read article</a>
         <hr class="light-grey-hr">
