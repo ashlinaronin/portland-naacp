@@ -155,6 +155,12 @@ h3.committee-title {
 		margin-left: 0;
 	}
 }
+.clear-after-images {
+	clear: both;
+	@include breakpoint(large) {
+		clear: none;
+	}
+}
 
 
 /*ACF Pro NAACP Resources dpc*/

@@ -115,7 +115,7 @@ get_header(); ?>
 							?>
 
 
-								<p class="clear"></p>
+								<p class="clear-after-images"></p>
 								<p class="divider">&nbsp;</p>
 
 				  <?php endwhile;
