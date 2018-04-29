@@ -16,9 +16,10 @@ get_header(); ?>
 
 <div class="grid-x module-events callout large">
   <div class="module-events__header callout text-center next-meeting small-10">
-      <h3>Next general session</h3>
-      <h2>Every 4th Saturday</h2>
-      <h5><span>12-2 PM</span> | <a class="button large" href="/event/naacp-general-meeting/all/">View Event</h5></a>
+      <h4 class="black">Come to a general session!</h4>
+      <h1>Every 4th Saturday</h1>
+      <h2>Noon-2pm</h2>
+      <a class="button" href="<?php echo get_site_url(); ?>/events">See the Calendar</a>
 	</div>
 </div>
 <div class="grid-container events-news"><!--dpc-added container for events plus news-->

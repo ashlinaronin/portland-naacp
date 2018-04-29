@@ -50,8 +50,18 @@
 .module-events__header.next-meeting {
 	background-color: $secondary-color;
 	border:none;
+	padding: 4rem;
+	margin-bottom: 4rem;
+	h1, h4 {
+		margin-bottom:1rem;
+	}
+	.button {
+		margin:2rem 0 0 0;
+	}
 	@include breakpoint (medium) {
 		margin-top: -12rem;
+		padding-bottom: 3rem;
+		margin-bottom: 0;
 	}
 }
 .module-events.callout.large {
@@ -66,44 +76,6 @@
 	@include breakpoint (medium) {
 		padding-top: 2rem;
 	}
-}
-.module-events.callout.large {
-}
-.module-events__header.callout.text-center.next-meeting.small-10 {//dpc - 
-	padding-bottom: 0;
-	margin-bottom: 4rem;
-	@include breakpoint (medium) {
-		padding-bottom: 3rem;
-		margin-bottom: 0;
-	}
-}
-.module-events__header.callout.text-center.next-meeting.small-10 h2 {//dpc - 
-	@include breakpoint (medium) {
-		font-size: 4rem;
-		margin-bottom: 20px;
-	}
-}
-.module-events__header.callout.text-center.next-meeting.small-10 h3 {//dpc - 
-	font-size: 1.5rem;
-	line-height: 1;
-	@include breakpoint (medium) {
-		font-size: 2rem;
-		line-height: 2.66667rem;
-	}
-}
-.module-events__header.callout.text-center.next-meeting.small-10 h5 {//dpc - 
-	font-size: 1.5rem;
-	line-height: 1.5;
-	margin-bottom: 1.5rem;
-	@include breakpoint (medium) {
-		font-size: 1.66667rem;
-		line-height: 2rem;
-		margin-bottom: 0;
-	}
-}
-
-.module-events__header.callout.text-center.next-meeting.small-10 h5 span {
-	padding: 0;
 }
 
 //Get Involved
