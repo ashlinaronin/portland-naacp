@@ -42,10 +42,9 @@ get_header(); ?>
 </div>
 
 <div class="grid-container content">
-
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
-      <h2>Make a donation</h2>
+      <h2 class="text-center">Make a donation</h2>
       <?php the_field('donation_form_link'); ?>
     </div>
     <div class="cell small-12 medium-8 medium-offset-2">
@@ -53,11 +52,9 @@ get_header(); ?>
     </div>
   </div>
 
-
-
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
-      <h2><?php the_field('membership_copy'); ?></h2>
+      <h2 class="text-center"><?php the_field('membership_copy'); ?></h2>
       <div class="callout secondary">
         <?php the_field('membership_form_link'); ?>
       </div>
@@ -66,7 +63,7 @@ get_header(); ?>
 
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
-      <h2>Resources</h2>
+      <h2 class="text-center">Resources</h2>
       <div class="callout secondary">
         Relevant resources + local representative contact info
       </div>
