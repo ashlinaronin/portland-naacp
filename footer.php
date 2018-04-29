@@ -12,35 +12,28 @@
 
 <?php get_template_part('template-parts/inspirational-closing-cta'); ?>
 
-		</section>
-		<div class="footer-container" data-sticky-footer>
-			<footer class="footer grid-x grid-padding-x">
-              <?php do_action( 'foundationpress_before_footer' ); ?>
+	</section>
+	<footer class="footer grid-x grid-margin-x" data-sticky-footer>
+	  <?php do_action( 'foundationpress_before_footer' ); ?>
 
-			  <div class="small-12 large-7 footer__upper cell">
-				  <?php dynamic_sidebar( 'footer-left-widgets' ); ?>
-			  </div>
+	  <!-- footer main nav --> 
+	  <div class="cell small-12 large-7 footer__upper">
+		  <?php dynamic_sidebar( 'footer-left-widgets' ); ?>
+	  </div>
 
-			  <div class="small-12 large-5 cell">
-				<!--<label for="updates-email" class="updates">Get updates</label>
-				<div class="input-group">
-				  <input id="updates-email" class="input-group-field" type="email" placeholder="Enter your email address">
-				  <div class="input-group-button">
-					<input type="submit" class="button" value="Sign Up">
-				  </div>
-				</div>-->
-        <?php dynamic_sidebar( 'footer-right-widgets' ); ?>					
-			  </div>
+	  <!-- footer email signup -->
+	  <div class="cell small-12 large-5">
+		<?php dynamic_sidebar( 'footer-right-widgets' ); ?>		
+	  </div>
 
-			  <div class="footer__lower small-12">
-				  <?php dynamic_sidebar( 'footer-widgets' ); ?>
-			  </div>
-
-              <?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
-		</div>
-
-		<?php do_action( 'foundationpress_layout_end' ); ?>
+	  <!-- footer lower nav / mailing info -->
+	  <div class="footer__lower small-12">
+		  <?php dynamic_sidebar( 'footer-widgets' ); ?>
+	  </div>
+	  
+	  <?php do_action( 'foundationpress_after_footer' ); ?>
+	</footer>
+	<?php do_action( 'foundationpress_layout_end' ); ?>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 	</div><!-- Close off-canvas content -->
