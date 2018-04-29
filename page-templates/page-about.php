@@ -56,13 +56,57 @@ get_header(); ?>
     </div>
     <div class="cell small-4">
       <div>
-        <h3>Sidebar of org highlights / CTAs</h3>
-        <ul>
-          <li>History</li>
-          <li>Committees</li>
-          <li>Volunteering</li>
-          <li>Blog/News</li>
-        </ul>
+        <?php
+
+          // check if the repeater field has rows of data
+          if( have_rows('sidebar-content') ):
+
+            // loop through the rows of data
+              while ( have_rows('sidebar-content') ) : the_row();
+
+                // vars
+                $image = get_sub_field('image');
+                $heading = get_sub_field('heading');
+                $description = get_sub_field('link-description');
+                $link = get_sub_field('link');
+
+                //post items
+      ?>
+                <div class="sidebar-item">
+                  <?php // image
+                    if( !empty($image) ):
+
+                      // vars
+                      $url = $image['url'];
+                      $title = $image['title'];
+                      $alt = $image['alt'];
+                    ?>
+
+                    <img src="<?php echo $url; ?>" title="<?php echo $title; ?>" alt="<?php echo $alt; ?>" />
+                  <?php endif; ?>
+
+                  <?php // heading
+                    if( $heading ): ?>
+                      <h4><?php echo $heading; ?></h4>
+                  <?php endif; ?>
+
+                  <?php //description
+                    if( $description ): ?>
+                      <p><?php echo $description; ?></p>
+                  <?php endif; ?>
+
+                  <?php // link 
+                    if( $link ): ?>
+                      <a class="button" href="<?php $link['url'] ?>"><?php echo $link['title']; ?></a>
+                  <?php endif; ?>
+                </div> 
+        <?php
+              endwhile;
+
+          else :
+              // no rows found
+          endif;
+        ?>
       </div>
     </div>
   </div>

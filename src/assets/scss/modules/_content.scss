@@ -47,19 +47,6 @@ body {
       @include xy-cell(12);
     }
   }
-
-  .sidebar {
-
-    @include breakpoint(small) {
-      @include xy-cell(12);
-    }
-
-    @include breakpoint(medium) {
-      @include xy-cell(4);
-      margin-top: 1rem;
-    }
-
-  }
 }
 
 .main-content {
@@ -74,6 +61,11 @@ body {
   }
 }
 
+.sidebar-item {
+  border-bottom:2px solid $light-grey;
+  margin-bottom:rem-calc(22);
+  padding-bottom:2rem;
+}
 .three-column-links {
   border-top:2px solid $light-grey;
   margin-top: rem-calc(48);
