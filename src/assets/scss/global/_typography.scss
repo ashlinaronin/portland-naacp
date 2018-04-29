@@ -98,7 +98,7 @@ a.decorated-link {
 
   &--single-left {
     &::before {
-      content: ' \002039';
+      content: '\002039  ';
     }
   }
 
@@ -110,7 +110,7 @@ a.decorated-link {
 
   &--double-left {
     &::before {
-     content: ' \0000AB';
+     content: '\0000AB  ';
     }
   }
 
