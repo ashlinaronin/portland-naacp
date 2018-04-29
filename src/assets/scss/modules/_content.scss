@@ -1,23 +1,21 @@
+body {
+  overflow-x:hidden;
+}
+
 .lead-in {
   border-bottom:2px solid $light-grey;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-    @include breakpoint(636px) {
-			margin-top: 3rem;
-			margin-bottom: 3rem;
-			padding-bottom: 3rem;
-	}
-    @include breakpoint(medium) {
-			margin-top: 5rem;
-			margin-bottom: 5rem;
-			padding-bottom: 5rem;
-	}
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+			padding-bottom: 4rem;
+
     @include breakpoint(large) {
-			margin-top: 8rem;
-			margin-bottom: 8rem;
+			margin-top: 6rem;
+			margin-bottom: 6rem;
 			padding-bottom: 6rem;
 	}
+  .cta-block {
+    margin-top:rem-calc(24);
+  }
 }
 .main-wrap {
   @include xy-grid-container;
@@ -79,9 +77,9 @@
 
 .three-column-links {
   border-top:2px solid $light-grey;
-  margin-top: rem-calc(96);
-  margin-bottom: rem-calc(96);
-  padding-top: rem-calc(96);
+  margin-top: rem-calc(48);
+  margin-bottom: rem-calc(72);
+  padding-top: rem-calc(48);
 
   .home & {
     border-top:none;

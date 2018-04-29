@@ -4,7 +4,7 @@ Template Name: Issues
 */
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
+<?php //get_template_part( 'template-parts/featured-image' ); ?>
 
 <?php // lead-in?>
 <div class="lead-in text-center">
@@ -45,19 +45,20 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container issues">
   <?php // issues ?>
   <div class="grid-x">
-  	<div class="cell small-12 medium-8 medium-offset-2">
-      <?php if ( have_rows('issues')): ?>
-      <?php while( have_rows('issues')): the_row(); ?>
-        <?php $issue = get_sub_field('issue'); ?>
-        <?php $issue_description = get_sub_field('issue_description');?>
-        <h4><?php echo $issue; ?></h4>
-	      <?php echo $issue_description; ?>
-      <?php endwhile; ?>
-      <?php endif; ?>
-    </div>
+    <?php if ( have_rows('issues')): ?>
+    <?php while( have_rows('issues')): the_row(); ?>
+      <div class="cell small-12 medium-8 medium-offset-2">
+          <?php $issue = get_sub_field('issue'); ?>
+          <?php $issue_description = get_sub_field('issue_description');?>
+          <h4><?php echo $issue; ?></h4>
+  	      <?php echo $issue_description; ?>
+      </div>
+      <hr class="small-12">
+    <?php endwhile; ?>
+    <?php endif; ?>
   </div>
   
   <?php // three-column section ?>

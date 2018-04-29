@@ -8,7 +8,7 @@ get_header(); ?>
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell small-12 medium-10 medium-offset-1">
-      <h1><?php the_field('lead-in_heading'); ?></h1>
+        <h1><?php the_field('lead-in_heading'); ?></h1>
         <?php 
         if(get_field('lead-in_copy')) {
           echo '<h3>' . get_field('lead-in_copy') . '</h3>';
@@ -19,23 +19,22 @@ get_header(); ?>
             $link_1 = get_sub_field('lead-in_link-1');
             $link_2 = get_sub_field('lead-in_link-2');
             $link_3 = get_sub_field('lead-in_link-3');
-      ?>
-           <div class="expanded stacked-for-small button-group button-group-get-involved">
-
-              <?php if ($link_1): ?>
-              <a class="button button-get-involved" href="<?php echo $link_1['url']; ?>"
-                 target="<?php echo $link_1['target']; ?>"><?php echo $link_1['title']; ?></a>
-              <?php endif; ?>
-              <?php if ($link_2): ?>
-                  <a class="button hollow button-get-involved" href="<?php echo $link_2['url']; ?>"
-                     target="<?php echo $link_2['target']; ?>"><?php echo $link_2['title']; ?></a>
-              <?php endif; ?>
-              <?php if ($link_3): ?>
-                  <a class="button button-get-involved last" href="<?php echo $link_3['url']; ?>"
-                     target="<?php echo $link_3['target']; ?>"><?php echo $link_3['title']; ?></a>
-              <?php endif; ?>
-            </div>
+        ?>
+          <div class="small-12 cta-block">
+            <?php if ($link_1): ?>
+            <a class="button" href="<?php echo $link_1['url']; ?>"
+               target="<?php echo $link_1['target']; ?>"><?php echo $link_1['title']; ?></a>
+            <?php endif; ?>
+            <?php if ($link_2): ?>
+                <a class="button" href="<?php echo $link_2['url']; ?>"
+                   target="<?php echo $link_2['target']; ?>"><?php echo $link_2['title']; ?></a>
+            <?php endif; ?>
+            <?php if ($link_3): ?>
+                <a class="button last" href="<?php echo $link_3['url']; ?>"
+                   target="<?php echo $link_3['target']; ?>"><?php echo $link_3['title']; ?></a>
+            <?php endif; ?>
           <?php endwhile; ?>
+          </div>
         <?php endif; ?>
       </div>
     </div>

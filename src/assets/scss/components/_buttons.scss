@@ -1,19 +1,31 @@
-.sites-button {
+/*.sites-button {
   font-size: 1.25rem;
   font-weight: bold;
   box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
   border-radius: 3px;
   border: none;
 }
-
+*/
 .button {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: $oswald;
-  padding: 1rem 3rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: $oswald;
+	font-size:rem-calc(18);
+	padding:2rem 2rem;
+	margin-bottom:1rem;
+	width:100%;
+	@include breakpoint(medium) {
+		padding:1rem 2rem;
+		margin-right: 2rem;
+		margin-bottom:0;
+		width:auto;
+	}
+	&.last {
+		margin-right: 0;
+	}
 
   &.hollow {
-    border-width: 3px;
+    border-width: 4px;
   }
 }
 .button.large {
@@ -54,7 +66,7 @@
 	a.button.hollow {
 		background: transparent;
 		color: $yellow;
-		border: 3px solid $yellow;
+		border: 4px solid $yellow;
 		margin-left: auto;
 		//-webkit-flex: .47 100px 0;
 		//-ms-flex: .47 100px 0;
@@ -154,9 +166,6 @@ a.button.button-get-involved {
 	margin-right: 20px;
 	margin-bottom: .5rem;
 	padding: 1rem;
-	&.last {
-		margin-right: 0;
-	}
 }
 a.button.button-get-involved:hover {
 	background-color: $dark-nav-color;
@@ -201,7 +210,7 @@ a.button.hollow.button-get-involved:hover {
 }
 
 //At small screen widths
-.cta-links a.button,
+/*.cta-links a.button,
 .button-group .button {
 	margin-right: 0;
-}
+}*/

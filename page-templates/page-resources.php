@@ -4,7 +4,7 @@ Template Name: Resources
 */
 get_header(); ?>
 
- <?php get_template_part( 'template-parts/featured-image' ); ?>
+ <?php //get_template_part( 'template-parts/featured-image' ); ?>
 
  
 <div class="main-wrap" role="main">

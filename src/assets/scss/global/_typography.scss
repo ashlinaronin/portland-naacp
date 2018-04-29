@@ -11,7 +11,7 @@ h1, h2 {
 h1 {
   font-size: rem-calc(48);
   line-height: rem-calc(54);
-  margin-bottom: rem-calc(18);
+  margin-bottom: rem-calc(24);
 }
 h2 {
   font-size: rem-calc(32);
@@ -23,7 +23,6 @@ h3 {
   font-weight: 700;
   font-size: rem-calc(24);
   line-height: rem-calc(32);
-  margin-bottom: rem-calc(24);
   letter-spacing:.1;
   color: $black;
   margin-top: 1.5rem;
@@ -136,39 +135,9 @@ ol, ul {
 
 hr {
   margin:24px 0 0 0;
-  border-bottom: 2px solid;
-
-  &.light-grey-hr {
-    border-color:$light-grey;
-  }
+  border-bottom: 2px solid $light-grey;
 }
 li {
 	font-size: 1.5rem;
-}
-
-//Widgets
-.widget ul {
-	margin-bottom: 2rem;	
-}
-.widget ul li {
-	margin-bottom: .75rem;
-}
-.widget ul li a {
-	font-family: $open-sans;
-	font-weight: 600;
-	font-size: 1.5rem;
-	text-transform: unset;	
-	&::before {
-		content: "»";
-		color: $orange;
-		padding-right: 3px;
-	}
-	.footer-container & {
-		font-family: $oswald;
-		text-transform: uppercase;
-	}
-	.footer-container &::before {
-		content: none;
-	}
 }
 

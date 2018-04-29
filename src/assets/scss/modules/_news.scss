@@ -19,11 +19,16 @@
 	vertical-align: text-bottom;
 }
 .text-left.latest-news.cell {
+	border-bottom: 4px solid $orange;
+ 	line-height: 3rem;
+	color: $black;
+	padding-bottom:1rem;
+	margin-bottom:0;
 	span {
-	font-family: "Oswald", Arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: $purple;		
+		font-family: "Oswald", Arial, sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $purple;		
 	}
 	a {
 		margin-bottom: 0;
@@ -54,5 +59,27 @@ aside {
 
 .news-item {
 	margin-bottom:2rem;
+}
+
+// Sidebar Widget
+aside.sidebar {
+	.widget ul {
+		list-style-type:none;
+		margin-bottom: 2rem;	
+	}
+	.widget ul li {
+		margin-bottom: .75rem;
+	}
+	.widget ul li a {
+		font-family: $open-sans;
+		font-weight: 600;
+		font-size: 1.5rem;
+		text-transform: unset;	
+		&::before {
+			content: "»";
+			color: $orange;
+			padding-right: 3px;
+		}
+	}
 }
 
