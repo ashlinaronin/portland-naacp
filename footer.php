@@ -16,19 +16,21 @@
 <footer class="footer" data-sticky-footer>
 	<?php do_action( 'foundationpress_before_footer' ); ?>
 
-	<!-- footer main nav --> 
-	<div class="cell small-12 large-7 footer__upper">
-		<?php dynamic_sidebar( 'footer-left-widgets' ); ?>
-	</div>
+	<div class="grid-x">
+		<!-- footer main nav --> 
+		<div class="cell small-12 large-7 footer__upper">
+			<?php dynamic_sidebar( 'footer-left-widgets' ); ?>
+		</div>
 
-	<!-- footer email signup -->
-	<div class="cell small-12 large-5">
-		<?php dynamic_sidebar( 'footer-right-widgets' ); ?>		
-	</div>
+		<!-- footer email signup -->
+		<div class="cell small-12 large-5">
+			<?php dynamic_sidebar( 'footer-right-widgets' ); ?>		
+		</div>
 
-	<!-- footer lower nav / mailing info -->
-	<div class="footer__lower small-12">
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		<!-- footer lower nav / mailing info -->
+		<div class="footer__lower small-12">
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		</div>
 	</div>
 </footer>
 <?php do_action( 'foundationpress_after_footer' ); ?>
