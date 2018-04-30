@@ -191,3 +191,11 @@ a.button.hollow.button-get-involved:hover {
 		}
 	}
 }
+footer {
+	.nf-field-element {
+		input[type="button"] {
+			width:100%;
+			margin-right:0!important;
+		}
+	}
+}
