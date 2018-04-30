@@ -20,6 +20,7 @@
     ],
     "active": 1,
     "description": "Small page section to drive people to Committees page",
+    "modified": 1525070595,
     "fields": [
         {
             "key": "field_5aab242831e3a",
@@ -98,6 +99,5 @@
             "max_size": "",
             "mime_types": ""
         }
-    ],
-    "modified": 1523148090
+    ]
 }

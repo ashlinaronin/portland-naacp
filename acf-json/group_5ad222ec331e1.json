@@ -1,6 +1,27 @@
 {
     "key": "group_5ad222ec331e1",
     "title": "NAACP COMMITTEES",
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "77"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "custom_fields",
+        "revisions"
+    ],
+    "active": 1,
+    "description": "Expand tab to add committee information.",
     "fields": [
         {
             "key": "field_5ad2587f90d2c",
@@ -141,7 +162,7 @@
                     "multiple": 0
                 },
                 {
-                    "key": "field_5ae2a697f9b95",
+                    "key": "field_5ae2b021e45d6",
                     "label": "Committee Emails",
                     "name": "committee_emails",
                     "type": "repeater",
@@ -160,7 +181,7 @@
                     "button_label": "Add Email",
                     "sub_fields": [
                         {
-                            "key": "field_5ae2a7de40a80",
+                            "key": "field_5ae2b042e45d7",
                             "label": "Email Address",
                             "name": "email_address",
                             "type": "email",
@@ -182,26 +203,5 @@
             ]
         }
     ],
-    "location": [
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "77"
-            }
-        ]
-    ],
-    "menu_order": 4,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content",
-        "custom_fields",
-        "revisions"
-    ],
-    "active": 1,
-    "description": "Expand tab to add committee information.",
-    "modified": 1524803594
+    "modified": 1525070595
 }

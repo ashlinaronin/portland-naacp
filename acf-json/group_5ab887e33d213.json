@@ -18,6 +18,7 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
+    "modified": 1525070595,
     "fields": [
         {
             "key": "field_5ab887f0177e6",
@@ -85,6 +86,5 @@
                 }
             ]
         }
-    ],
-    "modified": 1523148090
+    ]
 }
