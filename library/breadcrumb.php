@@ -2,9 +2,8 @@
 function the_breadcrumb() {
     echo '<ul id="crumbs">';
   if (!is_home()) {
-    echo '<li><a href="';
-    echo get_option('news');
-    echo '">';
+    $newslink = get_bloginfo( 'url' );
+    echo '<li><a href="' . $newslink . '/news">';
     echo 'News';
     echo "</a></li>";
     if (is_single()) {
