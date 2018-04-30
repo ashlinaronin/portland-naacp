@@ -26,6 +26,9 @@ h3 {
   letter-spacing:.1;
   color: $black;
   margin-top: 1.5rem;
+  &.committee-title {
+    font-weight: bold;
+  }
 }
 
 h4 {
@@ -62,6 +65,9 @@ h6 {
 	font-family: $open-sans;
 	font-weight: 600;
   margin-bottom: rem-calc(12);
+}
+.image-group h6 {
+  margin-bottom:0;
 }
 
 footer {
@@ -140,6 +146,15 @@ p {
   font-size: rem-calc(18);
   line-height: rem-calc(24);
   margin-bottom: rem-calc(12);
+  &.wp-caption-text{
+    font-size:1.1666666667rem;
+    text-align:center;
+    margin:0;
+    padding:0;
+  }
+  &.clear {
+    margin:0;
+  }
 }
 
 ol, ul {

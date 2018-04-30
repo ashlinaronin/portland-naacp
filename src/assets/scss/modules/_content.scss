@@ -78,7 +78,7 @@ body {
   } 
 }
 
-//Pages
+// Pages
 section.container {
 	margin: 0;
 	.home & {
@@ -99,10 +99,21 @@ section.container {
 }
 .entry-content {
 	padding-right: 8rem;
+	.intro {
+		border-bottom:2px solid $light-grey;
+		margin-bottom:4rem;
+		padding-bottom:4rem;
+	}
+}
+.tribe-events-style-full  {
+	.entry-content{
+		margin:0;
+		padding:0;
+	}
 }
 
 
-//News
+// News
 .blog .lead-in.text-center {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -124,34 +135,26 @@ section.container {
 		}
 }
 
-/*ACF Pro NAACP Committees dpc*/
-
-h3.committee-title {
-	font-weight: bold;
+// Committees
+.committee {
+	border-bottom:2px solid $light-grey;
+	margin-bottom:4rem;
+	padding-bottom:4rem;
+	&:last-child {
+		border:none;
+		margin-bottom:0;
+		padding-bottom:0;
+	}
 }
-.image-group {
-	float: left;
-	margin-right: 15px;
-	display: flex;
-	flex-wrap: wrap;
+.committee-description {
+	margin-bottom:2rem;
 }
 .committee-leader {
 	max-width: 150px;
-	margin: 0 3px -20px 0;
-}
-.committee-description {
-	clear: right;
-	> p {
-		font-size: 1.5rem;
-	}
-	> ol {
-		margin-left: 0;
-	}
-}
-.clear-after-images {
-	clear: both;
-	@include breakpoint(large) {
-		clear: none;
+	float:left;
+	margin: 2rem 1rem 0 0;
+	img {
+		margin-bottom:1rem;
 	}
 }
 
@@ -166,11 +169,6 @@ h3.committee-title {
 }
 h5.resource-name {
 	margin-top: 3rem;
-}
-p.wp-caption-text {
-	text-align: center;
-	font-style: italic;
-	font-weight: bold;
 }
 .wp-caption-text span {
 	font-size: .6rem;
