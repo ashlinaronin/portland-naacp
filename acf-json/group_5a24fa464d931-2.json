@@ -1,5 +1,5 @@
 {
-    "key": "group_5a24fa464d931",
+    "key": "group_5a24fa464d931-2",
     "title": "Issues List",
     "location": [
         [
@@ -10,7 +10,7 @@
             }
         ]
     ],
-    "menu_order": 7,
+    "menu_order": 2,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -37,7 +37,7 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
+            "layout": "row",
             "button_label": "Add Issue",
             "sub_fields": [
                 {
@@ -81,5 +81,5 @@
             ]
         }
     ],
-    "modified": 1523148090
+    "modified": 1525070595
 }

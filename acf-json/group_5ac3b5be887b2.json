@@ -1,27 +1,6 @@
 {
     "key": "group_5ac3b5be887b2",
     "title": "Calendar Shortcode",
-    "fields": [
-        {
-            "key": "field_5ac3b5ce28add",
-            "label": "Calendar Shortcode",
-            "name": "calendar_shortcode",
-            "type": "text",
-            "instructions": "Paste the calendar shortcode from the \"Calendars\" plugin here. \r\n\r\nYou can find this shortcode by hovering over \"Calendars\" on the sidebar and selecting \"All Calendars.\" Copy and paste the value from the \"Shortcode\" column of the calendar you wish to load.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        }
-    ],
     "location": [
         [
             {
@@ -42,5 +21,26 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1523896875
+    "modified": 1525070595,
+    "fields": [
+        {
+            "key": "field_5ac3b5ce28add",
+            "label": "Calendar Shortcode",
+            "name": "calendar_shortcode",
+            "type": "text",
+            "instructions": "Paste the calendar shortcode from the \"Calendars\" plugin here. \r\n\r\nYou can find this shortcode by hovering over \"Calendars\" on the sidebar and selecting \"All Calendars.\" Copy and paste the value from the \"Shortcode\" column of the calendar you wish to load.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ]
 }

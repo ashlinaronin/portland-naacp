@@ -1,5 +1,5 @@
 {
-    "key": "group_5a22fdd7f2b9e",
+    "key": "group_5ae5fbed4a8ec",
     "title": "Make a Donation",
     "location": [
         [
@@ -10,23 +10,24 @@
             }
         ]
     ],
-    "menu_order": 8,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "the_content"
+        "the_content",
+        "custom_fields"
     ],
     "active": 1,
     "description": "Page section with donation form and information",
     "fields": [
         {
-            "key": "field_5a2303fad343b",
+            "key": "field_5ae5fc16d38a3",
             "label": "Donation Form Link",
             "name": "donation_form_link",
             "type": "text",
-            "instructions": "Code to automatically load form created in GravityForms. If you need to make a change there, find the form in the GravityForms plugin.",
+            "instructions": "Code to automatically load form created in NinjaForms. If you need to make a change there, find the form in the NinjaForms plugin.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -41,7 +42,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5a23074dabbe0",
+            "key": "field_5ae5fce4d38a4",
             "label": "Direct Donation Information",
             "name": "direct_donation_info",
             "type": "group",
@@ -56,7 +57,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5a23076babbe1",
+                    "key": "field_5ae5fd1fd38a5",
                     "label": "Mailing instructions",
                     "name": "donate_mail-instructions",
                     "type": "text",
@@ -75,7 +76,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5a2307b4abbe2",
+                    "key": "field_5ae5fd68d38a6",
                     "label": "Mailing address",
                     "name": "donate_mailing-address",
                     "type": "textarea",
@@ -96,5 +97,5 @@
             ]
         }
     ],
-    "modified": 1523148090
+    "modified": 1525070594
 }

@@ -1,13 +1,32 @@
 {
-    "key": "group_5a23088caeaad",
+    "key": "group_5ae5facaad251",
     "title": "Become a Member",
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
     "fields": [
         {
-            "key": "field_5a2308cc7917f",
+            "key": "field_5ae5fad965c0d",
             "label": "Membership Copy",
             "name": "membership_copy",
             "type": "textarea",
-            "instructions": "Copy leading into the form enticing visitors to become a member",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -18,15 +37,15 @@
             "default_value": "",
             "placeholder": "",
             "maxlength": "",
-            "rows": 4,
+            "rows": "",
             "new_lines": ""
         },
         {
-            "key": "field_5a2308a209e8e",
+            "key": "field_5ae5faf903355",
             "label": "Membership Form Link",
             "name": "membership_form_link",
             "type": "text",
-            "instructions": "Code to automatically load form created in GravityForms. If you need to make a change there, find the form in the GravityForms plugin.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -41,24 +60,5 @@
             "maxlength": ""
         }
     ],
-    "location": [
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "8"
-            }
-        ]
-    ],
-    "menu_order": 1,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
-    "active": 1,
-    "description": "Page section with membership form & information",
-    "modified": 1524962197
+    "modified": 1525070594
 }
