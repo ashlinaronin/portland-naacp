@@ -1,26 +1,6 @@
 {
     "key": "group_5ae5fbed4a8ec",
     "title": "Make a Donation",
-    "location": [
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "8"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content",
-        "custom_fields"
-    ],
-    "active": 1,
-    "description": "Page section with donation form and information",
     "fields": [
         {
             "key": "field_5ae5fc16d38a3",
@@ -59,7 +39,7 @@
                 {
                     "key": "field_5ae5fd1fd38a5",
                     "label": "Mailing instructions",
-                    "name": "donate_mail-instructions",
+                    "name": "donate_mailing_instructions",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -78,7 +58,7 @@
                 {
                     "key": "field_5ae5fd68d38a6",
                     "label": "Mailing address",
-                    "name": "donate_mailing-address",
+                    "name": "donate_mailing_address",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -97,5 +77,25 @@
             ]
         }
     ],
-    "modified": 1525070594
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "custom_fields"
+    ],
+    "active": 1,
+    "description": "Page section with donation form and information",
+    "modified": 1525073124
 }

@@ -51,10 +51,14 @@ get_header(); ?>
       if( have_rows('direct_donation_info') ):
         while ( have_rows('direct_donation_info') ): the_row();
           //vars
-          $instructions = get_sub_field('donate_mail_instructions');
+          $instructions = get_sub_field('donate_mailing_instructions');
           $address = get_sub_field('donate_mailing_address');
           ?>
-          <div class="cell small-12 medium-8 medium-offset-2"><?php echo $address; ?></div>
+          <div class="cell small-12 medium-8 medium-offset-2">
+            <h5><?php echo $instructions; ?></h5><br />
+
+              <h4><?php echo $address; ?></h4>
+          </div>
         <?php 
           endwhile; 
           endif;
@@ -63,7 +67,8 @@ get_header(); ?>
 
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2">
-      <h2 class="text-center"><?php the_field('membership_copy'); ?></h2>
+      <h2 class="text-center">Become a Member</h2>
+      <p><?php the_field('membership_copy'); ?></p>
       <div class="callout secondary membership-form">
         <?php the_field('membership_form_link'); ?>
       </div>
