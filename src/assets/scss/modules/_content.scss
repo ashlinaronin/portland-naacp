@@ -223,8 +223,15 @@ p.divider {
 .ninja-forms-form-wrap * {
 	width: 100%;
 }
+.nf-before-form-content {
+	margin-bottom:1rem;
+}
 .main-contact-form .nf-field-element input, 
 .main-contact-form .nf-field-element select, 
 .main-contact-form .nf-field-element textarea {
 	border: 2px solid #ccc;
+}
+
+.nf-field-container {
+	margin-bottom:2rem;
 }

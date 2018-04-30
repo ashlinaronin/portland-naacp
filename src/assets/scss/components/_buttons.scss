@@ -50,7 +50,7 @@
 		margin-bottom: 1rem;
 		&:hover {
 			background-color: $white;
-			color: $yellow;
+			color: $purple;
 			transition: background-color 0.25s ease-out, color 0.25s ease-out;
 		}
 	}
@@ -80,11 +80,6 @@
 	border-color: $white;
 	color: $yellow;
 	transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
-}
-
-//Get-involved
-.lead-in .cta-block.get-involved__cta-links {
-	display: none;
 }
 
 //closing cta
@@ -169,4 +164,30 @@ a.button.hollow.button-get-involved:hover {
 	background-color: $white;
 	color: $dark-nav-color;
 	transition: border-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+// Contact
+.nf-field-element {
+	input[type="button"] {
+		border:none;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: $oswald;
+		font-size:rem-calc(18);
+		color:$white;
+		background-color:$purple;
+		padding:2rem 2rem;
+		margin-bottom:1rem;
+		width:100%;
+		@include breakpoint(medium) {
+			padding:1rem 2rem;
+			margin-right: 2rem;
+			margin-bottom:0;
+			width:auto;
+		}
+		&:hover, &:focus {
+			background-color:$dark-purple!important;
+			cursor:pointer!important;
+		}
+	}
 }
