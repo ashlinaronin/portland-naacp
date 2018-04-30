@@ -53,9 +53,6 @@ body {
   border-bottom:2px solid $light-grey;
   margin-bottom:4rem;
   padding-bottom:4rem;
-  h2 {
-    margin-bottom:2rem;
-  }
   &:last-child {
     border:none;
   }
@@ -110,6 +107,9 @@ section.container {
 		margin:0;
 		padding:0;
 	}
+}
+.module-events__events .tribe-event-featured {
+	display:none;
 }
 
 
@@ -213,11 +213,6 @@ p.divider {
 	text-transform: none;
 	line-height: 1;
 }
-/*.callout.membership-form {
-	background-color: transparent;
-	max-height: 20%;
-	outline: 10px solid $yellow;
-}*/
 
 //Contact Form
 .ninja-forms-form-wrap * {

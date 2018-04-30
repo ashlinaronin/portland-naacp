@@ -13,11 +13,19 @@ h1 {
   line-height: rem-calc(54);
   margin-bottom: rem-calc(24);
 }
+
+.main-content h2 {
+  margin-bottom:2rem;
+}
 h2 {
   font-size: rem-calc(32);
   line-height: rem-calc(36);
   margin-bottom: rem-calc(12);
+  &.entry-title{
+    margin-bottom:1rem;
+  }
 }
+
 h3 {
   font-family: $glegoo;
   font-weight: 700;

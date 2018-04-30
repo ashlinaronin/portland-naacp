@@ -19,8 +19,10 @@ get_header(); ?>
 			$classes = array(
 				'main-content',
 				'small-12',
-				'medium-8',
-				'medium-offset-2'
+				'medium-10',
+				'medium-offset-1',
+				'large-8',
+				'large-offset-2'
 			);
 		?>
 		<article <?php post_class($classes) ?> id="post-<?php the_ID(); ?>">
@@ -28,7 +30,7 @@ get_header(); ?>
 				<?php foundationpress_entry_meta(); ?>
 			</header>
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-			<div class="entry-content">
+			<div class="">
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 			</div>

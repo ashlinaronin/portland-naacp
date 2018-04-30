@@ -50,6 +50,48 @@ p.byline.author {
 	margin-bottom:2rem;
 }
 
+.single {
+	p:first-child {
+		img {
+			margin-top:0;
+		}
+	}
+	img {
+		padding:0;
+		margin:2rem 0 2rem 0;
+		min-width:100%;
+		@include breakpoint(medium) {
+			min-width:inherit;
+			&.alignleft {
+				position:relative;
+				left:-4rem;
+				margin:2rem -2rem 2rem 2rem;
+			}
+			&.alignright {
+				position:relative;
+				right:-4rem;
+				margin:2rem 2rem 2rem -2rem;
+			}
+		}
+		@include breakpoint(large) {
+			min-width:inherit;
+			&.alignleft {
+				position:relative;
+				left:-8rem;
+				margin:2rem -6rem 2rem 2rem;
+			}
+			&.alignright {
+				position:relative;
+				right:-8rem;
+				margin-left:2rem 2rem 2rem -6rem;
+			}
+		}
+	}
+	.main-content {
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+}
 aside {
 	text-align: left;
 	margin-left: auto;
@@ -60,7 +102,6 @@ aside {
 	padding: 0;
 }
 //News
-
 .news-item {
 	margin-bottom:2rem;
 }
