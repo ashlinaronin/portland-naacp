@@ -47,9 +47,18 @@ get_header(); ?>
       <h2 class="text-center">Make a donation</h2>
       <div class="paypal-link"><?php the_field('donation_form_link'); ?></div>
     </div>
-    <div class="cell small-12 medium-8 medium-offset-2">
-      <?php the_field('direct_donation_info'); ?>
-    </div>
+    <?php 
+      if( have_rows('direct_donation_info') ):
+        while ( have_rows('direct_donation_info') ): the_row();
+          //vars
+          $instructions = get_sub_field('donate_mail_instructions');
+          $address = get_sub_field('donate_mailing_address');
+          ?>
+          <div class="cell small-12 medium-8 medium-offset-2"><?php echo $address; ?></div>
+        <?php 
+          endwhile; 
+          endif;
+        ?>
   </div>
 
   <div class="grid-x main-content">
