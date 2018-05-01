@@ -14,6 +14,7 @@
 
   &__events {
     justify-content: center;
+    margin-bottom:4rem;
 
     @include breakpoint(medium up) {
       justify-content: space-between;

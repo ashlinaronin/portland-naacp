@@ -5,7 +5,7 @@ get_header(); ?>
 
 <div class="lead-in text-center">
   <div class="grid-container">
-    <div class="grid-x">
+    <div class="grid-x grid-margin-x">
       <div class="cell small-12 medium-10 medium-offset-1">
         <h1>Latest News</h1>
       </div>
@@ -47,7 +47,7 @@ get_header(); ?>
     <?php endforeach; ?>
 
     <nav aria-label="Pagination">
-      <ul class="no-bullet grid-x align-justify">
+      <ul class="no-bullet grid-x grid-margin-x align-justify">
         <li class="cell small-6 text-left">
 	        <?php next_posts_link(__('Older Posts')); ?>
         </li>

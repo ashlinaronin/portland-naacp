@@ -47,7 +47,7 @@ get_header(); ?>
 
 <div class="grid-container issues">
   <?php // issues ?>
-  <div class="grid-x">
+  <div class="grid-x grid-margin-x">
     <?php if ( have_rows('issues')): ?>
     <?php while( have_rows('issues')): the_row(); ?>
       <div class="cell small-12 medium-8 medium-offset-2">

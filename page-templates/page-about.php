@@ -47,7 +47,7 @@ get_header(); ?>
 
 <div class="grid-container">
   <?php // Content ?>
-  <div class="grid-x grid-padding-x">
+  <div class="grid-x grid-margin-x">
     <div class="cell small-8">
       <div>
         <h3>About NAACP</h3>

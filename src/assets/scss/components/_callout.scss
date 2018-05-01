@@ -13,7 +13,7 @@
 		padding: 2rem 1.5rem 3rem;
 	}
 	@include breakpoint (medium) {
-		padding: 12rem 3rem 17rem 3rem;
+		padding: 18rem 3rem 17rem 3rem;
 	}
 }
 
@@ -27,10 +27,10 @@
 .callout.large h1 {//front page h1
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.6rem;
-	line-height: 1;
+	font-size: 2rem;
+	line-height:1.4;
 	@include breakpoint (small-medium) {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	@include breakpoint (medium) {
 		max-width: 1248px;

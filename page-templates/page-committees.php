@@ -19,7 +19,7 @@ get_header(); ?>
 	</div>
 
 	<div class="grid-container">
-		<div class="grid-x">
+		<div class="grid-x grid-margin-x">
 				<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 				<div class="cell small-12 medium-8 medium-offset-2">
 					<?php // Intro Copy ?>
