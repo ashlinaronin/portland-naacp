@@ -60,11 +60,16 @@ require_once( 'library/responsive-images.php' );
 /** ACF hack to prevent deletion of repeater fields when updating - dpc180408 */
 require_once( 'library/acf.php' );
 
+/** Hide ACF admin settings on production.
+ * See http://awesomeacf.com/how-to-avoid-conflicts-when-using-the-acf-local-json-feature/ for more details. */
+require_once('library/acf-hide-admin.php');
+
 /** Add breadcrumb */
 require_once( 'library/breadcrumb.php');
 
 /** Add classes to pagination and other links */
 require_once('library/link-attributes.php');
+
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
