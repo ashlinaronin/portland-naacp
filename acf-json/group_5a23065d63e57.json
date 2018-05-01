@@ -1,53 +1,6 @@
 {
     "key": "group_5a23065d63e57",
     "title": "Lead-in",
-    "location": [
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "8"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "10"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "77"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "79"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "16"
-            }
-        ]
-    ],
-    "menu_order": 1,
-    "position": "acf_after_title",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
-    "active": 1,
-    "description": "Lead-in copy template for pages",
     "fields": [
         {
             "key": "field_5a22fdfe98ee6",
@@ -90,7 +43,7 @@
         {
             "key": "field_5a24f70756074",
             "label": "Include call-to-action links?",
-            "name": "",
+            "name": "required",
             "type": "radio",
             "instructions": "",
             "required": 1,
@@ -182,5 +135,52 @@
             ]
         }
     ],
-    "modified": 1525070595
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "10"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "77"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "79"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "16"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "Lead-in copy template for pages",
+    "modified": 1525139946
 }

@@ -14,7 +14,7 @@ get_header(); ?>
           echo '<h3>' . get_field('lead-in_copy') . '</h3>';
         } ?>
 
-       <?php  if (have_rows('lead-in_CTA')):
+       <?php  if (get_field('required') == 'Yes'):
           while(have_rows('lead-in_CTA')): the_row();
             $link_1 = get_sub_field('lead-in_link-1');
             $link_2 = get_sub_field('lead-in_link-2');

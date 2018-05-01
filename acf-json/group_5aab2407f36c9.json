@@ -1,26 +1,6 @@
 {
     "key": "group_5aab2407f36c9",
     "title": "Our Committees",
-    "location": [
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "8"
-            }
-        ]
-    ],
-    "menu_order": 2,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
-    "active": 1,
-    "description": "Small page section to drive people to Committees page",
-    "modified": 1525070595,
     "fields": [
         {
             "key": "field_5aab242831e3a",
@@ -99,5 +79,25 @@
             "max_size": "",
             "mime_types": ""
         }
-    ]
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 0,
+    "description": "Small page section to drive people to Committees page",
+    "modified": 1525139730
 }
