@@ -1,3 +1,4 @@
+//Home Page Latest News
 .module-news {
 
   margin-bottom:8rem;
@@ -11,8 +12,6 @@
     }
   }
 }
-
-//Home Page Latest News
 .module-news__news-item-content span {//Read article arrows
 	color: $orange;
 	font-weight: 700;
@@ -36,7 +35,19 @@
 	}
 }
 
-//News dpc-180203
+//News container
+.module-news.callout {
+	border: none;
+	padding: 0;
+}
+
+// News page
+.news-item {
+	margin-bottom:2rem;
+}
+
+
+// Single
 .news-title,
 .callout.secondary.news-item,
 aside .callout.secondary,
@@ -51,59 +62,18 @@ p.byline.author {
 }
 
 .single {
-	p:first-child {
-		img {
-			margin-top:0;
-		}
-	}
-	img {
-		padding:0;
-		margin:2rem 0 2rem 0;
-		min-width:100%;
-		@include breakpoint(medium) {
-			min-width:inherit;
-			&.alignleft {
-				position:relative;
-				left:-4rem;
-				margin:2rem -2rem 2rem 2rem;
-			}
-			&.alignright {
-				position:relative;
-				right:-4rem;
-				margin:2rem 2rem 2rem -2rem;
-			}
-		}
-		@include breakpoint(large) {
-			min-width:inherit;
-			&.alignleft {
-				position:relative;
-				left:-8rem;
-				margin:2rem -6rem 2rem 2rem;
-			}
-			&.alignright {
-				position:relative;
-				right:-8rem;
-				margin-left:2rem 2rem 2rem -6rem;
-			}
-		}
-	}
 	.main-content {
 		margin-bottom:0;
 		padding-bottom:0;
+		header {
+			border-bottom:2px solid $light-grey;
+			margin-bottom:4rem;
+		}
 	}
 }
 aside {
 	text-align: left;
 	margin-left: auto;
-}
-//News container
-.module-news.callout {
-	border: none;
-	padding: 0;
-}
-//News
-.news-item {
-	margin-bottom:2rem;
 }
 // Sidebar Widget
 aside.sidebar {

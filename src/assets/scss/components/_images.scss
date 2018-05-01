@@ -16,3 +16,39 @@ img.committee {
 	background: url("../../../../../../../../wp-content/uploads/2018/02/full_width_group-180x250.jpg")no-repeat center;
 	background-size: cover;
 }
+
+// News
+
+.single .container {
+	p:first-child {
+		img {
+			margin-top:0;
+		}
+	}
+	img {
+		border:1px solid $light-grey;
+		min-width:100%;
+		height:auto;
+		padding:2rem;
+		margin:4rem auto;
+		@include breakpoint(medium) {
+			&.alignleft, &.alignright, &.aligncenter {
+				margin:4rem auto;
+			}
+		}
+		@include breakpoint(large) {
+			min-width:inherit;
+			padding:1.5rem;
+			&.alignleft {
+				position:relative;
+				left:-8rem;
+				margin:2rem -5rem 2rem 2rem;
+			}
+			&.alignright {
+				position:relative;
+				right:-8rem;
+				margin-left:2rem 2rem 2rem -5rem;
+			}
+		}
+	}
+}
