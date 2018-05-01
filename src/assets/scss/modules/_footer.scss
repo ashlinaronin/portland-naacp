@@ -135,6 +135,9 @@ footer {
 }
 
 footer{
+  .nf-before-form-content {
+    margin-bottom:0;
+  }
   .nf-form-cont {
     .two-thirds.email-container, .one-third.submit-container {
       width:100%;
@@ -144,7 +147,7 @@ footer{
     }
     .nf-field-element input {
       height:auto!important;
-      margin-bottom:1rem;
+      margin-bottom:0;
       padding:1.6666666667rem;
     }
     .label-above .nf-field-label {
@@ -181,10 +184,9 @@ footer{
         padding:1rem;
       }
     }
-
   }
 }
 .ninja-forms-field.email-address.nf-element {
-	margin-top: 1rem;
-	border: 2px solid #$light-grey;
+	margin-top: 1rem!important;
+	border: 2px solid $light-grey;
 }
