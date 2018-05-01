@@ -20,6 +20,11 @@ body {
   .cta-block {
     margin-top:rem-calc(24);
   }
+  &.single-line{
+  	h1{
+  		margin-bottom:0;
+  	}
+  }
 }
 .main-wrap {
   @include xy-grid-container;
@@ -85,7 +90,7 @@ section.container {
 	.home & {
 		/*margin: 0;*/
 			@include breakpoint(medium) {
-				margin-top:-122px;
+				margin-top:-132px;
 		}
 	}
 }

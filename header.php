@@ -33,19 +33,19 @@
 					<img class="naacp-logo style-svg" src="/wp-content/uploads/2018/04/NAACP-362889.svg" />
 					<span class="portland-branch">Portland Branch 1120</span>
 				</a>
-				<!-- <div class="site-mobile-title title-bar-title">
-				</div> -->
 			</div>
 		</div>
 
 		<nav class="site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="naacp-logo style-svg" src="/wp-content/uploads/2018/04/NAACP-362889.svg"/>
-						<div class="portland-branch">&nbsp;Portland Branch 1120</div>
-						<div class="naacp-text">NAACP</div>
-					</a>
+					<div id="logo-home">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img class="naacp-logo style-svg" src="/wp-content/uploads/2018/04/NAACP-362889.svg"/>
+							<div class="portland-branch">&nbsp;Portland Branch 1120</div>
+							<div class="naacp-text">NAACP</div>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="top-bar-right">

@@ -49,19 +49,37 @@ footer {
     margin-top:rem-calc(48);
     padding-top:rem-calc(48);
     ul {
-      display:inline-block;
+      display:block;
+      height:2rem;
       margin:0 auto 2rem auto;
       li {
         display:inline-block;
         border-right: 2px solid $light-grey;
+        height:2rem;
         margin:0;
         padding:0 2rem;
         &:last-child {
           border:none;
         }
         a {
+          float:left;
           text-align:center;
           margin:0;
+        }
+        &#menu-item-29, &#menu-item-30 {
+          a {
+            display:inline-block;
+            width:2rem;
+            height:2rem;
+            font-size:1px;
+            color:$white;
+          }
+        }
+        &#menu-item-29 a {
+          background:url('../images/icons/twitter.svg') center center no-repeat;
+        }
+        &#menu-item-30 a {
+          background:url('../images/icons/fb.svg') center center no-repeat;      
         }
       }
     }

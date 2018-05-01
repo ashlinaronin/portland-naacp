@@ -8,7 +8,7 @@ get_header(); ?>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-	<div class="lead-in text-center">
+	<div class="lead-in single-line text-center">
 	  	<div class="grid-container">
 		    <div class="grid-x">
 		      	<div class="cell small-12 medium-10 medium-offset-1">

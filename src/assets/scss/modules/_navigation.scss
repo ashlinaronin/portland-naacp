@@ -38,6 +38,12 @@
 	margin-right: 2rem;
 }
 
+@include breakpoint(large) {
+  .top-bar ul {
+    margin-right:4rem;
+  }
+}
+
 .home .mobile-menu ul li {
 	background-color: $purple;
 }
@@ -66,7 +72,11 @@
 	width: 80px;
 	height: auto;
 	float: left;
-	margin: 1rem 1.25rem 1rem 2rem;
+	margin: 1rem 1rem 1rem 2rem;
+}
+
+#logo-home{
+  padding-top:1rem;
 }
 
 // Mobile menu
@@ -231,14 +241,14 @@
 
 .menu-item:not(.is-dropdown-submenu-item) > a {
   &:hover {
-    color: $yellow;
+    color: $dark-purple;
     text-decoration: none;
   }
 }
 
 //Submenu/Dropdown	
 .dropdown.menu.vertical.submenu.is-dropdown-submenu.first-sub {
-	right: -6.5rem !important;
+	right: -5.5rem !important;
 	top: 4rem;
 	z-index: 100;
 }	

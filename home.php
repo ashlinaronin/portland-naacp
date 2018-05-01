@@ -3,7 +3,7 @@ get_header(); ?>
 
 <?php // get_template_part( 'template-parts/featured-image' ); ?>
 
-<div class="lead-in text-center">
+<div class="lead-in single-line text-center">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="cell small-12 medium-10 medium-offset-1">
