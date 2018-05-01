@@ -4,7 +4,7 @@ Template Name: Home
 */
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
+<?php // get_template_part( 'template-parts/featured-image' ); ?>
 
 <div class="c-hero callout large text-center">
     <h1>Ensuring the <span>political</span>, <span>educational</span>, <span>social</span> and <span>economic equality of rights</span> of all persons and to <span>eliminate racial hatred and discrimination</span></h1>

@@ -3,7 +3,9 @@
 }
 
 .container .c-hero.callout.large {
-	background: url("http://portland-naacp.local/wp-content/uploads/2018/04/home-page-march.jpg") #3b2c96 no-repeat;
+	background: 
+		linear-gradient(rgba(59, 44, 150, .95),rgba(59, 44, 150, .95)),
+		url("../../../../../../wp-content/uploads/2018/04/march_with_logo.png") no-repeat;
 	background-size: cover;
 	padding: 2rem 1rem 3rem;
 	h1 {
