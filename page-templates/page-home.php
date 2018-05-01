@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class="grid-x module-events callout large">
   <div class="module-events__header callout text-center next-meeting small-10">
-      <h4 class="black">Come to a general session!</h4>
+      <h4 class="black">Come to a general meeting!</h4>
       <h1>Every 4th Saturday</h1>
       <h2>Noon-2pm</h2>
       <a class="button" href="<?php echo get_site_url(); ?>/events">See the Calendar</a>
