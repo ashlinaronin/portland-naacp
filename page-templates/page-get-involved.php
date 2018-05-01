@@ -43,8 +43,9 @@ get_header(); ?>
 
 <div class="grid-container content">
   <div class="grid-x main-content">
-    <div class="cell small-12 medium-8 medium-offset-2">
-      <h2 class="text-center">Make a donation</h2>
+    <div class="cell small-12 medium-8 medium-offset-2 text-center">
+      <h2 class="">Make a donation</h2>
+      <h3>Donate Online</h3>
       <div class="paypal-link"><?php the_field('donation_form_link'); ?></div>
     </div>
     <?php 
@@ -54,10 +55,10 @@ get_header(); ?>
           $instructions = get_sub_field('donate_mailing_instructions');
           $address = get_sub_field('donate_mailing_address');
           ?>
-          <div class="cell small-12 medium-8 medium-offset-2">
-            <h5><?php echo $instructions; ?></h5><br />
-
-              <h4><?php echo $address; ?></h4>
+          <div class="cell small-12 medium-8 medium-offset-2 text-center">
+            <h3>Donate by Mail</h3>
+            <h6><?php echo $instructions; ?></h6>
+            <p><?php echo $address; ?></p>
           </div>
         <?php 
           endwhile; 
@@ -66,10 +67,10 @@ get_header(); ?>
   </div>
 
   <div class="grid-x main-content">
-    <div class="cell small-12 medium-8 medium-offset-2">
-      <h2 class="text-center">Become a Member</h2>
+    <div class="cell small-12 medium-8 medium-offset-2 text-center">
+      <h2 class="">Become a Member</h2>
       <p><?php the_field('membership_copy'); ?></p>
-      <div class="callout secondary membership-form">
+      <div class="membership-form">
         <?php the_field('membership_form_link'); ?>
       </div>
     </div>

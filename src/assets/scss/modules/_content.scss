@@ -193,9 +193,6 @@ p.divider {
 
 
 // Get Involved
-.send-by-mail {
-	margin-bottom: 0;
-}
 .donation-destination {
 	span {
 		font-weight: 600;
@@ -206,12 +203,17 @@ p.divider {
 	margin: 2rem auto 0 auto;
 	width: 150px;
 }
-.page-template-page-get-involved .text-center span {
+/*.page-template-page-get-involved .text-center span {
 	font-family: $glegoo;
 	color: $black;
 	font-size: 2rem;
 	text-transform: none;
 	line-height: 1;
+}*/
+.membership-form {
+	border:8px solid $light-grey;
+	background:$light-grey;
+	margin-top:4rem;
 }
 
 //Contact Form
