@@ -44,7 +44,7 @@
 }
 
 .top-bar .menu a {
-	font-size: 1.3rem !important;
+	font-size: 1.5rem;
 }
 .top-bar .top-bar-title a {
 	.portland-branch {
@@ -76,6 +76,72 @@
   display: none; // prevents repaint caused by JS hiding menu onload
 }
 
+.site-title-bar {
+  padding:0;
+  button.menu-icon {
+    float:left;
+    overflow:hidden;
+    margin:2rem;
+    &:hover, &:focus{
+      &:after {
+        background:$yellow;
+        box-shadow: 0 7px 0 $yellow, 0 14px 0 $yellow;
+      }
+    }
+    
+  }
+  .title-bar-title {
+    margin:0 auto;
+  }
+  a {
+    display:inline-block;
+    font-family:$oswald;
+    font-weight:600;
+    text-transform:uppercase;
+    text-align:left;
+    color:$white;
+    margin:0 auto;
+    overflow:visible;
+  }
+  .naacp-logo.style-svg {
+    width:44px;
+    height:44px;
+    margin:-.75rem 1rem 0 0;
+    padding:0;
+  }
+ 
+  .title-bar-left {
+    a {
+      margin-top:1.5833333333rem;
+      margin-left:-6rem;
+    }
+  }
+}
+
+.menu.vertical {
+  border-top:2px solid $dark-purple;
+  margin-top: 0;
+  padding-left: 0;
+  ul {
+    border:none;
+    margin:0;
+    padding:0;
+    li {
+      border-top:1px solid $dark-purple;
+      &:first-child {
+        border:none;
+      }
+      a {
+        font-size:1.5rem;
+        padding:2rem;
+      }
+      button.submenu-toggle {
+        margin-top:1rem;
+      }
+    }
+  }
+}
+
 .off-canvas {
   > ul.menu {
     height: 100vh;
@@ -89,33 +155,8 @@
   }
 
 }
-
-/*.title-bar-title {
-  a {
-    font-size: 1rem;
-		font-weight: 600;
-    color: #B9B9B9;
-		padding-left: 2rem;
-	}
-	a:hover {
-		text-decoration: none;
-		color: $yellow;
-	}
-}*/
-
-/*.mobile-menu,
-.mobile-off-canvas-menu {
-
-  .menu .is-active > a {
-    background-color: lighten($dark-nav-color, 5%);
-  }
-}*/
 .menu .is-active > a, .dropdown.menu .is-active > a {
   background:transparent;
-}
-.menu.vertical {
-	margin-top: 2rem;
-	padding-left: .5rem;
 }
 
 // Tablet and desktop menu

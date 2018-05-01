@@ -26,12 +26,15 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header class="site-header" role="banner">
-		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
+		<div class="site-title-bar title-bar text-center" <?php foundationpress_title_bar_responsive_toggle() ?>>
 			<div class="title-bar-left">
 				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
-				<span class="site-mobile-title title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</span>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img class="naacp-logo style-svg" src="/wp-content/uploads/2018/04/NAACP-362889.svg" />
+					<span class="portland-branch">Portland Branch 1120</span>
+				</a>
+				<!-- <div class="site-mobile-title title-bar-title">
+				</div> -->
 			</div>
 		</div>
 
