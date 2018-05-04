@@ -225,9 +225,7 @@ p.divider {
 }
 
 //Contact Form
-.ninja-forms-form-wrap {
-	width: 100%;
-}
+
 .nf-before-form-content {
 	margin-bottom:1rem;
 }
@@ -236,7 +234,12 @@ p.divider {
 .main-contact-form .nf-field-element textarea {
 	border: 2px solid #ccc;
 }
-
 .nf-field-container {
 	margin-bottom:2rem;
+}
+.nf-form-content nf-fields-wrap { 
+	width: 100%; 
+}
+.nf-after-field {
+	margin-top:1rem;
 }
