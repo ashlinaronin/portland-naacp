@@ -18,12 +18,12 @@
 
 	<div class="grid-x">
 		<!-- footer main nav --> 
-		<div class="cell small-12 large-7 footer__upper">
+		<div class="cell small-12 large-8 footer__upper">
 			<?php dynamic_sidebar( 'footer-left-widgets' ); ?>
 		</div>
 
 		<!-- footer email signup -->
-		<div class="cell small-12 large-5">
+		<div class="cell small-12 large-4">
 			<?php dynamic_sidebar( 'footer-right-widgets' ); ?>		
 		</div>
 

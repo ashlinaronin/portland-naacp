@@ -39,7 +39,7 @@
 		<nav class="site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<div id="logo-home">
+					<div id="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<img class="naacp-logo style-svg" src="/wp-content/uploads/2018/04/NAACP-362889.svg"/>
 							<div class="portland-branch">&nbsp;Portland Branch 1120</div>
