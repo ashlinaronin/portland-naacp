@@ -213,7 +213,10 @@
       > li.is-dropdown-submenu-item {
         width: initial;
         background: $yellow;
-        padding:1rem 1rem 0 1rem;
+        padding:1rem .25rem 0 .25rem; 
+        @include breakpoint(large) {
+          padding:1rem 1rem 0 1rem;
+        }
 
         a {
           color: $purple;
@@ -252,9 +255,12 @@
 
 //Submenu/Dropdown	
 .dropdown.menu.vertical.submenu.is-dropdown-submenu.first-sub {
-	right: -5.5rem !important;
+	right: -3.5rem;
 	top: 4rem;
 	z-index: 100;
+  @include breakpoint(large){
+    right: -6.5rem;
+  }
 }	
 .dropdown.menu.vertical.submenu.is-dropdown-submenu.first-sub li a:hover {
 	text-decoration: none;
