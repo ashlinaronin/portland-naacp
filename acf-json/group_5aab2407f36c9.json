@@ -1,6 +1,6 @@
 {
     "key": "group_5aab2407f36c9",
-    "title": "Our Committees",
+    "title": "Sidebar -- Committees",
     "fields": [
         {
             "key": "field_5aab242831e3a",
@@ -99,5 +99,5 @@
     ],
     "active": 0,
     "description": "Small page section to drive people to Committees page",
-    "modified": 1525139730
+    "modified": 1525405339
 }

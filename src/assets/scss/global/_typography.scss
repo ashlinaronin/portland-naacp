@@ -160,6 +160,17 @@ p {
     margin:0;
     padding:0;
   }
+  &.member-info{
+    font-size:1.1666666667rem;
+    margin:0;
+    padding:0;
+    &.name {
+      font-weight:600;
+    }
+    &.email {
+      font-size:1rem;
+    }
+  }
   &.clear {
     margin:0;
   }
