@@ -16,7 +16,16 @@ footer {
       margin: 0;
       padding: 0;
       li {
-        margin-right:4rem;
+        margin-right:2rem;
+        &:last-child {
+          margin-right:0;
+        }
+        @include breakpoint(medium) {
+          margin-right:4rem;
+          &:last-child {
+            margin-right:4rem;
+          }
+        }
         a {
           font-family:$oswald;
           font-weight: bold;
@@ -41,7 +50,12 @@ footer {
     }
   }
   .footer__upper {
-    padding-left:rem-calc(48);
+    padding-left:rem-calc(24);
+    padding-right:rem-calc(24);
+    @include breakpoint(medium) {
+      padding-left:rem-calc(48);
+      padding-right:0;
+    }
   }
   .footer__lower {
     border-top: 2px solid $light-gray;
