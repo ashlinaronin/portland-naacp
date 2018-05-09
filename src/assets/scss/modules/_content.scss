@@ -86,20 +86,12 @@ body {
 
 // Pages
 section.container {
-	/*margin: 0;*/
 	.home & {
-		/*margin: 0;*/
-			@include breakpoint(medium) {
-				margin-top:-132px;
+		@include breakpoint(medium) {
+			margin-top:-132px;
 		}
 	}
 }
-/*.grid-container {
-	max-width: 95%;
-		@include breakpoint(large) {
-			max-width: 104rem;
-	}	
-}*/
 .grid-margin-x > .small-8 {
 	padding-right: 8rem;
 }
@@ -145,6 +137,16 @@ section.container {
 }
 
 // Committees
+.page-template-page-committees .intro {
+	border-bottom:2px solid $light-grey;
+	margin-bottom:4rem;
+	padding-bottom:4rem;
+	p {
+		&:last-child {
+			margin-bottom:0;
+		}
+	}
+}
 .committee {
 	border-bottom:2px solid $light-grey;
 	margin-bottom:4rem;

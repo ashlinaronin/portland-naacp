@@ -98,41 +98,6 @@ get_header(); ?>
 								?>
 								<p class="clear"></p>
 						    </div>
-
-						    <!-- <?php //HIDING EMAILS UNTIL WE FIGURE OUT A BETTER WAY TO SHOW THEM ?> -->
-							<!-- <?php //conditional link to another page
-							$link = get_sub_field( 'link' );
-							if ( ! empty( $link ) ): ?>
-								<a href="<?php the_sub_field( 'link' ); ?>">Learn more...</a>
-							<?php endif; ?> -->
-
-							<!-- <p>&nbsp;</p>
-							<p class="clear"></p> -->
-
-							<!-- <?php // check if the repeater field has rows of data
-							if( have_rows('committee_emails') ):
-
-								// loop through the rows of data
-								while ( have_rows('committee_emails') ) : the_row(); ?>
-
-								<?php // display a conditional sub-field value ?> -->
-
-								<!--Email-->
-								<!-- <div class="resource-email"><?php $email = get_sub_field('email_address');
-									if( $email ): ?>
-										<p><span>Email: </span><?php echo ('<a href="mailto:'.$email.'">'.$email.'</a>'); ?></p>
-									<?php endif;?>
-								</div> -->
-
-								<!-- <?php endwhile;
-							else :
-							// no rows found
-							endif;
-							?> -->
-
-							<!-- <p class="clear"></p>
-							<p class="divider">&nbsp;</p> -->
-
 						</div>
 				  	<?php endwhile;
 					else :
