@@ -36,7 +36,8 @@ get_header(); ?>
 					  // loop through the rows of data
 					  while ( have_rows( 'committee_information' ) ) : the_row(); 
   						  	$committee_email = get_sub_field( 'committee_email' );
-				  	?>
+			            $escaped_committee_email = esc_html(antispambot($committee_email));
+			    ?>
 
 					  	<div class="committee">
 
@@ -47,7 +48,10 @@ get_header(); ?>
 						 	<div class="committee-description cell small-12">
 								<?php the_sub_field( 'description' ); ?>
 								<?php if ( ! empty( $committee_email ) ): ?>
-									<p><b>Get in touch:</b> <?php echo $committee_email; ?></p>
+									<p>
+                    <b>Get in touch:</b>
+                    <a href="mailto:<?php echo $escaped_committee_email; ?>"><?php echo $escaped_committee_email; ?></a>
+                  </p>
 								<?php endif; ?>
 							</div>
 
@@ -60,18 +64,19 @@ get_header(); ?>
 										// loop through the rows of data
 										while ( have_rows( 'members' ) ) : the_row(); ?>
 											<?php
-											$image = get_sub_field( 'image' );
-											$member_name = get_sub_field( 'member_name' );
-											$member_title = get_sub_field( 'member_title' );
-											$member_email = get_sub_field( 'member_email' );
+											$image                = get_sub_field( 'image' );
+											$member_name          = get_sub_field( 'member_name' );
+											$member_title         = get_sub_field( 'member_title' );
+											$member_email         = get_sub_field( 'member_email' );
+											$escaped_member_email = esc_html(antispambot($member_email));
 
 											// Grab image info
 											if ( ! empty( $image ) ):
 
 												// vars
 												$title = $image['title'];
-												$alt     = $image['alt'];
-												$caption = $image['caption'];
+												$alt                = $image['alt'];
+												$caption            = $image['caption'];
 
 												// thumbnail
 												$size   = 'thumbnail';
@@ -87,7 +92,9 @@ get_header(); ?>
 													<p class="member-info name"><?php echo $member_name; ?></p>
 													<p class="member-info title"><?php echo $member_title; ?></p>
 													<?php if ( ! empty( $member_email ) ): ?>
-														<p class="member-info email"><?php echo $member_email; ?></p>
+														<p class="member-info email">
+                              <a href="mailto:<?php echo $escaped_member_email; ?>"><?php echo $escaped_member_email; ?></a>
+                            </p>
 													<?php endif; ?>
 												</div>
 											<?php endif; ?>
