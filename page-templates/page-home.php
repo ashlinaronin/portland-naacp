@@ -7,7 +7,7 @@ get_header(); ?>
 <?php // get_template_part( 'template-parts/featured-image' ); ?>
 
 <div class="c-hero callout large text-center">
-    <h1>Ensuring the <span>political</span>, <span>educational</span>, <span>social</span> and <span>economic equality of rights</span> of all persons and to <span>eliminate racial hatred and discrimination</span></h1>
+    <h1>Ensuring the <span>political</span>, <span>educational</span>, <span>social</span> and <span>economic equality of rights</span> of all persons and <span>eliminating racial hatred and discrimination</span></h1>
     <div class="expanded stacked-for-small button-group button-group--home-cta">
       <a class="button" href="<?php echo get_site_url(); ?>/about/committees/" title="Learn more">Learn more</a>
       <a class="button hollow" href="<?php echo get_site_url(); ?>/get-involved/" title="Get involved">Join us</a>
