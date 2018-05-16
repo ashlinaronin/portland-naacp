@@ -167,8 +167,10 @@ p {
     &.name {
       font-weight:600;
     }
-    &.email a {
-      font-size:1rem;
+    &.email {
+      a {
+        font-size:1rem;
+      }
     }
   }
   &.clear {
