@@ -47,6 +47,81 @@
 }
 
 //Home Page
+// Homepage Alert
+.homepage-alert {
+	text-align:center;
+	color:$purple;
+	padding:0 2rem;
+	background:$yellow;
+	p {
+		font-size:1.1666666667rem;
+		line-height:1.5rem;
+		margin:2rem 0 0 0;
+		@include breakpoint(large){
+			text-align:left;
+			margin:1.75rem 0;
+			br {
+				display:none;
+			}
+		}
+	}
+	button {
+		margin:1rem .1666666667rem 2rem 0;
+		a {
+			font-size:1.1666666667rem;
+			font-family: $oswald;
+			font-weight: 700;
+			letter-spacing:.1;
+			text-transform:uppercase;
+			color:$yellow;
+			display:inline-block;
+			padding:1rem;
+		}
+		&.primary {
+			a{
+				background:$purple;
+				&:hover, &:focus {
+					color:$purple;
+					background:#fff;
+				}
+			}
+		}
+		&.secondary {
+			a {
+				color:$purple;
+				border:4px solid $purple;
+				padding:0.6666666667rem; /*accounting for border*/
+				/*margin-right:0;*/
+				&:hover, &:focus {
+					background:#fff;
+					border:4px solid #fff;
+				}
+			}
+		}
+		&.close-button {
+			color:$purple;
+			font-size:2rem;
+			padding:0 0 1rem 1rem;
+			margin:0;
+			&:hover, &:focus {
+				font-size:2rem;
+				color:$dark-yellow;
+			}
+		}
+		@include breakpoint(large) {
+			margin-bottom:1rem;
+			&.close-button {
+				position:static;
+			}
+
+		}
+	}
+	@include breakpoint(large) {
+		#alert-buttons {
+			float:right;
+		}
+	}
+}
 
 //"Next General Session" 
 .module-events__header.next-meeting {
