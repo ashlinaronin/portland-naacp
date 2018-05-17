@@ -132,6 +132,7 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 	padding:0;
 }
 .tribe-mini-calendar-event {
+	position:relative;
 	border-bottom: 2px solid $light-grey;
 	padding:0 0 1.8333333333rem 0;
 	margin:0 0 2rem 0;
@@ -147,6 +148,21 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 				font-size: 1.6666666667rem;
 				line-height: 2rem;
 				margin-bottom: 1.5rem;
+				&:hover, &:focus {
+					&:after {
+						right:1.66666667rem;
+					}
+				}
+				&:after {
+					content:"\0203A";
+					position: absolute;
+					display:block;
+					font-size:3rem;
+					color:$orange;
+					top: 50%;
+					transform: translateY(-100%);
+					right:2rem;
+				}
 			}
 		}
 	}
@@ -170,12 +186,42 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 			font-size:rem-calc(24);
 		}
 	}
+	.tribe-events-duration {
+		display:none;
+	}
+}
+
+.module-events__events .tribe-event-featured {
+	border-bottom:0;
+	.tribe-mini-calendar-event {
+		color:#fff;
+		background:$purple;
+		padding:1.5rem 2rem;
+		margin-bottom:1rem;
+		.list-date, .list-info {
+			padding:0;
+		}
+		.tribe-events-duration {
+			display:initial;
+			font-size:1.1666666667rem;
+			font-weight:bold;
+			line-height:2rem;
+			color:$yellow;
+		}
+		.list-info {
+			h2 {
+				a {
+					&:after {
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
 }
 
 p.tribe-events-widget-link {
 	display:none;
 }
 
-.tribe-events-duration {
-	display:none;
-}

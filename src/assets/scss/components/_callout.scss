@@ -133,7 +133,12 @@
 		margin-bottom:1rem;
 	}
 	.button {
+		border:none;
 		margin:2rem 0 0 0;
+		&:hover {
+			background:#fff;
+			color:$purple;
+		}
 	}
 	@include breakpoint (medium) {
 		margin-top: -12rem;
