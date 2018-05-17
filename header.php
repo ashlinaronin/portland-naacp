@@ -26,24 +26,26 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header class="site-header" role="banner">
-		<div class="callout homepage-alert grid-x" data-closable>
-			<div class="small-12 large-9">
-				<p><b>SATURDAY, MAY 26TH:</b><br class="alert-break"> X-Factor brunch w/ Special Guest Ilyasah Shabazz (Daughter&nbsp;of&nbsp;Malcolm&nbsp;X)</p>
-			</div>
-			<div class="small-12 large-3">
-				<div id="alert-buttons">
-					<button class="primary">
-						<a href="https://xfactor.ticketleap.com/xfactor/dates/May-26-2018_at_1000AM" title="Get Tickets"  target="_blank">Get Tickets</a>
-					</button>
-					<button class="secondary">
-						<a href="<?php echo esc_url(home_url('')); ?>/2018/05/16/ilyasah-shabazz-the-daughter-of-malcolm-x-comes-to-portland-to-help-the-naacp-honor-him/" title="Ilyasah Shabazz comes to Portland to help NAACP honor her father, Malcolm X"target="_blank">More Info</a>
-					</button>
-					<!-- <button class="close-button" aria-label="Close alert" type="button" data-close>
-					    <span aria-hidden="true">&times;</span>
-					</button> -->
+		<?php if (is_page( 'Home' )): ?>
+			<div class="callout homepage-alert grid-x" data-closable>
+				<div class="small-12 large-9">
+					<p><b>SATURDAY, MAY 26TH:</b><br class="alert-break"> X-Factor brunch w/ Special Guest Ilyasah Shabazz (Daughter&nbsp;of&nbsp;Malcolm&nbsp;X)</p>
+				</div>
+				<div class="small-12 large-3">
+					<div id="alert-buttons">
+						<button class="primary">
+							<a href="https://xfactor.ticketleap.com/xfactor/dates/May-26-2018_at_1000AM" title="Get Tickets"  target="_blank">Get Tickets</a>
+						</button>
+						<button class="secondary">
+							<a href="<?php echo esc_url(home_url('')); ?>/2018/05/16/ilyasah-shabazz-the-daughter-of-malcolm-x-comes-to-portland-to-help-the-naacp-honor-him/" title="Ilyasah Shabazz comes to Portland to help NAACP honor her father, Malcolm X"target="_blank">More Info</a>
+						</button>
+						<!-- <button class="close-button" aria-label="Close alert" type="button" data-close>
+						    <span aria-hidden="true">&times;</span>
+						</button> -->
+					</div>
 				</div>
 			</div>
-		</div>
+		<?php endif; ?>
 		<div class="site-title-bar title-bar text-center" <?php foundationpress_title_bar_responsive_toggle() ?>>
 			<div class="title-bar-left">
 				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
