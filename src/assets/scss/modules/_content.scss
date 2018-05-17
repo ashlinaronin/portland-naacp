@@ -110,7 +110,21 @@ section.container {
 	}
 }
 
-
+#xfactor-callout {
+	padding-top:1.6666666667rem;
+	padding-bottom:.25rem;
+	a {
+		/*display:block;
+		width:100%;
+		height:auto;*/
+		img {
+			border:1px solid $light-grey;
+			min-width:100%;
+			height:auto;
+			padding:2rem;	
+		}
+	}
+}
 // News
 .blog .lead-in.text-center {
 	margin-top: 2rem;
