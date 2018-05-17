@@ -34,11 +34,11 @@ get_header(); ?>
       <?php $the_query = new WP_Query( 'posts_per_page=4' ); ?>
       <div class="module-news cell medium-12 large-8">
         <h2 class="text-left latest-news cell">Latest news&nbsp;&nbsp;<a href="/news/"><span>View All</span></a></h2>
-        <div id="xfactor-callout" class="small-12">
+        <!-- <div id="xfactor-callout" class="small-12">
           <a href="<?php echo esc_url(home_url('')); ?>/2018/05/16/ilyasah-shabazz-the-daughter-of-malcolm-x-comes-to-portland-to-help-the-naacp-honor-him/" title="Ilyasah Shabazz comes to Portland to help NAACP honor her father, Malcolm X" alt="X-Factor Brunch Ad" target="_self">
             <img src="<?php echo esc_url(home_url('')); ?>/wp-content/uploads/2018/05/x-factor1.jpg" alt="Ilyasah Shabazz comes to Portland to help NAACP honor her father, Malcolm X" />
           </a>
-        </div>
+        </div> -->
         <div class="grid-x grid-margin-x small-up-1 medium-up-2">
           <?php while ($the_query -> have_posts()): $the_query -> the_post(); ?>
             <div class="module-news__news-item cell">
