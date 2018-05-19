@@ -2,6 +2,19 @@
 
 This theme uses FoundationPress. If you have not worked with a Sass-based workflow before, I would recommend reading [FoundationPress for beginners](https://foundationpress.olefredrik.com/posts/tutorials/foundationpress-for-beginners), a short blog post that explains what you need to know.
 
+## Caching
+There are several kinds of caching in place to ensure visitors to the site can load and view it quickly.
+
+Our hosting provider Flywheel has setup server-side caching which pre-renders HTML pages from PHP to save processing speed.
+
+Also, most browsers will cache static assets (e.g. CSS, images) by default to save bandwidth and improve performance when reloading a page they've already been to. Most of the time, this is a good thing, but it can be frustrating when users don't see the latest changes you have made, especially styling updates. To get around this, the current version number of the theme is appended in the query string to all static assets. If you are making a change that you want to ensure all users see, you can bump the version number to ensure that all user's browsers will download the new file (since the query string will have changed, essentially giving it a new filename and invalidating the browser's cached version with the old version number).
+
+To bump the version number, update the version field in `style.css` and `package.json`. The version in `style.css` is the one that actually gets used for the query string, but it's good to be consistent so the version number is the same in both places.
+
+The version number is in the format 1.2.3 where 1 is a major version, 2 is a minor version and 3 is a bug fix or tiny tweak. It's up to developer discretion what qualifies as each, but when you have decided on a new version number make sure to update it in both places, then save and commit the file and push to Github.
+
+Once the CI build completes, you may need to clear the server cache on Flywheel as well. There is a button that says Flush Cache in the Advanced tab of the Portland NAACP site in the Flywheel admin.
+
 ## Collaboration
 Let's follow these general guidelines to ensure a smooth collaboration process:
 * Enter all data (copy, posts, etc.) on the Flywheel staging site at http://pdxnaacp.flywheelsites.com/
@@ -32,8 +45,6 @@ Daily workflow
     * Then run `git push` to push your changes to the Github repository. All code pushed to Github will start an automatic build on TravisCI and deploy to Flywheel. If you try to push changes before pulling down changes made by collaborators, Git will warn you and instruct you to pull first.
 5. Avoid using the Push / Pull functionality of Flywheel after the initial pull. We should only be pushing code from our local machines to the staging site on Flywheel, which we can do with Git. If we need data from the DB that is on staging but we don't have locally, we should use the WP Migrate DB plugin or a DB-only export via Duplicator. In general, we should be editing all data on staging and pulling it down to local, not pushing data up from local to staging so that there is one master copy of the database that we all share and keep up-to-date.
 
-
-
 ## Helpful Info from FoundationPress
 
 ### Requirements
@@ -53,6 +64,8 @@ In the `/src` folder you will the working files for all your assets. Every time 
 The `/page-templates` folder contains templates that can be selected in the Pages section of the WordPress admin panel. To create a new page-template, simply create a new file in this folder and make sure to give it a template name.
 
 I guess the rest is quite self explanatory. Feel free to ask if you feel stuck.
+
+
 
 ### Styles and Sass Compilation
 
