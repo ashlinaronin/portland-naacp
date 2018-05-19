@@ -133,9 +133,9 @@
 		margin-bottom:1rem;
 	}
 	.button {
-		border:none;
 		margin:2rem 0 0 0;
 		&:hover {
+			border-color:#fff;
 			background:#fff;
 			color:$purple;
 		}
