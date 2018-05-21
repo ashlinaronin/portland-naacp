@@ -39,9 +39,6 @@
 						<button class="secondary">
 							<a href="<?php echo esc_url(home_url('')); ?>/2018/05/16/ilyasah-shabazz-the-daughter-of-malcolm-x-comes-to-portland-to-help-the-naacp-honor-him/" title="Ilyasah Shabazz comes to Portland to help NAACP honor her father, Malcolm X"target="_blank">More Info</a>
 						</button>
-						<button class="close-button" aria-label="Close alert" type="button" data-close>
-						    <span aria-hidden="true">&times;</span>
-						</button>
 					</div>
 				</div>
 			</div>

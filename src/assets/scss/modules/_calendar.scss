@@ -31,6 +31,8 @@ h2.tribe-events-page-title {
 					font-family: $open-sans;
 					font-weight: 700;
 					color: $purple;
+					background:transparent;
+					padding:0;
 					span {
 						font-size:1rem;
 						line-height: 18px;
@@ -185,6 +187,65 @@ h2.tribe-events-page-title {
 	border-radius:0;
 	&:hover, &:focus, &:active{
 		background-color:$dark-purple;
+	}
+}
+
+// Mobile
+.tribe-is-responsive.tribe-mobile .tribe-events-page-title {
+	margin:0;
+}
+.tribe-events-week {
+	#tribe-mobile-container {
+		border-bottom:2px solid $light-grey;
+		margin:2rem 0;
+		.tribe-mobile-day {
+			.tribe-mobile-day-date {
+				font-family: $oswald;
+				font-weight: 700;
+				font-size:1.1666667rem;
+				background:$light-grey;
+				color:$black;
+				margin:0;
+				padding:1rem;
+			}
+		}
+		.type-tribe_events, .type-tribe_events~.type-tribe_events {
+			padding: 2rem 0;
+			h4 {
+				a {
+					font-family:$glegoo;
+					font-weight:700;
+					text-transform:none;
+				}
+			}
+			.tribe-events-event-body {
+				font-family:$open-sans;
+				font-size:1.5rem;
+				font-weight:bold;
+				color:$black;
+				margin-bottom:1rem;
+			}
+		}
+		.type-tribe_events~.type-tribe_events {
+			border-top:2px solid $light-grey;
+		}
+	}
+}
+
+.tribe-mobile #tribe-events-footer~a.tribe-events-ical.tribe-events-button {
+	font-family:$oswald!important;
+	font-size:1.1666667rem!important;
+	font-weight:700!important;
+	line-height:2rem!important;
+	background-color:$purple!important;
+	color:$white!important;
+	height: auto!important;
+	width:100%;
+	margin-top:2rem!important;
+	padding:1rem!important;
+	border-radius:0!important;
+	&:hover, &:focus, &:active{
+		background-color:$dark-purple!important;
 	}
 }
 /*.tribe-events-calendar thead th {
