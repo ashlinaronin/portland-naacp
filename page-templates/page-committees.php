@@ -97,11 +97,11 @@ get_header(); ?>
                             </p>
 													<?php endif; ?>
 												</div>
-											<?php endif; ?>
+										<?php ; endif; ?>
 										<?php endwhile;
-									else :
-									// no rows found
-									endif;
+									else : // no rows found ?>
+										<p class="no-members">Interested in applying for this committee? <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/contact-us" title="Apply to join this committee!">Get in touch!</a>
+									<?php endif;
 								?>
 								<p class="clear"></p>
 						    </div>
