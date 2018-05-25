@@ -374,9 +374,6 @@ section#tribe-events-countdown-widget-2 {
 	color: $purple !important;
 	font-size: 1.5rem;
 	font-family: $glegoo;
-		&:hover {
-			text-decoration: underline !important;
-		}
 }
 .tribe-events-event-meta address.tribe-events-address, 
 .tribe-events-list .tribe-events-venue-details {
@@ -394,6 +391,12 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 	border-bottom: 2px solid $light-grey;
 	padding:0 0 1.8333333333rem 0;
 	margin:0 0 2rem 0;
+
+	&:hover, &:focus {
+		.list-info h2 a:after {
+			right:1.66666667rem;
+		}
+	}
 	.list-info {
 		margin:0;
 		h2 {
@@ -406,11 +409,6 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 				font-size: 1.6666666667rem;
 				line-height: 2rem;
 				margin-bottom: 1.5rem;
-				&:hover, &:focus {
-					&:after {
-						right:1.66666667rem;
-					}
-				}
 				&:after {
 					content:"\0203A";
 					position: absolute;
