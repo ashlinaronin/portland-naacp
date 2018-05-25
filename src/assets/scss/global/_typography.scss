@@ -39,6 +39,27 @@ h3 {
   }
 }
 
+.next-meeting {
+  h3 {
+    a {
+      font-family: $glegoo;
+      font-weight: 700;
+      font-size: rem-calc(24);
+      line-height: rem-calc(32);
+      letter-spacing:.05rem;
+      text-decoration:underline;
+      color: $purple;
+      margin-top: 1.5rem;
+      &:hover, &:active, &:focus {
+        color:$black;
+      }
+    }
+    span.small {
+      font-size: rem-calc(18);
+    }
+  }
+}
+
 h4 {
   font-family: $oswald;
   font-weight: 500;
