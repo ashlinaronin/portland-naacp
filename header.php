@@ -26,7 +26,7 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header class="site-header" role="banner">
-		<?php if (is_page( 'Home' )): ?>
+		<?php /* if (is_page( 'Home' )): ?>
 			<div class="callout homepage-alert grid-x" data-closable>
 				<div class="small-12 large-9">
 					<p><b>SATURDAY, MAY 26TH:</b><br class="alert-break"> X-Factor brunch w/ Special Guest Ilyasah Shabazz (Daughter&nbsp;of&nbsp;Malcolm&nbsp;X)</p>
@@ -42,7 +42,7 @@
 					</div>
 				</div>
 			</div>
-		<?php endif; ?>
+		<?php endif; */ ?>
 		<div class="site-title-bar title-bar text-center" <?php foundationpress_title_bar_responsive_toggle() ?>>
 			<div class="title-bar-left">
 				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
