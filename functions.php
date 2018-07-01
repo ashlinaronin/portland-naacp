@@ -62,7 +62,7 @@ require_once( 'library/acf.php' );
 
 /** Hide ACF admin settings on production.
  * See http://awesomeacf.com/how-to-avoid-conflicts-when-using-the-acf-local-json-feature/ for more details. */
-require_once('library/acf-hide-admin.php');
+//require_once('library/acf-hide-admin.php');
 
 /** Add breadcrumb */
 require_once( 'library/breadcrumb.php');
