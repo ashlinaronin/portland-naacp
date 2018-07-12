@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="grid-x module-events callout large">
   <div class="module-events__header callout text-center next-meeting small-10">
       <h4 class="black">Next general meeting</h4>
-      <h1>Saturday, June 30th</h1>
+      <h1>Saturday, July 28th</h1>
       <h3>12-2 PM, <a href="https://goo.gl/maps/G35L17cejFH2" target="_blank" title="Map to NAACP Offices - 1257 Lloyd Center Portland, OR">NAACP Offices</a> <span class="small">(inside Lloyd Center)</span></h3>
       <a class="button" href="<?php echo get_site_url(); ?>/calendar">See the Calendar</a>
 	</div>
