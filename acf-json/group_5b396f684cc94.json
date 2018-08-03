@@ -75,6 +75,30 @@
             "return_format": "g:i a"
         },
         {
+            "key": "field_5b611ec5fbba4",
+            "label": "Meeting Status",
+            "name": "meeting_status",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Upcoming or In-Progress": "Upcoming or In-Progress",
+                "Adjourned": "Adjourned"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_5b63e0d8139ab",
             "label": "Meeting Agenda",
             "name": "meeting_agenda",
@@ -235,30 +259,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "key": "field_5b611ec5fbba4",
-            "label": "Meeting Status",
-            "name": "meeting_status",
-            "type": "radio",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Upcoming or In-Progress": "Upcoming or In-Progress",
-                "Adjourned": "Adjourned"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "",
-            "layout": "vertical",
-            "return_format": "value",
-            "save_other_choice": 0
         }
     ],
     "location": [
@@ -281,5 +281,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1533272411
+    "modified": 1533272542
 }
