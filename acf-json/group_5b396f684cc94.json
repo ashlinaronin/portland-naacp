@@ -3,11 +3,44 @@
     "title": "Agendas & Minutes",
     "fields": [
         {
-            "key": "field_5b39703ea07da",
-            "label": "Agenda",
-            "name": "agenda",
+            "key": "field_5b611c64fbb9a",
+            "label": "Meeting Date",
+            "name": "meeting_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_5b611cd9fbb9b",
+            "label": "Meeting Time",
+            "name": "meeting_time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i a",
+            "return_format": "g:i a"
+        },
+        {
+            "key": "field_5b611ceefbb9c",
+            "label": "Agenda Item",
+            "name": "agenda_item",
             "type": "repeater",
-            "instructions": "Pick a starting time for each agenda item",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,12 +52,12 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Agenda Item",
             "sub_fields": [
                 {
-                    "key": "field_5b397122a07db",
-                    "label": "Agenda item start time",
-                    "name": "agenda_item_start_time",
+                    "key": "field_5b611d02fbb9d",
+                    "label": "Item Start Time",
+                    "name": "agenda_item-start_time",
                     "type": "time_picker",
                     "instructions": "",
                     "required": 0,
@@ -38,30 +71,11 @@
                     "return_format": "g:i a"
                 },
                 {
-                    "key": "field_5b3971bca07dc",
-                    "label": "Agenda Item",
-                    "name": "agenda_item",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": 3,
-                    "new_lines": "br"
-                },
-                {
-                    "key": "field_5b39721ba07dd",
-                    "label": "Presenter",
-                    "name": "presenter",
+                    "key": "field_5b611d42fbb9e",
+                    "label": "Item Description",
+                    "name": "agenda_item-description",
                     "type": "text",
-                    "instructions": "Who will be presenting this topic?",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -74,21 +88,151 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5b611d7afbba0",
+                    "label": "Presenter",
+                    "name": "agenda_item-presenter",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5b611d55fbb9f",
+                    "label": "Item Notes",
+                    "name": "agenda_item-notes",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5b611e08fbba2",
+                    "label": "Action required?",
+                    "name": "agenda_item-action",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Yes": "Yes",
+                        "No": "No"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "No",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5b611e38fbba3",
+                    "label": "Action notes",
+                    "name": "agenda_item-action_notes",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5b611e08fbba2",
+                                "operator": "==",
+                                "value": "Yes"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 }
             ]
+        },
+        {
+            "key": "field_5b611ec5fbba4",
+            "label": "Meeting Status",
+            "name": "meeting_status",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Upcoming or In-Progress": "Upcoming or In-Progress",
+                "Adjourned": "Adjourned"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5b63dd3b535d3",
+            "label": "Committee",
+            "name": "committee",
+            "type": "taxonomy",
+            "instructions": "Which committee is this meeting for?",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "committees",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
         }
     ],
     "location": [
         [
             {
-                "param": "post_category",
+                "param": "post_type",
                 "operator": "==",
-                "value": "category:community-coordination"
-            },
-            {
-                "param": "post_category",
-                "operator": "==",
-                "value": "category:health"
+                "value": "meeting_agenda"
             }
         ]
     ],
@@ -98,9 +242,10 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "the_content"
+        "the_content",
+        "categories"
     ],
     "active": 1,
     "description": "",
-    "modified": 1530491700
+    "modified": 1533271710
 }
