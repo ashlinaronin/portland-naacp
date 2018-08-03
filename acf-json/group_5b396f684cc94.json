@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Use this form to create a meeting agenda for the future, or to take notes\/minutes down during the meeting! Just be sure to mark the meeting \"adjourned\" when it's done, and select the proper committee the meeting was for.",
+            "message": "Use this form to create a meeting agenda for the future, or to take notes\/minutes down during the meeting! Just be sure to set the proper committee and mark the meeting \"adjourned\" when it's done.",
             "new_lines": "",
             "esc_html": 0
         },
@@ -281,5 +281,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1533272542
+    "modified": 1533331283
 }
