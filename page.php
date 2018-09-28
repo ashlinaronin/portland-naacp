@@ -27,7 +27,7 @@
 				<div class="entry-content">
 					<?php the_content(); ?>
 					
-						<?php // display ACF Committee fields (Lead-in) - dpc180407 ?>
+						<?php // display ACF fields (Lead-in) - dpc180407 ?>
 
 						<h2><?php the_field('lead-in_heading'); ?></h2>
 						<p><?php the_field('lead-in_copy'); ?></p>

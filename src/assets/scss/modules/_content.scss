@@ -8,14 +8,14 @@ body {
 
 .lead-in {
   border-bottom:2px solid $light-grey;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			padding-bottom: 2rem;
+
+    @include breakpoint(large) {
 			margin-top: 4rem;
 			margin-bottom: 4rem;
 			padding-bottom: 4rem;
-
-    @include breakpoint(large) {
-			margin-top: 6rem;
-			margin-bottom: 6rem;
-			padding-bottom: 6rem;
 	}
   .cta-block {
     margin-top:rem-calc(24);
@@ -29,7 +29,8 @@ body {
 .main-wrap {
   @include xy-grid-container;
   @include xy-grid();
-  margin-top: 1rem;
+  margin: 1rem;
+	margin-bottom: 0;
 
   @include breakpoint(medium) {
     margin-top: 3rem;
@@ -96,7 +97,8 @@ section.container {
 	padding-right: 8rem;
 }
 .entry-content {
-	padding-right: 8rem;
+	padding-right: 2rem;
+	margin-right: 2rem;
 	.intro {
 		border-bottom:2px solid $light-grey;
 		margin-bottom:4rem;
@@ -137,7 +139,7 @@ section.container {
 			padding-bottom: 4rem;
 		}
 }
-.grid-container.lead-in {
+/*.grid-container.lead-in {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	padding-bottom: 2rem;
@@ -146,7 +148,7 @@ section.container {
 			margin-bottom: 4rem;
 			padding-bottom: 4rem;
 		}
-}
+}*/
 
 // Committees
 .page-template-page-committees .intro {

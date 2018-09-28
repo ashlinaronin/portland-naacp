@@ -1,32 +1,6 @@
 {
     "key": "group_5ad56f3e3234b",
     "title": "Resources",
-    "location": [
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "254"
-            },
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "656"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content",
-        "revisions"
-    ],
-    "active": 1,
-    "description": "",
-    "modified": 1525070595,
     "fields": [
         {
             "key": "field_5ad56f4b3afa4",
@@ -41,15 +15,15 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_5ad56f7d3afa5",
             "min": 0,
             "max": 0,
             "layout": "row",
             "button_label": "Add a Category",
             "sub_fields": [
                 {
-                    "key": "field_5ad576bcfc56d",
-                    "label": "Category Container",
+                    "key": "field_5b61275888abb",
+                    "label": "Resource Category",
                     "name": "",
                     "type": "accordion",
                     "instructions": "",
@@ -85,7 +59,7 @@
                 },
                 {
                     "key": "field_5ad56f933afa6",
-                    "label": "Sub-category Repeater",
+                    "label": "Sub-categories",
                     "name": "sub_category_repeater",
                     "type": "repeater",
                     "instructions": "",
@@ -96,15 +70,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "collapsed": "",
+                    "collapsed": "field_5ad56fde3afa7",
                     "min": 0,
                     "max": 0,
                     "layout": "row",
                     "button_label": "Add a Sub-category",
                     "sub_fields": [
                         {
-                            "key": "field_5ad576e0fc56e",
-                            "label": "Sub-category Container",
+                            "key": "field_5b61289e99d69",
+                            "label": "Sub-category",
                             "name": "",
                             "type": "accordion",
                             "instructions": "",
@@ -140,7 +114,7 @@
                         },
                         {
                             "key": "field_5ad56ffa3afa8",
-                            "label": "Resource repeater",
+                            "label": "Resources",
                             "name": "resource_repeater",
                             "type": "repeater",
                             "instructions": "",
@@ -151,7 +125,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
+                            "collapsed": "field_5ad5704a3afa9",
                             "min": 0,
                             "max": 0,
                             "layout": "row",
@@ -159,7 +133,7 @@
                             "sub_fields": [
                                 {
                                     "key": "field_5ad57706fc56f",
-                                    "label": "Resource Container",
+                                    "label": "Resource Info",
                                     "name": "",
                                     "type": "accordion",
                                     "instructions": "",
@@ -347,5 +321,25 @@
                 }
             ]
         }
-    ]
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "358"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "revisions"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1538172766
 }
