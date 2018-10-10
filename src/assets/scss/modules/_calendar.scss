@@ -145,32 +145,7 @@ h2.tribe-events-page-title {
 	}
 	// Tooltip styles
 	.tribe-events-tooltip {
-		padding:2rem;
-		h4 {
-			font-family: $glegoo;
-		    font-weight: 700;
-		    font-size: rem-calc(20);
-		    line-height: rem-calc(24);
-		    text-transform:none;
-		    color: $purple;
-		    margin-bottom:1rem;
-		}
-		.tribe-events-event-body {
-			font-family:$open-sans;
-			font-size:1.5rem;
-			color:$black;
-			margin:0;
-			padding:0;
-			.tribe-event-duration {
-				font-weight:bold;
-				margin-bottom:1rem;
-			}
-			.tribe-event-description {
-				p:last-child {
-					margin-bottom:0;
-				}
-			}
-		}
+		display: none !important;
 	}
 }
 

@@ -48,6 +48,9 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+/** Customize The Events Calendar views */
+require_once( 'library/customize-calendar-display.php' );
+
 /** Add Nav Options to Customer */
 require_once( 'library/custom-nav.php' );
 
