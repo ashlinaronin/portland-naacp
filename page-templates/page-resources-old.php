@@ -19,10 +19,6 @@ get_header(); ?>
  
 <div class="main-wrap" role="main">
 
-<div class="grid-container">	
-	  <div class="grid-x grid-margin-x">
-
-	
  <?php do_action( 'foundationpress_before_content' ); ?>
  <?php while ( have_posts() ) : the_post(); ?>
 
@@ -187,14 +183,14 @@ endif;
 	</article>
  <?php endwhile;?>
 
+	
+	
+	
  <?php do_action( 'foundationpress_after_content' ); ?>
   <div class="cell small-12 medium-5 large-4">
     <?php get_sidebar(); ?>
   </div>
 
-	</div> <!--end grid-x grid-margin-x-->		
- </div> <!--end grid-container-->
-
-</div>
+ </div>
 
  <?php get_footer();
