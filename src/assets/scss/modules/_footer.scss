@@ -3,7 +3,6 @@ footer {
   margin: 0 auto;
   padding-top: rem-calc(48);
   padding-bottom: rem-calc(96);
-
   @include breakpoint(large) {
     .cell:nth-child(2) {
       border-left: 2px solid $light-grey;
@@ -203,4 +202,8 @@ footer{
 .ninja-forms-field.email-address.nf-element {
 	margin-top: 1rem!important;
 	border: 2px solid $light-grey;
+}
+
+footer.resources-template {
+	margin-right: 4rem;
 }

@@ -165,7 +165,7 @@ endif;
 <?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 		
 		
-		<footer>
+		<footer class="resources-template">
 			<?php
 				wp_link_pages(
 					array(

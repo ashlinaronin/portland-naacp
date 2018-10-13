@@ -63,8 +63,9 @@ Template Name: Contact
 			<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 
 		</div>
-	</div>
+  </div>		
 </div>
+
 <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 
