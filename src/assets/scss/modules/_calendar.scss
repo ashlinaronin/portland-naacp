@@ -13,6 +13,7 @@ h2.tribe-events-page-title {
 }
 
 // Calendar
+body .tribe-events-calendar .tribe-events-tooltip { visibility:hidden; }
 #tribe-events-content {
 	table.tribe-events-calendar {
 		border:none;
