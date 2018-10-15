@@ -4,7 +4,17 @@ Template Name: Home
 */
 get_header(); ?>
 
-<?php // get_template_part( 'template-parts/featured-image' ); ?>
+<?php
+  $upcoming_general_meetings = tribe_get_events( array(
+    'eventDisplay'   => 'upcoming',
+    'posts_per_page' => 1,
+    'tag'            => 'general-meeting'
+  ) );
+
+  $next_general_meeting = $upcoming_general_meetings[0];
+  $formatted_meeting_date = tribe_get_start_date($next_general_meeting, false, 'l, F j');
+  $formatted_meeting_time = tribe_get_start_date($next_general_meeting, false, 'g') . '-' . tribe_get_end_date($next_general_meeting, false, 'g a');
+?>
 
 <div class="c-hero callout large text-center">
     <h1>Ensuring the <span>political</span>, <span>educational</span>, <span>social</span> and <span>economic equality of rights</span> of all persons and <span>eliminating racial hatred and discrimination</span></h1>
@@ -17,8 +27,14 @@ get_header(); ?>
 <div class="grid-x module-events callout large">
   <div class="module-events__header callout text-center next-meeting small-10">
       <h4 class="black">Next general meeting</h4>
-      <h1>Saturday, July 28th</h1>
-      <h3>12-2 PM, <a href="https://goo.gl/maps/G35L17cejFH2" target="_blank" title="Map to NAACP Offices - 1257 Lloyd Center Portland, OR">NAACP Offices</a> <span class="small">(inside Lloyd Center)</span></h3>
+      <?php if ($next_general_meeting != null): ?>
+        <h1><?php echo $formatted_meeting_date; ?></h1>
+        <h3>
+	        <?php echo $formatted_meeting_time; ?>,
+          <a href="https://goo.gl/maps/G35L17cejFH2" target="_blank" title="Map to NAACP Offices - 1257 Lloyd Center Portland, OR">NAACP Offices</a>
+          <span class="small">(inside Lloyd Center)</span>
+        </h3>
+      <?php endif; ?>
       <a class="button" href="<?php echo get_site_url(); ?>/calendar">See the Calendar</a>
 	</div>
 </div>
