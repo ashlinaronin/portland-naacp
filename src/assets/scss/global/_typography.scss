@@ -135,6 +135,17 @@ a {
 
 a:hover {
 	color:$black;
+}
+
+// link hover underlines & overrides
+a:hover,
+ul.sub-menu a:hover {
+  text-decoration:underline!important;
+}
+
+#logo a:hover,
+.menu a:hover,
+a.button:hover {
   text-decoration:none!important;
 }
 

@@ -72,6 +72,7 @@ h2.tribe-events-page-title {
 		}
 
 		// -- Date Number
+		// -- -- General
 		div[id*=tribe-events-daynum-],
 		td.tribe-events-past div[id*=tribe-events-daynum-],
 		td.tribe-events-thismonth div[id*=tribe-events-daynum-],
@@ -82,25 +83,25 @@ h2.tribe-events-page-title {
 		td.tribe-events-thismonth div[id*=tribe-events-daynum-]>a,
 		td.tribe-events-othermonth.tribe-events-future div[id*=tribe-events-daynum-]>a {
 			background:transparent;
+			font-family: $oswald;
 			font-size:1.1666666667rem;
 			text-align:right;
-			color:$dark-grey;
-		}
-		td.tribe-events-past div[id*=tribe-events-daynum-],
-		td.tribe-events-thismonth div[id*=tribe-events-daynum-],
-		td.tribe-events-othermonth.tribe-events-future div[id*=tribe-events-daynum-],
-		div[id*=tribe-events-daynum-] {
+			color:$purple;
 			padding:1rem;
 		}
+		// -- -- Color (Past)
+		td.tribe-events-past div[id*=tribe-events-daynum-] {
+			color:$dark-grey;
+		}
 
-		// -- Today
+		// -- -- Today
 		td.tribe-events-present div[id*=tribe-events-daynum-] a {
 			color:$orange;
 		} 
 
-		// -- Hovers
+		// -- -- Hovers
 		td:hover {
-			background:$lightest-grey;
+			background:transparent;
 			box-shadow:none;
 		}
 	}
@@ -223,122 +224,128 @@ h2.tribe-events-page-title {
 		background-color:$dark-purple!important;
 	}
 }
-/*.tribe-events-calendar thead th {
-	font-family: "Oswald", Arial, sans-serif;
-	background-color: $white;
-	color: $purple;
-	font-weight: 700;
-	padding: .5em 0;
-	white-space: nowrap;
-	border-left: 1px solid #fff;
-	border-right: 1px solid #fff;
-	border-bottom: 1px solid #ccc;
-	font-size: 1.25rem;	
-}
-#tribe-events .tribe-events-button, 
-#tribe-events .tribe-events-button:hover, 
-#tribe_events_filters_wrapper input[type="submit"], 
-.tribe-events-button, .tribe-events-button.tribe-active:hover, 
-.tribe-events-button.tribe-inactive, .tribe-events-button:hover, 
-.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], 
-.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a { //various buttons
-	font-family: "Oswald", Arial, sans-serif;
-	background-color: $orange;
-	color: #fff;	
-}
-#tribe-events-content .tribe-events-tooltip h4 { //tooltip
-	background-color: $purple;
-	color: $white;
-	text-align: center;	
-	padding: 8px;
-}
 
-#tribe-events-content .tribe-events-abbr, 
-abbr.tribe-events-abbr.tribe-event-date-start, 
-.tribe-events-tooltip .tribe-events-event-body {
-	font-family: $glegoo;
-  font-weight: 700;
-  font-size: 1.5rem !important;
-}
-.tribe-event-description p {
-	font-size: 1.4rem !important;
-	font-weight: 500 !important;
-}
-.tribe-events-category-committee-meetings h2.tribe-events-list-event-title {//Committee Meetings Category - list view
-	background-color: $purple !important;
-	border: 2px solid $purple;
-	a {
-		color: $white !important;
-		padding: 10px; 
-	}
-}
-.tribe-events-category-general-meetings h3.tribe-events-month-event-title, //General Meetings Category
-.tribe-events-category-general-meetings h2.tribe-events-list-event-title	{ //General Meetings Category - list view
-	background-color: $white !important;
-	border: 2px solid $purple;
-	a {
-		color: $purple;
-		padding: 10px;
-	}
-}
-.tribe-events-category-general-meetings h4.entry-title.summary {//General Meetings Category popup
-	background-color: $white !important;
-	color: $purple !important;
-	border: 2px solid $purple;
-}
-.tribe-events-category-special-events h3.tribe-events-month-event-title, //Special Events Category
-.tribe-events-category-special-events h2.tribe-events-list-event-title	{ //Special Events Category - list view
-	background-color: $yellow !important;
-	a {
-		color: $purple;	
-		padding: 10px;
-	}
-}
-.tribe-events-category-special-events h4.entry-title.summary {//Special Events Category popup
-	background-color: $yellow !important;
-	color: $purple !important;
-}
-#tribe-events-content .tribe-events-abbr,
-.tribe-events-abbr.tribe-event-date-start,
-.tribe-events-tooltip .tribe-events-event-body {
-	font-size: 1rem;
-	font-weight: 700;
-	color: $black;
-	margin: 10px 0;
-}
-.tribe-event-description p {
-	font-size: 1.2rem;
-	color: $black;
-}
-#tribe-events-content .tribe-events-calendar div[id*="tribe-events-event-"] h3.tribe-events-month-event-title {//actual event
-	background-color: $purple;
-}
-.tribe-events-calendar td a {
-	color: $white;
-}
-button:hover, 
-.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], 
-.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a, 
-.tribe-events-calendar td div[id*="tribe-events-daynum-"] {
-	font-size: 1rem;
-	text-align: right;
-}
-section#tribe-events-countdown-widget-2 {
-	margin-bottom: 20px;
-}
+// ALREADY HIDDEN
 
-//recurring events
-.tribe-events-loop .tribe-events-event-meta {
-	font-size: 1rem;
-}
-#tribe-events-content .tribe-events-abbr {
-	font-weight: normal;
-}
-.tribe-events-list .type-tribe_events h2 {
-	margin-bottom: 20px;
-}
+		/*.tribe-events-calendar thead th {
+			font-family: "Oswald", Arial, sans-serif;
+			background-color: $white;
+			color: $purple;
+			font-weight: 700;
+			padding: .5em 0;
+			white-space: nowrap;
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #ccc;
+			font-size: 1.25rem;	
+		}
+		#tribe-events .tribe-events-button, 
+		#tribe-events .tribe-events-button:hover, 
+		#tribe_events_filters_wrapper input[type="submit"], 
+		.tribe-events-button, .tribe-events-button.tribe-active:hover, 
+		.tribe-events-button.tribe-inactive, .tribe-events-button:hover, 
+		.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], 
+		.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a { //various buttons
+			font-family: "Oswald", Arial, sans-serif;
+			background-color: $orange;
+			color: #fff;	
+		}
+		#tribe-events-content .tribe-events-tooltip h4 { //tooltip
+			background-color: $purple;
+			color: $white;
+			text-align: center;	
+			padding: 8px;
+		}
 
-*/
+		#tribe-events-content .tribe-events-abbr, 
+		abbr.tribe-events-abbr.tribe-event-date-start, 
+		.tribe-events-tooltip .tribe-events-event-body {
+			font-family: $glegoo;
+		font-weight: 700;
+		font-size: 1.5rem !important;
+		}
+		.tribe-event-description p {
+			font-size: 1.4rem !important;
+			font-weight: 500 !important;
+		}
+		.tribe-events-category-committee-meetings h2.tribe-events-list-event-title {//Committee Meetings Category - list view
+			background-color: $purple !important;
+			border: 2px solid $purple;
+			a {
+				color: $white !important;
+				padding: 10px; 
+			}
+		}
+		.tribe-events-category-general-meetings h3.tribe-events-month-event-title, //General Meetings Category
+		.tribe-events-category-general-meetings h2.tribe-events-list-event-title	{ //General Meetings Category - list view
+			background-color: $white !important;
+			border: 2px solid $purple;
+			a {
+				color: $purple;
+				padding: 10px;
+			}
+		}
+		.tribe-events-category-general-meetings h4.entry-title.summary {//General Meetings Category popup
+			background-color: $white !important;
+			color: $purple !important;
+			border: 2px solid $purple;
+		}
+		.tribe-events-category-special-events h3.tribe-events-month-event-title, //Special Events Category
+		.tribe-events-category-special-events h2.tribe-events-list-event-title	{ //Special Events Category - list view
+			background-color: $yellow !important;
+			a {
+				color: $purple;	
+				padding: 10px;
+			}
+		}
+		.tribe-events-category-special-events h4.entry-title.summary {//Special Events Category popup
+			background-color: $yellow !important;
+			color: $purple !important;
+		}
+		#tribe-events-content .tribe-events-abbr,
+		.tribe-events-abbr.tribe-event-date-start,
+		.tribe-events-tooltip .tribe-events-event-body {
+			font-size: 1rem;
+			font-weight: 700;
+			color: $black;
+			margin: 10px 0;
+		}
+		.tribe-event-description p {
+			font-size: 1.2rem;
+			color: $black;
+		}
+		#tribe-events-content .tribe-events-calendar div[id*="tribe-events-event-"] h3.tribe-events-month-event-title {//actual event
+			background-color: $purple;
+		}
+		.tribe-events-calendar td a {
+			color: $white;
+		}
+		button:hover, 
+		.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], 
+		.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a, 
+		.tribe-events-calendar td div[id*="tribe-events-daynum-"] {
+			font-size: 1rem;
+			text-align: right;
+		}
+		section#tribe-events-countdown-widget-2 {
+			margin-bottom: 20px;
+		}
+
+		//recurring events
+		.tribe-events-loop .tribe-events-event-meta {
+			font-size: 1rem;
+		}
+		#tribe-events-content .tribe-events-abbr {
+			font-weight: normal;
+		}
+		.tribe-events-list .type-tribe_events h2 {
+			margin-bottom: 20px;
+		}
+
+		*/
+// END ALREADY HIDDEN
+
+
 //Single Events
 .tribe-events-schedule h2 span  {
 	color: $black !important;
