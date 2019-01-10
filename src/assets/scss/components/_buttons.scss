@@ -56,10 +56,8 @@ footer .label-above .nf-field-element {
 	}
 }
 .button-group--home-cta {
-	max-width: 225px;
 	margin: 2em auto;
 	padding: 0;
-
 	a.button, a.button.hollow {
 		transition: none;
 		&:hover {
@@ -83,8 +81,8 @@ footer .label-above .nf-field-element {
 		border-color: $yellow;
 		margin-left: auto;
 	}
-	@include breakpoint (medium) {
-		max-width: 400px;
+	a.button:nth-child(2) {
+		margin-right:0;
 	}
 }
 .button-group--home-meeting a.button:hover {

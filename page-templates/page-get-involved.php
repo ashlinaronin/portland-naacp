@@ -68,7 +68,7 @@ get_header(); ?>
 
   <div class="grid-x main-content">
     <div class="cell small-12 medium-8 medium-offset-2 text-center">
-      <h2 class="">Become a Member</h2>
+      <h2 id="member"></a>Become a Member</h2>
       <p><?php the_field('membership_copy'); ?></p>
       <div class="membership-form">
         <?php the_field('membership_form_link'); ?>
