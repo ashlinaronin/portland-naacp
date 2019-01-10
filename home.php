@@ -35,34 +35,33 @@ get_header(); ?>
   ?>
 <div class="grid-container">
   <div class="grid-x grid-margin-x">
-  <main class="cell small-12 medium-7 large-8">
-    <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
-      <div class="news-item">
-        <h4 class="date"><?php the_time( get_option( 'date_format' ))?></h4>
-        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-        <p><?php the_excerpt(); ?></p>
-        <a class="decorated-link decorated-link--double-right" href="<?php the_permalink(); ?>">Read article</a>
-        <hr class="light-grey-hr">
-      </div>
-    <?php endforeach; ?>
+    <main class="cell small-12 medium-7 large-8">
+      <?php foreach ( $found_posts as $post ) : setup_postdata( $post ); ?>
+        <div class="news-item">
+          <h4 class="date"><?php the_time( get_option( 'date_format' ))?></h4>
+          <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+          <p><?php the_excerpt(); ?></p>
+          <a class="decorated-link decorated-link--double-right" href="<?php the_permalink(); ?>">Read article</a>
+          <hr class="light-grey-hr">
+        </div>
+      <?php endforeach; ?>
 
-    <nav aria-label="Pagination">
-      <ul class="no-bullet grid-x grid-margin-x align-justify">
-        <li class="cell small-6 text-left">
-	        <?php next_posts_link(__('Older Posts')); ?>
-        </li>
-        <li class="cell small-6 text-right">
-	        <?php previous_posts_link(__('Newer Posts')); ?>
-        </li>
-      </ul>
-    </nav>
-  </main>
+      <nav aria-label="Pagination">
+        <ul class="no-bullet grid-x grid-margin-x align-justify">
+          <li class="cell small-6 text-left">
+            <?php next_posts_link(__('Older Posts')); ?>
+          </li>
+          <li class="cell small-6 text-right">
+            <?php previous_posts_link(__('Newer Posts')); ?>
+          </li>
+        </ul>
+      </nav>
+    </main>
 
-  <aside class="cell small-12 medium-5 large-4">
-    <?php get_sidebar(); ?>
-  </aside>
+    <aside class="cell small-12 medium-5 large-4">
+      <?php get_sidebar(); ?>
+    </aside>
   </div>
-
 </div>
 
 	<?php get_footer();
