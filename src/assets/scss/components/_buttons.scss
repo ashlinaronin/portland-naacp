@@ -25,16 +25,19 @@
 .button.large {
 	font-size: 1.5rem;
 }
-footer .nf-field-element input[type="button"] {
-	margin-bottom:0;
-	padding:2rem;
-	@include breakpoint(medium){
-		margin-top: 1rem;
-		padding:1.98rem;
-	}
-	@include breakpoint(large){
-		margin-top: 1rem;
-		padding:1.3rem 0;
+footer .label-above .nf-field-element {
+	width:auto;
+	input[type="button"] {
+		margin-bottom:0;
+		padding:2rem;
+		@include breakpoint(medium){
+			margin-top: 1rem;
+			padding:1.98rem;
+		}
+		@include breakpoint(large){
+			margin-top: 1rem;
+			padding:1.3rem;
+		}
 	}
 }
 
