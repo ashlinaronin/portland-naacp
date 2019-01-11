@@ -371,18 +371,19 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 .tribe-mini-calendar-event {
 	position:relative;
 	border-bottom: 2px solid $light-grey;
-	padding:0 0 1.8333333333rem 0;
-	margin:0 0 2rem 0;
+	// padding:0 0 1.8333333333rem 0;
+	margin:0;
 
 	&:hover, &:focus {
-		.list-info h2 a:after {
-			right:1.66666667rem;
+		.list-date:after {
+			right:0;
 		}
 	}
 	.list-info {
 		margin:0;
 		h2 {
-			margin-right:2rem;
+			margin-top:.25rem!important;
+			margin-right:2.5rem;
 			margin-bottom:0;
 			text-transform: unset;
 			a {
@@ -390,26 +391,10 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 				font-weight: 700;
 				font-size: 1.6666666667rem;
 				line-height: 2rem;
-				margin-bottom: 1.5rem;
-				&:after {
-					content:"\0203A";
-					position: absolute;
-					display:block;
-					font-size:3rem;
-					color:$orange;
-					top: 50%;
-					transform: translateY(-100%);
-					right:2rem;
-				}
 			}
 		}
 	}
 	.list-date {
-		background:none;
-		margin:0 2rem 0 0;
-		padding:0;
-		width:auto;
-		overflow:visible;
 		.list-dayname,
 		.list-daynumber {
 			font-family: $oswald;
@@ -422,6 +407,16 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 		}
 		.list-daynumber {
 			font-size:rem-calc(24);
+		}
+		&:after {
+			content:"\0203A";
+			position: absolute;
+			display:block;
+			font-size:3rem;
+			color:$orange;
+			top: 45%;
+			transform: translateY(-50%);
+			right:.5rem;
 		}
 	}
 	.tribe-events-duration {
