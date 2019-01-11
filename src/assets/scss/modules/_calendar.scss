@@ -9,7 +9,8 @@ h2.tribe-events-page-title {
 
 // Events Search Bar
 #tribe-events-bar {
-	margin-bottom:4rem;
+	display:none;
+	// margin-bottom:4rem;
 }
 
 // Calendar
@@ -20,7 +21,7 @@ h2.tribe-events-page-title {
 	}
 	// Calendar Header + Footer
 	#tribe-events-header {
-		top:-2rem; // align dates with bottom of header
+		//top:-2rem; // align dates with bottom of header
 		margin-bottom:0;
 	}
 	#tribe-events-header, #tribe-events-footer {
@@ -167,6 +168,9 @@ h2.tribe-events-page-title {
 }
 
 // Mobile
+.tribe-events-calendar td.tribe-events-present.mobile-active {
+	background:$purple;
+}
 .tribe-is-responsive.tribe-mobile .tribe-events-page-title {
 	margin:0;
 }
@@ -222,6 +226,15 @@ h2.tribe-events-page-title {
 	border-radius:0!important;
 	&:hover, &:focus, &:active{
 		background-color:$dark-purple!important;
+	}
+}
+
+@media only screen and (min-width:768px) {
+	#tribe-events-content {
+		margin-top:-2.5rem;
+		#tribe-events-header {
+			top:-2rem; // align dates with bottom of header
+		}
 	}
 }
 
@@ -457,4 +470,3 @@ section.large-12.columns.widget.tribe-events-adv-list-widget {
 p.tribe-events-widget-link {
 	display:none;
 }
-
