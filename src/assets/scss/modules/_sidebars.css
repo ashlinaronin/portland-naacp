@@ -1,0 +1,38 @@
+
+aside.sidebar {
+	ul {
+		list-style-type:none;
+		margin:1rem 0 2rem 0;
+	}
+	ul li {
+		margin-bottom: .75rem;
+		ul {
+			margin:1rem 0 1rem 1.2rem;
+		}
+		a {
+			font-family: $open-sans;
+			font-weight: 600;
+			font-size: 1.5rem;
+			text-transform: unset;	
+			&:before {
+				content: "»";
+				color: $orange;
+				padding-right: 4px;
+			}
+		}
+	}
+	ul.compact-archives {
+		li a {
+			&:before {
+				content: "";
+			}
+		}
+		li strong a {
+			&:before {
+				content: "»";
+				color: $orange;
+				padding-right: 4px;
+			}
+		}
+	}
+}
