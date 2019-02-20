@@ -87,6 +87,10 @@ aside.sidebar {
 	.widget ul {
 		list-style-type:none;
 		margin:1rem 0 2rem 0;
+		ul {
+			padding-left:20px;
+		}
+	}
 	}
 	.widget ul li {
 		margin-bottom: .75rem;
@@ -117,4 +121,3 @@ aside.sidebar {
 		}
 	}
 }
-
