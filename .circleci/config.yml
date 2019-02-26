@@ -23,8 +23,8 @@ jobs: # a collection of steps
       - run: # run tests
           name: build-gulp
           command: |
-            gulp build
+            npx gulp build
       - run: # deploy via gulp
           name: deploy-gulp
           command: |
-            gulp deploy --host $FTP_HOST --remotePath $FTP_PATH --user $FTP_USER --password $FTP_PASSWORD
+            npx gulp deploy --host $FTP_HOST --remotePath $FTP_PATH --user $FTP_USER --password $FTP_PASSWORD
